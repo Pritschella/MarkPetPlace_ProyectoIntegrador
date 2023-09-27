@@ -1,0 +1,30 @@
+
+
+
+/* navbar */
+
+.navbar{
+    background-color: #FF862F;
+}
+
+.navbar-toggler-icon{
+    background-image: url("/assets/img/Icono\ hamburguesa.svg");
+}
+
+.navbar-nav a{
+    color: #FFFDF5;
+}
+
+.navbar-toggler{
+    border-color: #FFFDF5;
+}
+
+.navbar-nav .nav-link.active{
+    color: #FFFDF5;
+    font-weight: bold;
+}
+
+.btn-outline{
+    color: #FFFDF5;
+    border-color: #FFFDF5;
+}
