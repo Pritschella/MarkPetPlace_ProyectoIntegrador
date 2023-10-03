@@ -13,6 +13,57 @@ li a {
     font-family: 'Mukta', sans-serif;
 }
 
+a {
+    font-family: 'Mukta', sans-serif;
+}
+
+/*Color de fondo del body*/
+#colorFondo {
+    background-color:#FFFDF5;
+}
+
+/*Banner de la página Sobre Nosotros*/
+#banner {
+    
+}
+
+/*Container 1: Titulo*/
+#manada {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: #472922;
+}
+
+#furdevs {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #FF862F;
+}
+
+#descripcion {
+    font-family: 'Mukta', sans-serif;
+    color:#472922;
+}
+
+/*Container 2: Descripciones*/
+#foto {
+    height: 216px;
+    width: 216px;
+    border-radius: 50%;
+}
+
+#nombre {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color:#FF862F;
+}
+
+#logo {
+    height: 24px;
+    width: 24px;
+}
+
+
 
 /* navbar */
 
