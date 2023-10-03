@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MarkPetPlace</title>
+
+    <!-- Fuentes -->
+    <link href="https://api.fontshare.com/v2/css?f[]=nunito@700,800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    </head>
+
+    
+    <body>
+        <!-- barra de navegación -->
+        <div id="navbar-container"></div>
+
+        <!-- Contenedor "padre"-->
+        <div class="container">
+        <h1>¡Contáctanos!</h1>
+
+        <!-- Contenedor "hijo" para filas usando la clase "row" -->
+
+        <!-- Formulario de contacto -->
+        <form class="row g-3">
+
+          <!-- Para los forms, el for del label, tiene que tener el mismo nombre que el #id del input. -->
+
+          <!-- Input de Nombre completo a 12 col -->
+          <div class="col-12">
+            <label for="NombreCompleto_Contacto" class="form-label">Nombre completo</label>
+
+            <div class="input-group">
+              <input id="inputNombre_Contacto" type="text" aria-label="Nombres" class="form-control" placeholder="Nombre(s)" required>
+              <input id="inputApellido_Contacto" type="text" aria-label="Apellidos" class="form-control" placeholder="Apellido(s)" required>
+            </div>
+          </div>
+
+
+          <!-- Input de CORREO ELECTRÓNICO a 6 col en ipad y desktop, 12 en móvil -->
+          <div class="col-md-6">
+            <label for="inputEmail_Contacto" class="form-label">Correo electrónico</label>
+            <input id="inputEmail_Contacto" type="email" class="form-control" placeholder="Correo electrónico" required>
+          </div>
+
+
+          <!-- Input de TELÉFONO a 6 col en ipad y desktop, 12 en móvil -->
+          <div class="col-md-6">
+            <label for="inputTelefono_Contacto" class="form-label">Teléfono</label>
+            <input id="inputTelefono_Contacto" type="tel" class="form-control" placeholder="Teléfono">
+          </div>
+
+
+          <!-- Input de MOTIVO a 12 col -->
+          <div class="col-12">
+            <label for="inputMotivo_Contacto" class="form-label">Cuéntanos el motivo de tu mensaje :D</label>
+            <input id="inputMotivo_Contacto" type="text" class="form-control"  placeholder="Motivo de mensaje" required>
+          </div>
+
+
+          <!-- Textarea de MENSAJE LARGO a 12 col -->
+          <div class="col-12">
+            <label for="inputMensaje_Contacto" class="form-label">Cuéntanos más :D</label>
+            <textarea id="inputMensaje_Contacto" class="form-control"  placeholder="Tu mensaje a detalle aquí" required></textarea>
+          </div>
+
+          <!-- Botón de ENVIAR MENSAJE -->
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">¡Marca territorio y envía!</button>
+          </div>
+        </form>
+
+
+
+
+
+        <!-- Script de Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!-- Script local -->
+        <script src="./assets/scripts/script.js"></script>
+
+    </body>
+</html>
