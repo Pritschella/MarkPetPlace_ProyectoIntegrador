@@ -2,7 +2,7 @@
 
 const navbarContainer = document.getElementById('navbar-container');
 
-const navbarURL = '/navbar.html';
+const navbarURL = 'navbar.html';
 
 fetch(navbarURL)
     .then(response => response.text())
