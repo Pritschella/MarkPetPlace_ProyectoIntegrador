@@ -1,0 +1,48 @@
+
+form .btn{
+    border: none;
+}
+
+form .btn:first-child:active{
+    background-color: #F06B30 ;
+}
+
+form .btn-primary{
+    background-color: #FFA101;
+    border: none;
+    padding: 10px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+form .btn-primary:hover{
+    background-color: #FF862F;
+    border: none;
+}
+form .btn-primary:active{
+    background-color: #F06B30;
+    border: none;
+}
+
+form .form-control {
+    border-color: #FAE6B1;
+    box-shadow: none;
+    border-radius: 50rem;
+    padding: 6px 20px;
+}
+
+
+form .form-control:focus {
+    border-color: #F06B30;
+    box-shadow: none;
+}
+
+form .form-control:valid {
+    border-color: #FFA101;
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    opacity: 1;
+    color: #949494 !important;
+  }
+
