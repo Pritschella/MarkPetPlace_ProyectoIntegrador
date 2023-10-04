@@ -34,6 +34,8 @@ $(document).ready(function () {
             }
             else {
                 seEncontraronElementoNoValidos = true;
+                alert("Ingrese un archivo válido");
+                cont--;
             }
         }
 
