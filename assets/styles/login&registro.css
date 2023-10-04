@@ -409,3 +409,10 @@ form.sign-in-form {
     left: 50%;
   }
 }
+
+form .boton .btn {
+  color: #000000;
+  background-color: #FFA101;
+  /*   border-radius: 10px;
+  padding: 10px; */
+}
