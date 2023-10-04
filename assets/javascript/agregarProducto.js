@@ -1,17 +1,8 @@
 $(document).ready(function () {
 
-    // Modal
-
-    $(".modal").on("click", function (e) {
-        console.log(e);
-        if (($(e.target).hasClass("modal-main") || $(e.target).hasClass("close-modal")) && $("#loading").css("display") == "none") {
-            closeModal();
-        }
-    });
-
-    // -> Modal
-
     // Abrir el inspector de archivos
+
+    //Código que le da funcionalidad al cuadrito azul para agregar foto/imagen y contador de cantidad de imagenes subidas
 
     $(document).on("click", "#add-photo", function () {
         if (cont < 4) {
@@ -22,9 +13,7 @@ $(document).ready(function () {
         }
     });
 
-    // -> Abrir el inspector de archivos
-
-    // Cachamos el evento change
+    // Código que agrega una nueva foto y compara la extensión de la misma para verificar si es válida o no
     var cont = 0;
     $(document).on("change", "#add-new-photo", function () {
 
@@ -35,7 +24,7 @@ $(document).ready(function () {
         var seEncontraronElementoNoValidos = false;
 
 
-
+        //Código que selecciona el archivo
         console.log(cont);
         for (var i = 0; i < files.length; i++) {
             element = files[i];
@@ -48,49 +37,28 @@ $(document).ready(function () {
             }
         }
 
-        if (seEncontraronElementoNoValidos) {
-            showMessage("Se encontraron archivos no validos.");
-        }
-        else {
-            showMessage("Archivo subido correctamente.");
-        }
-
     });
 
 
-    // -> Cachamos el evento change
-
     // Eliminar previsualizaciones
-
+    /* 
+    Código que elimina la imagen ya subida, al hacer click en la misma imagen
+    */
     $(document).on("click", "#Images .image-container", function (e) {
         $(this).parent().remove();
         cont--;
     });
 
-    // -> Eliminar previsualizaciones
 
 });
 
 
 
-//Genera las previsualizaciones
+//Genera las previsualizaciones de las imagenes
+//Muestra las imagenes que se van cargando y seleccionado. 
 function createPreview(file) {
     var imgCodified = URL.createObjectURL(file);
     var img = $('<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12"><div class="image-container"> <figure> <img src="' + imgCodified + '" alt="Foto del usuario"> <figcaption> <i class="icon-cross"></i> </figcaption> </figure> </div></div>');
     $(img).insertBefore("#add-photo-container");
 }
 
-
-
-// Modal 
-
-
-function showModal(card) {
-    $("#" + card).show();
-    $(".modal").addClass("show");
-}
-
-function showMessage(message) {
-    $("#Message .tag").text(message);
-    showModal("Message");
-}
