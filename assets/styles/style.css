@@ -42,6 +42,63 @@ li a {
 
 .navbar-nav a:hover {
     font-weight: 600;
+    text-decoration: underline;
+    background-color: #fffdf521;
+}
+
+.navbar-toggler {
+    border-color: #FFFDF5;
+}
+
+.navbar-nav .nav-link.active {
+    color: #FFFDF5;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link.show {
+    color: #FFFDF5;
+}
+
+/*Dropdown menu*/
+.dropdown-toggle {
+    font-weight: 600;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #472922;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #ff862f13;
+}
+
+/*Botón*/
+.btn-outline {
+    color: #FFFDF5;
+    border-color: #FFFDF5;
+}
+
+.btn-outline:hover {
+    background-color: #FFFDF5;
+    color: #FF862F;
+    border-color: #FF862F;
+}
+
+.carousel-caption {
+    position: static;
+    color: #472922;
+}
+
+.navbar-nav .nav-link.active:hover{
+    text-decoration: underline;
+}
+
+.navbar-nav a {
+    color: #FFFDF5;
+}
+
+.navbar-nav a:hover {
+    font-weight: 600;
 }
 
 .navbar-toggler {
