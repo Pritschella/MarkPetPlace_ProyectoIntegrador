@@ -42,8 +42,6 @@ li a {
 
 .navbar-nav a:hover {
     font-weight: 600;
-    text-decoration: underline;
-    background-color: #fffdf521;
 }
 
 .navbar-toggler {
@@ -87,4 +85,14 @@ li a {
 .carousel-caption {
     position: static;
     color: #472922;
+}
+
+/*Contenedor enlaces*/
+
+.contendor-enlaces{
+    margin-right: 30px;
+}
+
+.contendor-enlaces li{
+    margin-right: 10px;
 }
