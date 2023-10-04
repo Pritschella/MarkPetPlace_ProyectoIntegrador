@@ -9,7 +9,6 @@
 
     <!-- Fuentes -->
     <link href="https://api.fontshare.com/v2/css?f[]=nunito@700,800&display=swap" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600&display=swap" rel="stylesheet">
@@ -41,18 +40,27 @@
     <div id="navbar-container"></div>
 
     <br>
+    <!--Link de regresar con su icono -->
     <a href="./index.html" class="link"> <img src="./assets/img/icono_regresar.svg" class="icono"> Regresar</a>
 
     <!-- Título de página -->
     <h1 class="titulo">Vender producto</h1>
 
-    <main>
-        <div class="container">
-            <h4 class="subtitulo">Sube tus imagenes aquí</h4>
-            <div class="row">
-                <div class="col-8">
-                    <section id="Images" class="images-cards">
-                        <form action="upload.php" method="post" enctype="multipart/form-data">
+    <!-- 
+    El siguiente código muestra la sección donde se van agregan las fotos, es decir, 
+    muestra el rectángulo al que se le puede dar click para que abra el explorador de archivos
+    -->
+    <main> <!-- Inicio de apartado para subir imagenes y el formulario -->
+
+        <div class="container"><!-- Inicio de div container imagenes -->
+
+            <h4 class="subtitulo">Sube tus imagenes aquí</h4><!-- Subtitulo imagenes -->
+
+            <div class="row"><!-- Inicio de div row -->
+
+                <div class="col-8"> <!-- Inicia div de sección imagenes -->
+                    <section id="Images" class="images-cards"> <!-- Inicio de section images -->
+                        <form action="upload.php" method="post" enctype="multipart/form-data"> <!-- Form upload-->
                             <div class="row">
                                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" id="add-photo-container">
                                     <div class="add-new-photo first" id="add-photo">
@@ -61,9 +69,22 @@
                                     <input type="file" multiple id="add-new-photo" name="images[]">
                                 </div>
                             </div>
-                        </form>
-                    </section>
-                </div>
+                        </form> <!--  -->
+
+                    </section> <!-- Fin de section images -->
+
+                </div><!-- Termina div de sección imagenes -->
+
+                <!-- 
+                    Código que muestra el formulario con los campos a llenar, es decir, los campos:
+                    Titulo del producto
+                    Precio del producto
+                    El tipo de animal al que pertecene el producto
+                    La categoría a la que pertenece el producto
+                    Descripción del producto
+                    Y finalmente, se agrega el botón para registrar el producto
+                 -->
+
                 <!--Inicio formulario-->
                 <div class="col-4 formulario">
                     <div class="mb-3">
@@ -107,13 +128,13 @@
                     </div>
 
                     <button class="btn" type="submit" id="form">Button</button>
-
-
-
                 </div>
-            </div>
-        </div>
+            </div> <!-- Fin de div row -->
+
+        </div><!-- Fin de div container imagenes -->
+
     </main>
+    <!-- Fin de la sección para subir imagenes y el formulario (main) -->
 
 
     <!-- Script de Bootstrap -->

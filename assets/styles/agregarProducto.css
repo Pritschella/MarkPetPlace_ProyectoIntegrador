@@ -1,5 +1,6 @@
 .cuerpo {
     background-color: #FFFDF5;
+    padding-bottom: 25px;
 }
 
 .icono {
@@ -158,4 +159,11 @@ main {
     border: 1px solid #472922;
     border-radius: 25px;
     padding: 25px;
+}
+
+label {
+    font-family: 'Mukta', sans-serif;
+    color: #472922;
+    font-size: 18px;
+    font-weight: bold;
 }
