@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
+body {
+  background-color: #FAE6B1 !important;
+}
+
 * {
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
@@ -11,10 +15,6 @@ input {
   font-family: "Poppins", sans-serif;
 }
 
-body .fodiu{
-  background-color: #f9f500;
-
-}
 
 .container {
   position: relative;
@@ -157,6 +157,7 @@ form.sign-in-form {
 .btn:hover {
   background-color: #4d84e2;
 }
+
 .panels-container {
   position: absolute;
   height: 100%;
@@ -282,6 +283,7 @@ form.sign-in-form {
     min-height: 800px;
     height: 100vh;
   }
+
   .signin-signup {
     width: 100%;
     top: 95%;
@@ -388,9 +390,11 @@ form.sign-in-form {
   .image {
     display: none;
   }
+
   .panel .content {
     padding: 0.5rem 1rem;
   }
+
   .container {
     padding: 1.5rem;
   }
