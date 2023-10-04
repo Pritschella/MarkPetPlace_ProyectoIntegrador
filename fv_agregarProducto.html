@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agregar producto</title>
+
+    <!-- Fuentes -->
+    <link href="https://api.fontshare.com/v2/css?f[]=nunito@700,800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Estilos locales -->
+    <link rel="stylesheet" href="./assets/styles/agregarProducto.css">
+
+
+
+</head>
+
+<body class="cuerpo">
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+    <br>
+    <a href="./index.html" class="link"> <img src="./assets/img/icono_regresar.svg" class="icono"> Regresar</a>
+
+    <!-- Título de página -->
+    <h1 class="titulo">Vender producto</h1>
+
+    <main>
+        <div class="container">
+            <h4 class="subtitulo">Sube tus imagenes aquí</h4>
+            <div class="row">
+                <div class="col-8">
+                    <section id="Images" class="images-cards">
+                        <form action="upload.php" method="post" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" id="add-photo-container">
+                                    <div class="add-new-photo first" id="add-photo">
+                                        <span><img src="./assets/img/camara_icono.svg" class="icono_camara"></span>
+                                    </div>
+                                    <input type="file" multiple id="add-new-photo" name="images[]">
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <div class="col-4 formulario">
+                    <div class="mb-3">
+                        <label for="Titulo" class="form-label">Titulo <span class="textoSecundario">Máximo 40
+                                caracteres</span></label>
+                        <input type="text" class="form-control" id="form" placeholder="Titulo del producto">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Precio" class="form-label">Precio</label>
+                        <input type="number" class="form-control" id="form" placeholder="$">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Animal" class="form-label">¿A qué animal pertenece el producto?</label>
+                        <select class="form-select" id="form" aria-label="Default select example">
+                            <option selected>Animal</option>
+                            <option value="Perro">Perro</option>
+                            <option value="Gato">Gato</option>
+                            <option value="Conejo">Conejo</option>
+                            <option value="Peces">Peces</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Categoria" class="form-label">Selecciona una categoria</label>
+                        <select class="form-select" id="form" aria-label="Default select example">
+                            <option selected>Categoria</option>
+                            <option value="Alimentacion">Alimentación</option>
+                            <option value="Accesorios">Accesorios</option>
+                            <option value="Cuidado">Cuidado e higiene</option>
+                            <option value="Salud">Salud</option>
+                            <option value="Ropa">Ropa y moda</option>
+                            <option value="Entrenamiento">Productos para entrenamiento</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Descripcion" class="form-label">Descripción del producto</label>
+                        <textarea class="form-control" id="form" rows="3"
+                            placeholder="Añada una descripcion del producto"></textarea>
+                    </div>
+
+                    <button class="btn" type="submit" id="form">Button</button>
+
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Scripts de jQuerys -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+
+
+
+    <script src="./assets/javascript/agregarProducto.js"></script>
+    <script src="./assets/javascript/script.js"></script> <!-- Script local de navbar -->
+
+</body>
+
+</html>
