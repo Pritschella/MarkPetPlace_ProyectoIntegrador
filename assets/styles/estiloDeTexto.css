@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;600&display=swap');
+
+/*Titulos*/
+.titulosH1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: #F06B30;
+    font-size: 48px;
+}
+
+.titulosH2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: #F06B30;
+    font-size: 40px;
+    padding: 50px 0px 20px;
+}
+
+.titulosH3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: #F06B30;
+    font-size: 32px;
+}
+
+.titulosH3C {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: #472922;
+    font-size: 32px;
+}
+
+.titulosH4 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: #472922;
+    font-size: 28px;
+}
+
+.titulosH5 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: #F06B30;
+    font-size: 24px;
+}
+
+.titulosH6 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #472922;
+    font-size: 16px;
+}
+
+/*Subtitulos*/
+.sb28 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #472922;
+    font-size: 28px;
+}
+
+.sb24 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #472922;
+    font-size: 24px;
+}
+
+.sb20 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #472922;
+    font-size: 20px;
+}
+
+.sb18 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #472922;
+    font-size: 18px;
+}
+
+.sb16 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #472922;
+    font-size: 16px;
+}
+
+/*Extra bold*/
+.exSb24 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: #472922;
+    font-size: 24px;
+}
+
+.exSb24N {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: #F06B30;
+    font-size: 24px;
+}
+
+.exSb18 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: #472922;
+    font-size: 18px;
+}
+
+/*Semi bold*/
+.seSb18 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #472922;
+    font-size: 18px;
+}
+
+/*Placeholder*/
+.sb28P {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color: #949494;
+    font-size: 18px;
+}
+
+.sb28p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color: #949494;
+    font-size: 16px;
+}
+
+/*Cuerpo de texto*/
+.txt18 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color: #472922;
+    font-size: 18px;
+}
+
+.txt18_SB {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    color: #472922;
+    font-size: 18px;
+}
+
+.txt16 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color: #472922;
+    font-size: 16px;
+}
+
+.txt16_SB {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    color: #472922;
+    font-size: 16px;
+}
+
+.txt14 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color: #472922;
+    font-size: 14px;
+}
+
+.txt14N {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color: #FFA101;
+    font-size: 14px;
+}
+
+/*Links*/
+.link24 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    color: #FFA101;
+    font-size: 24px;
+}
+
+.link20 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    color: #472922;
+    font-size: 20px;
+}
+
+.link18 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color: #FF862F;
+    font-size: 18px;
+}
+
+.link16 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color: #FF862F;
+    font-size: 16px;
+}
+
+.link16_SB {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    color: #FF862F;
+    font-size: 16px;
+}
+
+/*Nunito*/
+.nLink18 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #472922;
+    font-size: 18px;
+}
+
+.nLink18N {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #FF862F;
+    font-size: 18px;
+}
+
+/*Botones*/
+.txt20B {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 20px;
+}
+.txt18Btn {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    color: #472922;
+    font-size: 18px;
+}
+.txt18B {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+
+
+
+
+
