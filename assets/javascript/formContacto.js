@@ -11,10 +11,8 @@
         if (!form.checkValidity()) {
           event.preventDefault()
           event.stopPropagation()
-        }else if(form.classList.add('was-validated')){
-            $('#exampleModal').modal({ show:true });
         }
-    
+        form.classList.add('was-validated')
         
       }, false)
       

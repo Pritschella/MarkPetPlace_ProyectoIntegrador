@@ -41,11 +41,17 @@
 
   <!-- Contenedor "padre"-->
   <div class="container">
-    <div class="col-sm-12 d-flex justify-content-center">
-      <h1 class="titulosH2 ">¡Contáctanos!</h1>
-    </div>
+    <div class="row"> <!--Row 1-->
+      <div class="col-sm-12 d-flex justify-content-center">
+        <h1 class="titulosH2 ">¡Contáctanos!</h1>
+      </div>
+      <div class="col">
+        <p class="txt18">Puedes entrar en contacto con nosotros si tienes alguna duda, recomendación o problema con tu producto. ¡Cualquier aullido es bienvenido! </p>
+      </div>
+    </div> <!--Cierre de Row 1-->
     
-    <p class="txt18">Puedes entrar en contacto con nosotros si tienes alguna duda, recomendación o problema con tu producto. ¡Cualquier aullido es bienvenido! </p>
+    
+    
 
     <!-- Contenedor "hijo" para filas usando la clase "row" -->
 
@@ -111,18 +117,19 @@
 
       <!-- FormSubmit para desactivar captcha -->
       <input type="hidden" name="_captcha" value="false">
-      <!-- FormSubmit para evitar que te rediriga a otra página -->
-      <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacto.html">
+      <!-- FormSubmit para mandar a una página de agradecimiento -->
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/gracias_contacto.html">
+      <!-- FormSubmit para ponerle un asunto a los mensajes que llegan al correo -->
+      <input type="hidden" name="_subject" value="¡Nuevo mensaje para MarkPetPlace!">
 
       <input type="hidden" name="_autoresponse" value="¡Hemos recibido tu aullido!">
       <!-- FormSubmit para darle formato a la información recibida por correo -->
       <input type="hidden" name="_template" value="table">
     </form>
-    
-
-
-
   </div>
+
+  <!--Footer-->
+  <footer id="my-footer"></footer>
 
 
 
