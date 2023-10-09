@@ -1,0 +1,14 @@
+/* Styles del index */
+
+#iconos-mascotas {
+    display: inline;
+}
+
+#iconos-mascotas a {
+    text-decoration: none;
+}
+
+.contenedor-productos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
