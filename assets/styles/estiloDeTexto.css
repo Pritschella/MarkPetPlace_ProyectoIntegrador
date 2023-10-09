@@ -247,8 +247,28 @@
     font-size: 18px;
 }
 
+/* Color de fuente para el texto placeholder o texto de ejemplo en los formularios */
+.form-control::placeholder {
+    font-family: 'Mukta', sans-serif;
+    opacity: 1;
+    color: #949494 !important;
+  }
 
+  form input.form-control{
+    font-family: 'Mukta', sans-serif;
+    color: #472922;
+}
+form input.form-control:focus{
+    color: #472922;
+}
 
+/* Padding de altura */
+.p95{
+    padding: 75px 0px 30px;
+}
 
+.p30{
+    padding: 20px 0px;
+}
 
 
