@@ -14,7 +14,7 @@ fetch(navbarURL)
     })
 
 
-    /* footer */
+/* footer */
 
 const footerContainer = document.getElementById('my-footer');
 
