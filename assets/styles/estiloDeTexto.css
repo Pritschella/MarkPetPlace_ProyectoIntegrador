@@ -280,3 +280,7 @@ form input.form-control:focus {
 .p30 {
     padding: 20px 0px;
 }
+
+.verMas {
+    text-decoration: underline;
+}
