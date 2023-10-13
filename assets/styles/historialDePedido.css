@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;600&display=swap');
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.filtro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton {
+    color: #ff862f;
+    border-color: #ff862f;
+    background-color: #FFFDF5;
+    border-radius: 10px;
+}
+
+.cartas {
+    border-color: #ff862f;
+}
+
+.entregado{
+    display: inline-block; 
+    padding: 5px;
+    border: 1px solid #B3DEE5;
+    background-color: #FFFDF5; 
+    border-radius: 10px; 
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color: #B3DEE5;
+    font-size: 15px;
+}
+
+.cancelado{
+    display: inline-block; 
+    padding: 5px;
+    border: 1px solid #D9D9D9;
+    background-color: #FFFDF5; 
+    border-radius: 10px; 
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color: #D9D9D9;
+    font-size: 15px;
+}
+
+.margen{
+    margin-left: 200px;
+}
+
+.pagination-centered {
+    display: flex;
+    justify-content: center;
+}
+
