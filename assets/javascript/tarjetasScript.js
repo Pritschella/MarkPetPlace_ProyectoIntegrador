@@ -1,11 +1,3 @@
-const contenedorTarjetaPez1 = document.getElementById("tarjeta-pez-contenedor1");
-const contenedorTarjetaPez2 = document.getElementById("tarjeta-pez-contenedor2");
-const contenedorTarjetaPez3 = document.getElementById("tarjeta-pez-contenedor3");
-
-const contenedorTarjetaConejo1 = document.getElementById("tarjeta-conejo-contenedor1");
-const contenedorTarjetaConejo2 = document.getElementById("tarjeta-conejo-contenedor2");
-const contenedorTarjetaConejo3 = document.getElementById("tarjeta-conejo-contenedor3");
-
 // Carrusel de productos destacados de la seccion de perros
 //Obtengo el contenedor de las tarjetas de cada seccion
 function pintarFilaPerro(contenedorId) {
