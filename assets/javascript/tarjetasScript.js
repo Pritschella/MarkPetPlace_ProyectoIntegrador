@@ -1,4 +1,4 @@
-
+//Obtengo los contenedores de las tarjetas de cada seccion
 const contenedorTarjetaPerro1 = document.getElementById("tarjeta-perro-contenedor1");
 const contenedorTarjetaPerro2 = document.getElementById("tarjeta-perro-contenedor2");
 const contenedorTarjetaPerro3 = document.getElementById("tarjeta-perro-contenedor3");
@@ -15,12 +15,14 @@ const contenedorTarjetaConejo1 = document.getElementById("tarjeta-conejo-contene
 const contenedorTarjetaConejo2 = document.getElementById("tarjeta-conejo-contenedor2");
 const contenedorTarjetaConejo3 = document.getElementById("tarjeta-conejo-contenedor3");
 
+//Funcion para pintar las tarjetas de cada seccion
 function pintarFilaPerro1() {
-    var fila = document.createElement("div");
-    fila.className = "row";
-    for (let i = 0; i < 4; i++) {
-        let tarjeta = document.createElement("div");
-        tarjeta.className = "col-sm-12 col-md-3 col-lg-3";
+    var fila = document.createElement("div"); //Creo un div para cada fila
+    fila.className = "row"; //Le asigno la clase row de bootstrap
+    for (let i = 0; i < 4; i++) { //Creo un for para que se repita 4 veces y se creen 4 tarjetas
+        let tarjeta = document.createElement("div"); //Creo un div para cada tarjeta
+        tarjeta.className = "col-sm-12 col-md-3 col-lg-3"; //Le asigno la clase col-sm-12 col-md-3 col-lg-3 de bootstrap
+        //Le asigno el contenido a cada tarjeta
         tarjeta.innerHTML = `
 
     <div class="product-card">
@@ -44,10 +46,10 @@ function pintarFilaPerro1() {
     </div>
 
 `
-        fila.appendChild(tarjeta);
-    }
-    contenedorTarjetaPerro1.appendChild(fila);
-}
+        fila.appendChild(tarjeta); //Agrego cada tarjeta a la fila
+    } //Cierro el for
+    contenedorTarjetaPerro1.appendChild(fila); //Agrego cada fila al contenedor de tarjetas
+} //Cierro la funcion
 
 function pintarFilaPerro2() {
     var fila = document.createElement("div");
@@ -423,6 +425,7 @@ function pintarFilaConejo3() {
     contenedorTarjetaConejo3.appendChild(fila);
 }
 
+//Llamo a las funciones para que se ejecuten y se pinten las tarjetas de cada seccion en el html
 pintarFilaPerro1();
 pintarFilaPerro2();
 pintarFilaPerro3();
