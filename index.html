@@ -11,6 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Fuentes -->
     <link href="https://api.fontshare.com/v2/css?f[]=nunito@700,800&display=swap" rel="stylesheet">
 
@@ -44,18 +47,20 @@
             <h3 class="titulosH3C">Selecciona tu mascota 🧡</h3>
         </div>
         <div class="row" id="iconos-mascotas">
-            <a href="">
-                <img src="./assets/img/iconos/icon_perro.svg" alt="">
-            </a>
-            <a href="">
-                <img src="./assets/img/iconos/icon_gato.svg" alt="">
-            </a>
-            <a href="">
-                <img src="./assets/img/iconos/icon_pez.svg" alt="">
-            </a>
-            <a href="">
-                <img src="./assets/img/iconos/icon_conejo.svg" alt="">
-            </a>
+            <div class="col-sm-12">
+                <a href="">
+                    <img src="./assets/img/iconos/icon_perro.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="./assets/img/iconos/icon_gato.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="./assets/img/iconos/icon_pez.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="./assets/img/iconos/icon_conejo.svg" alt="">
+                </a>
+            </div>
         </div>
         <div class="row">
             <img src="./assets/img/Vector 4423.svg" alt="hr" id="hr">
@@ -63,7 +68,7 @@
     </div>
 
     <!-- Carrusel -->
-    <div class="container" id="contenedor-carrusel">
+    <div class="container-fluid" id="contenedor-carrusel">
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -133,10 +138,12 @@
 
     <!-- Destacados Perros -->
 
-    <div class="container text-center contenedor-productos">
+    <div class="container contenedor-productos">
 
-        <h3 class="titulosH3">Perros</h3>
-        <h4 class="txt18">Productos destacados</h4>
+        <div class="text-center">
+            <h3 class="titulosH3">Perros</h3>
+            <h4 class="txt18">Productos destacados</h4>
+        </div>
 
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
@@ -148,389 +155,14 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card">
-                                <img src="https://www.mayoreototal.mx/cdn/shop/products/000058155m_350x.webp?v=1662653418"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="titulosH5C">Croquetas</a>
-                                    <h3 class="h6 fw-light mt-2 txt18">Ricas croquetas para perro</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star me-1 txt16">Kenia</span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 link24">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_corazonProductos.svg" alt="Carrito btn"
-                                                id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://www.mayoreototal.mx/cdn/shop/products/000058155m_350x.webp?v=1662653418"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="titulosH5C">Croquetas</a>
-                                    <h3 class="h6 fw-light mt-2 txt18">Ricas croquetas para perro</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star me-1 txt16">Kenia</span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 link24">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_corazonProductos.svg" alt="Carrito btn"
-                                                id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://www.mayoreototal.mx/cdn/shop/products/000058155m_350x.webp?v=1662653418"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="titulosH5C">Croquetas</a>
-                                    <h3 class="h6 fw-light mt-2 txt18">Ricas croquetas para perro</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star me-1 txt16">Kenia</span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 link24">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_corazonProductos.svg" alt="Carrito btn"
-                                                id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://www.mayoreototal.mx/cdn/shop/products/000058155m_350x.webp?v=1662653418"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="titulosH5C">Croquetas</a>
-                                    <h3 class="h6 fw-light mt-2 txt18">Ricas croquetas para perro</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star me-1 txt16">Kenia</span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 link24">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_corazonProductos.svg" alt="Carrito btn"
-                                                id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="carousel-item active" id="tarjeta-contenedor1">
+
                 </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://www.mayoreototal.mx/cdn/shop/products/000058155m_350x.webp?v=1662653418"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="titulosH5C">Croquetas</a>
-                                    <h3 class="h6 fw-light mt-2 txt18">Ricas croquetas para perro</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star me-1 txt16">Kenia</span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 link24">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_corazonProductos.svg" alt="Carrito btn"
-                                                id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://www.mayoreototal.mx/cdn/shop/products/000058155m_350x.webp?v=1662653418"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="titulosH5C">Croquetas</a>
-                                    <h3 class="h6 fw-light mt-2 txt18">Ricas croquetas para perro</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star me-1 txt16">Kenia</span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 link24">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_corazonProductos.svg" alt="Carrito btn"
-                                                id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://www.mayoreototal.mx/cdn/shop/products/000058155m_350x.webp?v=1662653418"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="titulosH5C">Croquetas</a>
-                                    <h3 class="h6 fw-light mt-2 txt18">Ricas croquetas para perro</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star me-1 txt16">Kenia</span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 link24">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_corazonProductos.svg" alt="Carrito btn"
-                                                id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://www.mayoreototal.mx/cdn/shop/products/000058155m_350x.webp?v=1662653418"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="titulosH5C">Croquetas</a>
-                                    <h3 class="h6 fw-light mt-2 txt18">Ricas croquetas para perro</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star me-1 txt16">Kenia</span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 link24">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_corazonProductos.svg" alt="Carrito btn"
-                                                id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="carousel-item" id="tarjeta-contenedor2">
+
                 </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://www.mayoreototal.mx/cdn/shop/products/000058155m_350x.webp?v=1662653418"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="titulosH5C">Croquetas</a>
-                                    <h3 class="h6 fw-light mt-2 txt18">Ricas croquetas para perro</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star me-1 txt16">Kenia</span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 link24">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_corazonProductos.svg" alt="Carrito btn"
-                                                id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://www.mayoreototal.mx/cdn/shop/products/000058155m_350x.webp?v=1662653418"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="titulosH5C">Croquetas</a>
-                                    <h3 class="h6 fw-light mt-2 txt18">Ricas croquetas para perro</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star me-1 txt16">Kenia</span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 link24">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_corazonProductos.svg" alt="Carrito btn"
-                                                id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://www.mayoreototal.mx/cdn/shop/products/000058155m_350x.webp?v=1662653418"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="titulosH5C">Croquetas</a>
-                                    <h3 class="h6 fw-light mt-2 txt18">Ricas croquetas para perro</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star me-1 txt16">Kenia</span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 link24">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_corazonProductos.svg" alt="Carrito btn"
-                                                id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://www.mayoreototal.mx/cdn/shop/products/000058155m_350x.webp?v=1662653418"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="titulosH5C">Croquetas</a>
-                                    <h3 class="h6 fw-light mt-2 txt18">Ricas croquetas para perro</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star me-1 txt16">Kenia</span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 link24">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_corazonProductos.svg" alt="Carrito btn"
-                                                id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <img src="./assets/img/icon_carrito.svg" alt="Carrito btn" id="btn-card">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="carousel-item" id="tarjeta-contenedor3">
+
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -569,312 +201,48 @@
                 <div class="carousel-item active">
                     <div class="row">
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row">
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row">
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -913,312 +281,48 @@
                 <div class="carousel-item active">
                     <div class="row">
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row">
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row">
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -1257,312 +361,48 @@
                 <div class="carousel-item active">
                     <div class="row">
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row">
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row">
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card shadow">
-                                <img src="https://i.pinimg.com/736x/7f/51/4a/7f514af68465daa321394d092b7f2055.jpg"
-                                    alt="black watch">
-                                <div class="card-footer border-top border-gray-300 p-4">
-                                    <a href="#" class="h5">Apple Watch Series 3</a>
-                                    <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport
-                                        Band</h3>
-                                    <div class="d-flex mt-3">
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning me-1"></span>
-                                        <span class="star fas fa-star text-warning"></span>
-                                        <span class="badge bg-primary ms-2">4.7</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <span class="h5 mb-0 text-gray">$299.00</span>
-                                        <a class="btn btn-xs btn-tertiary" href="#">
-                                            <span class="fas fa-cart-plus me-2"></span> Add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -1595,6 +435,7 @@
     <!-- Script local -->
     <script src="./assets/javascript/script.js"></script>
     <script src="./assets/javascript/indexScript.js"></script>
+    <script src="./assets/javascript/tarjetasScript.js"></script>
 
 
 </body>
