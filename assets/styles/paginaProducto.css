@@ -1,0 +1,61 @@
+.breadcrumb li a{
+    color: #FFA101;
+    font-size: 14px;
+}
+.breadcrumb li.active{
+    color: #949494;
+    font-size: 14px;
+    font-family: 'Mukta', sans-serif;
+    padding: 0px;
+}
+
+button.btn-primary{
+    border: none;
+}
+
+button.btn-primary:first-child:active{
+    background-color: #F06B30 ;
+}
+
+button.btn-primary{
+    background-color: #FFA101;
+    border: none;
+    padding: 10px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+/* Estilo para estado hover,donde está el cursor encima del botón */
+button.btn-primary:hover{
+    background-color: #FF862F;
+    border: none;
+}
+
+/* Estilo para estado active,donde se está presionando el botón */
+button.btn-primary:active{
+    background-color: #F06B30;
+    border: none;
+}
+
+button.btn-outline-primary{
+    border-color: #FFA101;
+    color: #FFA101;
+}
+
+/* Estilo para estado hover,donde está el cursor encima del botón */
+button.btn-outline-primary:hover{
+    background-color: #FF862F;
+    border-color: #FF862F;
+}
+
+/* Estilo para estado active,donde se está presionando el botón */
+button.btn-outline-primary:first-child:active{
+    background-color: #F06B30;
+    border-color: #F06B30;
+}
+
+div hr.border.border-tertiary {
+    border-color:  #FAE6B1;
+}
+
+

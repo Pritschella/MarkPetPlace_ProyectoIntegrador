@@ -35,7 +35,7 @@ form .btn-primary:active{
 
 
 /* Estilos para campos de formulario */
-form .form-control {
+form .form-control, div .form-control {
     border-color: #FAE6B1;
     box-shadow: none;
     border-radius: 2rem;
@@ -43,7 +43,7 @@ form .form-control {
 }
 
 /* Estado de formulario cuando el cursor está presionando el campo*/
-form .form-control:focus {
+form .form-control:focus, div .form-control:focus {
     border-color: #FFA101;
     box-shadow: none;
 }
