@@ -1,98 +1,180 @@
-/* Fuentes */
-h1,
-h2 {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
+/* Styles del index */
+
+#iconos-mascotas {
+    display: inline;
 }
 
-h3 {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
+#iconos-mascotas a {
+    text-decoration: none;
 }
 
-li a {
-    font-family: 'Mukta', sans-serif;
+.contenedor-productos {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-
-/* navbar */
-
-/*Fondo*/
-.navbar {
-    background-color: #FF862F;
-}
-
-/*ícono del menú de hamburguesa*/
-.navbar-toggler-icon {
-    background-image: url("/assets/img/Icono_hamburguesa.svg");
-}
-
-.navbar-nav .nav-link.active {
-    color: #FFFDF5;
-    font-weight: bold;
-}
-
-.navbar-nav .nav-link.active:hover {
-    text-decoration: underline;
-}
-
-.navbar-nav a {
+div a .btn-verMas {
+    border-radius: 40px;
     color: #FFFDF5;
 }
 
-.navbar-nav a:hover {
-    font-weight: 600;
-}
-
-.navbar-toggler {
-    border-color: #FFFDF5;
-}
-
-.navbar-nav .nav-link.active {
-    color: #FFFDF5;
-    font-weight: bold;
-}
-
-.navbar-nav .nav-link.show {
-    color: #FFFDF5;
-}
-
-/*Dropdown menu*/
-.dropdown-toggle {
-    font-weight: 600;
-}
-
-.navbar-nav .dropdown-menu .dropdown-item {
-    color: #472922;
-}
-
-.navbar-nav .dropdown-menu .dropdown-item:hover {
-    background-color: #ff862f13;
-}
-
-/*Botón*/
-.btn-outline {
-    color: #FFFDF5;
-    border-color: #FFFDF5;
-}
-
-.btn-outline:hover {
-    background-color: #FFFDF5;
-    color: #FF862F;
-    border-color: #FF862F;
+#hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .carousel-caption {
     position: static;
-    color: #472922;
 }
 
-/*Contenedor enlaces*/
-
-.contendor-enlaces{
-    margin-right: 30px;
+div .row #hr {
+    height: 40px;
 }
 
-.contendor-enlaces li{
-    margin-right: 10px;
+div .card {
+    border-radius: 12px !important;
+    height: 100%;
+}
+
+#btn-card {
+    background: #FFA101;
+    border-radius: 40px;
+    padding: 2px;
+}
+
+#iconos-mascotas img {
+    border-radius: 50%;
+    background-color: #FAE6B1;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 120px;
+}
+
+/* Cards */
+a {
+    text-decoration: none;
+}
+
+.product-card {
+    position: relative;
+    /* box-shadow: 0 2px 7px #dfdfdf; */
+    margin: 50px auto;
+    background: #fafafa;
+    border: 1px solid #fbb72c;
+    border-radius: 12px;
+}
+
+.badge {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background: red;
+    color: #fff;
+    padding: 3px 10px;
+}
+
+.product-tumb {
+    display: flex;
+    /* align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 50px; */
+    background: #f0f0f0;
+    border-radius: 12px 12px 0 0;
+}
+
+.product-tumb img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.product-details {
+    padding: 30px;
+}
+
+.product-catagory {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 18px;
+}
+
+.product-details h4 a {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.product-details h4 a:hover {
+    color: #fbb72c;
+}
+
+.product-details p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    color: #999;
+}
+
+.product-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.product-bottom-details div {
+    float: left;
+    width: 50%;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #fbb72c;
+    font-weight: 600;
+}
+
+.product-price small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.product-links {
+    text-align: right;
+}
+
+.product-links a {
+    display: inline-block;
+    margin-left: 5px;
+    color: #fbb72c;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.product-links a:hover {
+    color: #fbb72c;
+
+}
+
+#icono-card {
+    border: 1px solid #fbb72c;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#icono-card:hover {
+    background-color: #fbb72c;
+    color: #fff;
 }
