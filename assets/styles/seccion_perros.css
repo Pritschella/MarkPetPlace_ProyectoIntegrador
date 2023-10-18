@@ -4,41 +4,71 @@
 }
 
 /*Banner*/
-.contenedor-img-banner img {
+.banner img {
     width: 100%;
     object-fit: cover;
 }
 
-/*Container general*/
 
-.container {
+h1 {
+    text-align: center;
+}
+
+h3{
+    text-align: center;
     margin-top: 30px;
 }
 
-.contenedor-img {
-    margin-bottom: 15px;
-}
-
-#colorFondo {
-    background-color: #FFFDF5;
+#contenedor-iconos-mascotas a {
+    text-decoration: none !important;
+    
 }
 
 
-/*Container 2: Descripciones*/
-#foto {
-    height: 216px;
-    width: 216px;
+/* El tamaño del fondo de color influye en el tamaño del ícono por su clase. Hubieron cambios en la propiedad transition, aspect ratio, width, margin y demás. */
+#iconos-mascotas {
     border-radius: 50%;
+    background-color: #FAE6B1;
+    display: inline-flex;
+    width: 80px;
+    aspect-ratio: 1 / 1;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px 0px; /*Se esribe así para darle un margen 10px vertical y 0 px horizontal*/
+    transition: background-color .3s ease-in-out; 
+    
 }
 
-#logoLinkedIn {
-    height: 24px;
-    width: 24px;
+/* Color de fondo del círculo al pasar el mouse encima */
+#iconos-mascotas:hover {
+    background-color: #FFA101; 
+    color: #FFA101;
 }
 
-.txt18 {
-    text-decoration: none;
+/* Color de fondo del círculo al presionar encima */
+#iconos-mascotas:active {
+    background-color: #FF862F; 
 }
+
+
+.txt22 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color: #472922;
+    font-size: 22px;
+}
+
+#categoria {
+    margin-bottom: 70px;
+}
+
+.card {
+    text-align: center;
+    width: auto;
+    margin-top: 10px;
+}
+
 
 
 /* navbar */

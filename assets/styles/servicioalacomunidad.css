@@ -3,41 +3,24 @@
     background-color: #FFFDF5;
 }
 
-/*Banner*/
-.contenedor-img-banner img {
-    width: 100%;
-    object-fit: cover;
-}
-
-/*Container general*/
-
-.container {
-    margin-top: 30px;
-}
-
-.contenedor-img {
-    margin-bottom: 15px;
-}
-
-#colorFondo {
-    background-color: #FFFDF5;
+.txt21 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color: #472922;
+    font-size: 21px;
 }
 
 
-/*Container 2: Descripciones*/
-#foto {
-    height: 216px;
-    width: 216px;
-    border-radius: 50%;
+#img-art {
+    width: 280px;
+    height: 280px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20%;
 }
 
-#logoLinkedIn {
-    height: 24px;
-    width: 24px;
-}
-
-.txt18 {
-    text-decoration: none;
+#col-art {
+    margin-top: 20px;
 }
 
 
