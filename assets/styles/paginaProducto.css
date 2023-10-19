@@ -58,4 +58,40 @@ div hr.border.border-tertiary {
     border-color:  #FAE6B1;
 }
 
+div#accordionExample.accordion .accordion-item {
+    background-color: transparent;
+    border-color: #FFA101;
+}
 
+div#accordionExample.accordion .accordion-item .accordion-button {
+    background-color: transparent;
+    font-family: 'Mukta', sans-serif;
+    color: #472922;
+    font-size: 18px;
+}
+
+div#accordionExample.accordion .accordion-item .accordion-button:focus {
+    background-color: #FAE6B1;
+    box-shadow: none;
+    border-color: #F06B30;
+}
+
+div#accordionExample.accordion .accordion-item .accordion-body {
+    font-family: 'Mukta', sans-serif;
+    color: #472922;
+}
+
+div#accordionExample.accordion .accordion-item .accordion-button::after {
+    fill: #472922;
+}
+
+.hr-crema{
+    color: #FAE6B1;
+}
+
+.puntajeReviews {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #FFA101;
+    font-size: 40px;
+}
