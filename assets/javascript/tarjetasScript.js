@@ -46,9 +46,9 @@ function pintarFila(contenedorId, datos) {//recibe el id del contenedor y los da
 }
 
 // Datos específicos para cada categoría
-const datosPerro = {//objeto con los datos de la tarjeta de perro
+const datosPerro = {//objeto con los datos de la tarjeta de perro 
   imgSrc:
-    "https://www.mayoreototal.mx/cdn/shop/products/000058155m_350x.webp?v=1662653418",
+    "./assets/img/sobreNosotrostoño.jpg",
   nombre: "Crocretitas",
   categoria: "Alimentacion",
   vendedor: "Kenia",
