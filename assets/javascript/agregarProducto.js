@@ -1,3 +1,23 @@
+function openAlert() {
+    var alert = document.getElementById('customAlert');
+    alert.style.display = 'block';
+}
+
+function closeAlert() {
+    var alert = document.getElementById('customAlert');
+    alert.style.display = 'none';
+}
+
+function acceptAlert() {
+    closeAlert();
+}
+
+window.onload = function () {
+    openAlert();
+}
+
+
+
 $(document).ready(function () {
 
     // Abrir el inspector de archivos
@@ -63,4 +83,9 @@ function createPreview(file) {
     var img = $('<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12"><div class="image-container"> <figure> <img src="' + imgCodified + '" alt="Foto del usuario"> <figcaption> <i class="icon-cross"></i> </figcaption> </figure> </div></div>');
     $(img).insertBefore("#add-photo-container");
 }
+
+//Validaciones
+
+let expresiones = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
 
