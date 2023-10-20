@@ -8,7 +8,7 @@ function crearTarjeta(contenedor, imgSrc, nombre, categoria, vendedor, precio) {
             <img src="${imgSrc}" class="img-fluid" alt="">
           </div>
           <div class="product-details">
-            <h4><a href="">${nombre}</a></h4>
+            <h4><a href=./productoPerro.html>${nombre}</a></h4>
             <span class="product-catagory">${categoria}</span>
             <p>${vendedor}</p>
             <div class="product-bottom-details">
