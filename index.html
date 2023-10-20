@@ -11,6 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Fuentes -->
     <link href="https://api.fontshare.com/v2/css?f[]=nunito@700,800&display=swap" rel="stylesheet">
 
@@ -36,13 +39,60 @@
 
 <body>
 
-
-
+    <!-- Navbar -->
     <div id="navbar-container"></div>
 
+    <!-- Botones mascotas -->
+    <!-- my-4 se usa para un margen vertical -->
+    <div class="container text-center my-4" id="contenedor-iconos-mascotas">
+
+        <div class="row">
+            <h3 class="titulosH3C">Selecciona tu mascota 🧡</h3>
+        </div>
+
+        <div class="row justify-content-center"> <!--Row1 Iconos-->
+
+            <div class="col-3 col-sm-3 col-md-2 "> <!--Col1 Perros-->
+                <a href="./seccion_perros.html" target="_self">
+                    <div id="iconos-mascotas">
+                        <img class="w-75" src="./assets/img/iconos/icon_perro.svg" alt="">
+                    </div>
+                    <h4 class="txt22 ">Perros</h4>
+                </a>
+            </div> <!--Cierre de Col1 Perros-->
+
+            <div class="col-3 col-sm-3 col-md-2"> <!--Col2 Gatos-->
+                <a href="" target="_self">
+                    <div id="iconos-mascotas">
+                        <img class="w-75" src="./assets/img/iconos/icon_gato.svg" alt="">
+                    </div>
+                    <h4 class="txt22 ">Gatos</h4>
+                </a>
+            </div> <!--Cierre de Col2 Gatos-->
+
+            <div class="col-3 col-sm-3 col-md-2"> <!--Col3 Peces-->
+                <a href="" target="_self">
+                    <div id="iconos-mascotas">
+                        <img class="w-75" src="./assets/img/iconos/icon_pez.svg" alt="">
+                    </div>
+                    <h4 class="txt22 ">Peces</h4>
+                </a>
+            </div> <!--Cierre de Col3 Peces-->
+
+            <div class="col-3 col-sm-3 col-md-2"> <!--Col4 Conejos-->
+                <a href="" target="_self">
+                    <div id="iconos-mascotas">
+                        <img class="w-75" src="./assets/img/iconos/icon_conejo.svg" alt="">
+                    </div>
+                    <h4 class="txt22 ">Conejos</h4>
+                </a>
+            </div> <!--Cierre de Col4 Conejos-->
+
+        </div> <!--Cierre de Row1 Iconos-->
+    </div> <!--Cierre Container-->
 
     <!-- Carrusel -->
-    <div class="container" id="contenedor-carrusel">
+    <div class="container-fluid" id="contenedor-carrusel">
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -59,7 +109,7 @@
                     <img src="./assets/img/gato-banner.jpg" class="d-block w-100" alt="placeholder">
                     <div class="carousel-caption">
                         <h5>¿Cómo darle un buen paseo a tus mascotas?</h5>
-                        <a href=""><button type="button" class="btn btn-warning">
+                        <a href=""><button type="button" class="btn btn-warning btn-verMas">
                                 <h3>Ver más</h3>
                             </button></a>
                     </div>
@@ -68,7 +118,7 @@
                     <img src="./assets/img/perro-banner.jpg" class="d-block w-100" alt="placeholder">
                     <div class="carousel-caption">
                         <h5>Los beneficios de tener una mascota en tu vida</h5>
-                        <a href=""><button type="button" class="btn btn-warning">
+                        <a href=""><button type="button" class="btn btn-warning btn-verMas">
                                 <h3>Ver más</h3>
                             </button></a>
                     </div>
@@ -77,7 +127,7 @@
                     <img src="./assets/img/nemo-banner.jpg" class="d-block w-100" alt="placeholder">
                     <div class="carousel-caption">
                         <h5>¿Cómo elegir el alimento perfecto para tu mascota?</h5>
-                        <a href=""><button type="button" class="btn btn-warning">
+                        <a href=""><button type="button" class="btn btn-warning btn-verMas">
                                 <h3>Ver más</h3>
                             </button></a>
                     </div>
@@ -86,7 +136,7 @@
                     <img src="./assets/img/conejo-banner.jpg" class="d-block w-100" alt="placeholder">
                     <div class="carousel-caption">
                         <h5>Consejos para mantener a tu mascota feliz y saludable</h5>
-                        <a href=""><button type="button" class="btn btn-warning">
+                        <a href=""><button type="button" class="btn btn-warning btn-verMas">
                                 <h3>Ver más</h3>
                             </button></a>
                     </div>
@@ -107,155 +157,215 @@
 
     <!-- Mercadito -->
     <div class="container titulosH2 text-center" id="Mercadito">
-        <h2>Mercadito</h2>
+        <h3 class="titulosH3">Mercadito</h3>
     </div>
 
-    <!-- Destacados Perros
+    <!-- Destacados Perros -->
 
-    <div class="container">
-        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+    <div class="container contenedor-productos">
+
+        <div class="text-center">
+            <h3 class="titulosH3">Perros</h3>
+            <h4 class="txt18">Productos destacados</h4>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card-group">
-                        <div class="card">
-                            <img src="https://ultimateframedata.com/hitboxes/pikachu/PikachuFTiltUp.gif"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://ultimateframedata.com/hitboxes/pikachu/PikachuFTiltUp.gif"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to
-                                    additional content.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://ultimateframedata.com/hitboxes/pikachu/PikachuFTiltUp.gif"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This card has even longer content than the first to
-                                    show that equal height action.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="carousel-inner"> <!-- La clase carousel-item es la que contiene las tarjetas de productos
+                destacados -->
+                <div class="carousel-item active" id="tarjeta-perro-contenedor1">
+                    <!-- Contenedor de tarjetas de productos destacados de perros -->
 
                 </div>
-                <div class="carousel-item">
-                    <div class="card-group">
-                        <div class="card">
-                            <img src="https://ultimateframedata.com/hitboxes/pikachu/PikachuFTiltUp.gif"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://ultimateframedata.com/hitboxes/pikachu/PikachuFTiltUp.gif"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to
-                                    additional content.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://ultimateframedata.com/hitboxes/pikachu/PikachuFTiltUp.gif"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This card has even longer content than the first to
-                                    show that equal height action.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="carousel-item" id="tarjeta-perro-contenedor2">
+                    <!-- Contenedor de tarjetas de productos destacados de perros -->
 
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" id="tarjeta-perro-contenedor3">
+                    <!-- Contenedor de tarjetas de productos destacados de perros -->
 
-
-                    <div class="card-group">
-                        <div class="card">
-                            <img src="https://ultimateframedata.com/hitboxes/pikachu/PikachuFTiltUp.gif"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://ultimateframedata.com/hitboxes/pikachu/PikachuFTiltUp.gif"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to
-                                    additional content.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://ultimateframedata.com/hitboxes/pikachu/PikachuFTiltUp.gif"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This card has even longer content than the first to
-                                    show that equal height action.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <br>
+        <div class="text-center">
+            <a href="" class="link24 verMas">Ver más</a> <!-- Link para ver más productos destacados -->
+        </div>
     </div>
- -->
+
+    <!-- Destacados Gatos -->
+
+    <div class="container contenedor-productos">
+
+        <div class="text-center">
+            <h3 class="titulosH3">Gatos</h3>
+            <h4 class="txt18">Productos destacados</h4>
+        </div>
+
+        <div id="carouselExampleIndicators1" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="tarjeta-gato-contenedor1">
+
+                </div>
+                <div class="carousel-item" id="tarjeta-gato-contenedor2">
+
+                </div>
+                <div class="carousel-item" id="tarjeta-gato-contenedor3">
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br>
+        <div class="text-center">
+            <a href="" class="link24 verMas">Ver más</a>
+        </div>
+    </div>
+
+    <!-- Destacados Peces -->
+
+    <div class="container contenedor-productos">
+
+        <div class="text-center">
+            <h3 class="titulosH3">Peces</h3>
+            <h4 class="txt18">Productos destacados</h4>
+        </div>
+
+
+        <div id="carouselExampleIndicators2" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="tarjeta-pez-contenedor1">
+
+                </div>
+                <div class="carousel-item" id="tarjeta-pez-contenedor2">
+
+                </div>
+                <div class="carousel-item" id="tarjeta-pez-contenedor3">
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br>
+        <div class="text-center">
+            <a href="" class="link24 verMas">Ver más</a>
+        </div>
+    </div>
+
+    <!-- Destacados Conejos -->
+
+    <div class="container contenedor-productos">
+
+        <div class="text-center">
+            <h3 class="titulosH3">Conejos</h3>
+            <h4 class="txt18">Productos destacados</h4>
+        </div>
+
+
+        <div id="carouselExampleIndicators3" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="tarjeta-conejo-contenedor1">
+
+                </div>
+                <div class="carousel-item" id="tarjeta-conejo-contenedor2">
+
+                </div>
+                <div class="carousel-item" id="tarjeta-conejo-contenedor3">
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br>
+        <div class="text-center">
+            <a href="" class="link24 verMas">Ver más</a>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer id="my-footer"></footer>
 
     <!-- Script de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
     <!-- Script local -->
     <script src="./assets/javascript/script.js"></script>
+    <script src="./assets/javascript/indexScript.js"></script>
+    <script src="./assets/javascript/tarjetasScript.js"></script>
 
 
 </body>

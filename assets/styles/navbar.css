@@ -1,20 +1,3 @@
-/* Fuentes */
-h1,
-h2 {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-}
-
-h3 {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-}
-
-li a {
-    font-family: 'Mukta', sans-serif;
-}
-
-
 /* navbar */
 
 /*Fondo*/
@@ -34,10 +17,6 @@ li a {
 
 .navbar-nav .nav-link.active:hover {
     text-decoration: underline;
-}
-
-.navbar-nav a {
-    color: #FFFDF5;
 }
 
 .navbar-nav a:hover {
@@ -91,10 +70,6 @@ li a {
 
 .navbar-nav .nav-link.active:hover{
     text-decoration: underline;
-}
-
-.navbar-nav a {
-    color: #FFFDF5;
 }
 
 .navbar-nav a:hover {
@@ -152,4 +127,23 @@ li a {
 
 .contendor-enlaces li{
     margin-right: 10px;
+}
+
+/*Menú lateral*/
+.offcanvas{
+    background-color: #fffdf5;
+}
+
+hr{
+    color: #FF862F;
+    margin: 0;
+}
+
+.hr_movil{
+    color: #fffdf5;
+    margin: 0;
+}
+
+.navbar-nav .nav-link.show {
+    color: #472922;
 }

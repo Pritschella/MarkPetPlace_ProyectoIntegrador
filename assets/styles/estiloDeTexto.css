@@ -9,6 +9,13 @@
     font-size: 48px;
 }
 
+.titulosH1C {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: #472922;
+    font-size: 48px;
+}
+
 .titulosH2 {
     font-family: 'Nunito', sans-serif;
     font-weight: 900;
@@ -45,6 +52,13 @@
     font-size: 24px;
 }
 
+.titulosH5C {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: #472922;
+    font-size: 24px;
+}
+
 .titulosH6 {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
@@ -53,6 +67,7 @@
 }
 
 /*Subtitulos*/
+
 .sb28 {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
@@ -212,6 +227,13 @@
     font-size: 16px;
 }
 
+.link16_NB {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    color: #fff9eb;
+    font-size: 16px;
+}
+
 /*Nunito*/
 .nLink18 {
     font-family: 'Nunito', sans-serif;
@@ -234,12 +256,14 @@
     color: #ffffff;
     font-size: 20px;
 }
+
 .txt18Btn {
     font-family: 'Mukta', sans-serif;
     font-weight: 600;
     color: #472922;
     font-size: 18px;
 }
+
 .txt18B {
     font-family: 'Mukta', sans-serif;
     font-weight: 600;
@@ -247,8 +271,39 @@
     font-size: 18px;
 }
 
+/* Color de fuente para el texto placeholder o texto de ejemplo en los formularios */
+.form-control::placeholder {
+    font-family: 'Mukta', sans-serif;
+    opacity: 1;
+    color: #949494 !important;
+}
 
+form input.form-control, div .form-control {
+    font-family: 'Mukta', sans-serif;
+    color: #472922;
+}
 
+form input.form-control:focus {
+    color: #472922;
+}
 
+/* Padding de altura */
+.p95 {
+    padding: 75px 0px 30px;
+}
 
+.p30 {
+    padding: 20px 0px;
+}
 
+.verMas {
+    text-decoration: underline;
+}
+
+/* precio */
+.txtPrecio {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: #FFA101;
+    font-size: 24px;
+}
