@@ -6,7 +6,6 @@
     color: #949494;
     font-size: 14px;
     font-family: 'Mukta', sans-serif;
-    padding: 0px;
 }
 
 button.btn-primary{
@@ -37,6 +36,7 @@ button.btn-primary:active{
     border: none;
 }
 
+/* Estilo para botón secundario SOLO BORDES */
 button.btn-outline-primary{
     border-color: #FFA101;
     color: #FFA101;
@@ -48,14 +48,117 @@ button.btn-outline-primary:hover{
     border-color: #FF862F;
 }
 
-/* Estilo para estado active,donde se está presionando el botón */
+/* Estilo para estado active, donde se está presionando el botón */
 button.btn-outline-primary:first-child:active{
     background-color: #F06B30;
     border-color: #F06B30;
 }
 
-div hr.border.border-tertiary {
-    border-color:  #FAE6B1;
+/* Estilo para botón secundario SOLO BORDES desabilitado */
+button.btn-outline-primary.disabled{
+    border-color: #949494;
+    color: #949494;
 }
 
 
+
+/* Estilo de componente Acordeon */
+div#accordionExample.accordion .accordion-item {
+    background-color: transparent;
+    border-color: #FFA101;
+}
+
+div#accordionExample.accordion .accordion-item .accordion-button {
+    background-color: transparent;
+    font-family: 'Mukta', sans-serif;
+    color: #472922;
+    font-size: 16px;
+}
+
+div#accordionExample.accordion .accordion-item .accordion-button:focus {
+    background-color: #FAE6B1;
+    box-shadow: none;
+    border-color: #F06B30;
+}
+
+div#accordionExample.accordion .accordion-item .accordion-body {
+    font-family: 'Mukta', sans-serif;
+    color: #472922;
+}
+
+div#accordionExample.accordion .accordion-item .accordion-button::after {
+    fill: #472922;
+}
+/* Terminma estilo de componente Acordeon */
+
+/* Esilo para línea divisoria */
+.hr-crema{
+    color: #FAE6B1;
+}
+
+.puntajeReviews {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #FFA101;
+    font-size: 40px;
+}
+
+.huellaVacia{
+    opacity: 40%;
+}
+
+
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+img.slider{
+    width: 100%;
+    display: block;
+}
+.img-display{
+    overflow: hidden;
+}
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.img-showcase img{
+    min-width: 100%;
+}
+.img-select{
+    display: flex;
+}
+.img-item{
+    margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+}
+.product-content{
+    padding: 2rem 1rem;
+}
+
+
+@media screen and (min-width: 992px){
+
+    .card-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}
