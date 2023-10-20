@@ -67,6 +67,7 @@
 }
 
 /*Subtitulos*/
+
 .sb28 {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
@@ -277,7 +278,7 @@
     color: #949494 !important;
 }
 
-form input.form-control {
+form input.form-control, div .form-control {
     font-family: 'Mukta', sans-serif;
     color: #472922;
 }
@@ -297,4 +298,12 @@ form input.form-control:focus {
 
 .verMas {
     text-decoration: underline;
+}
+
+/* precio */
+.txtPrecio {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: #FFA101;
+    font-size: 24px;
 }

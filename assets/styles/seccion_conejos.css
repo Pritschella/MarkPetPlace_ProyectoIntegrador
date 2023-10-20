@@ -1,4 +1,34 @@
-/* Styles del index */
+/*Color de fondo del body*/
+#colorFondo{
+    background-color: #FFFDF5;
+}
+
+/*Banner*/
+.banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#contenedor-iconos-mascotas a {
+    text-decoration: none !important;
+    
+}
+
+
+#img-fluid {
+width: 267.17px;
+height: 267.17px;
+}
 
 /* El tamaño del fondo de color influye en el tamaño del ícono por su clase. Hubieron cambios en la propiedad transition, aspect ratio, width, margin y demás. */
 #iconos-mascotas {
@@ -10,61 +40,32 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin: 10px 0px;
-    /*Se esribe así para darle un margen 10px vertical y 0 px horizontal*/
-    transition: background-color .3s ease-in-out;
-
+    margin: 10px 0px; /*Se esribe así para darle un margen 10px vertical y 0 px horizontal*/
+    transition: background-color .3s ease-in-out; 
+    
 }
 
 /* Color de fondo del círculo al pasar el mouse encima */
 #iconos-mascotas:hover {
-    background-color: #FFA101;
+    background-color: #FFA101; 
     color: #FFA101;
 }
 
 /* Color de fondo del círculo al presionar encima */
 #iconos-mascotas:active {
-    background-color: #FF862F;
+    background-color: #FF862F; 
 }
 
-.contenedor-productos {
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+.txt22 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color: #472922;
+    font-size: 22px;
 }
 
-div a .btn-verMas {
-    border-radius: 40px;
-    color: #FFFDF5;
-}
-
-#hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.carousel-caption {
-    position: static;
-}
-
-div .row #hr {
-    height: 40px;
-}
-
-div .card {
-    border-radius: 12px !important;
-    height: 100%;
-}
-
-#btn-card {
-    background: #FFA101;
-    border-radius: 40px;
-    padding: 2px;
-}
-
-/* Color de las flechas del carrusel */
-.carousel-control-next,
-.carousel-control-prev {
-    filter: invert(100%);
+#categoria {
+    margin-bottom: 70px;
 }
 
 /* Cards */
@@ -79,8 +80,6 @@ a {
     background: #fafafa;
     border: 1px solid #fbb72c;
     border-radius: 12px;
-    max-width: 304px;
-    min-width: 304px;
 }
 
 .badge {
@@ -106,8 +105,8 @@ a {
 }
 
 .product-tumb img {
-    max-width: 100% !important;
-    max-height: 100% !important;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 12px 12px 0 0;
 }
 
@@ -196,4 +195,84 @@ a {
 #icono-card:hover {
     background-color: #fbb72c;
     color: #fff;
+}
+
+div .card {
+    border-radius: 12px !important;
+    height: 100%;
+}
+
+#btn-card {
+    background: #FFA101;
+    border-radius: 40px;
+    padding: 2px;
+}
+
+/* navbar */
+
+/*Fondo*/
+.navbar {
+    background-color: #FF862F;
+}
+
+/*ícono del menú de hamburguesa*/
+.navbar-toggler-icon {
+    background-image: url("/assets/img/Icono_hamburguesa.svg");
+}
+
+.navbar-nav .nav-link.active {
+    color: #FFFDF5;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link.active:hover {
+    text-decoration: underline;
+}
+
+.navbar-nav a {
+    color: #FFFDF5;
+}
+
+.navbar-nav a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+    background-color: #fffdf521;
+}
+
+.navbar-toggler {
+    border-color: #FFFDF5;
+}
+
+.navbar-nav .nav-link.active {
+    color: #FFFDF5;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link.show {
+    color: #FFFDF5;
+}
+
+/*Dropdown menu*/
+.dropdown-toggle {
+    font-weight: 600;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #472922;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #ff862f13;
+}
+
+/*Botón*/
+.btn-outline {
+    color: #FFFDF5;
+    border-color: #FFFDF5;
+}
+
+.btn-outline:hover {
+    background-color: #FFFDF5;
+    color: #FF862F;
+    border-color: #FF862F;
 }
