@@ -1,11 +1,30 @@
 /* Styles del index */
 
+/* El tamaño del fondo de color influye en el tamaño del ícono por su clase. Hubieron cambios en la propiedad transition, aspect ratio, width, margin y demás. */
 #iconos-mascotas {
-    display: inline;
+    border-radius: 50%;
+    background-color: #FAE6B1;
+    display: inline-flex;
+    width: 80px;
+    aspect-ratio: 1 / 1;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px 0px;
+    /*Se esribe así para darle un margen 10px vertical y 0 px horizontal*/
+    transition: background-color .3s ease-in-out;
+
 }
 
-#iconos-mascotas a {
-    text-decoration: none;
+/* Color de fondo del círculo al pasar el mouse encima */
+#iconos-mascotas:hover {
+    background-color: #FFA101;
+    color: #FFA101;
+}
+
+/* Color de fondo del círculo al presionar encima */
+#iconos-mascotas:active {
+    background-color: #FF862F;
 }
 
 .contenedor-productos {
@@ -40,14 +59,6 @@ div .card {
     background: #FFA101;
     border-radius: 40px;
     padding: 2px;
-}
-
-#iconos-mascotas img {
-    border-radius: 50%;
-    background-color: #FAE6B1;
-    margin-left: 15px;
-    margin-right: 15px;
-    width: 120px;
 }
 
 /* Cards */
