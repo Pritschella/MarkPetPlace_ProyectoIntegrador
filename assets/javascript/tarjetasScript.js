@@ -96,7 +96,7 @@ function pintarFila(contenedorId, datos) {//recibe el id del contenedor y los da
 const datosPerro = {//objeto con los datos de la tarjeta de perro 
   imgSrc:
     "https://www.mayoreototal.mx/cdn/shop/products/000058155m_350x.webp?v=1662653418",
-  nombre: "Crocretitas",
+  nombre: "Croquetas Sport Man's hoise",
   categoria: "Alimentacion",
   vendedor: "Kenia",
   precio: "$230.99",
