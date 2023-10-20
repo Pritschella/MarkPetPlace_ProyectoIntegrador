@@ -49,15 +49,35 @@
     El siguiente código muestra la sección donde se van agregan las fotos, es decir, 
     muestra el rectángulo al que se le puede dar click para que abra el explorador de archivos
     -->
+
     <main> <!-- Inicio de apartado para subir imagenes y el formulario -->
+        <div id="customAlert" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeAlert()">&times;</span>
+                <img src="./assets/img/advertencia.svg" alt="">
+                <h1>Antes de vender un producto...</h1>
+                <p class="txt18">Ten en cuenta que somos una plataforma que promueve el compromiso con el medio
+                    ambiente, por lo que
+                    te pedimos que los productos que vayas a vender...</p>
+                <ul class="txt18">
+                    <li>Tengan un envoltorio biodegradable.</li>
+                    <li>Reutilices material que tengas en casa para envolverlos.</li>
+                    <li>Evites el uso de material innecesario para el empaque del producto.</li>
+                </ul>
+                <p class="txt18">Tus clientes podrán calificar este aspecto tuyo como vendedor, ¡así que tenlo en cuenta
+                    para tener
+                    una buena reputación!</p>
+                <button onclick="acceptAlert()" class="txt20B ">Aceptar</button>
+            </div>
+        </div>
 
         <div class="container"><!-- Inicio de div container imagenes -->
 
             <h4 class="subtitulo">Sube tus imagenes aquí</h4><!-- Subtitulo imagenes -->
 
-            <div class="row"><!-- Inicio de div row -->
+            <div class="row justify-content-sm-center"><!-- Inicio de div row -->
 
-                <div class="col-8"> <!-- Inicia div de sección imagenes -->
+                <div class="col-lg-8 col-xl-8 col-md-6 col-sm-12 col-xs-12"> <!-- Inicia div de sección imagenes -->
                     <section id="Images" class="images-cards"> <!-- Inicio de section images -->
                         <form action="upload.php" method="post" enctype="multipart/form-data"> <!-- Form upload-->
                             <div class="row">
@@ -65,7 +85,7 @@
                                     <div class="add-new-photo first" id="add-photo">
                                         <span><img src="./assets/img/camara_icono.svg" class="icono_camara"></span>
                                     </div>
-                                    <input type="file" multiple id="add-new-photo" name="images[]">
+                                    <input type="file" multiple id="add-new-photo" name="images[]" accept="image/*">
                                 </div>
                             </div>
                         </form> <!--  -->
@@ -84,16 +104,69 @@
                     Y finalmente, se agrega el botón para registrar el producto
                  -->
 
+
                 <!--Inicio formulario-->
-                <div class="col-4 formulario">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10 col-xs-10 formulario" id="container-form">
                     <div class=" mb-3">
                         <label for="Titulo" class="form-label">Titulo <span class="textoSecundario">Máximo 40
                                 caracteres</span></label>
-                        <input type="text" class="form-control" id="form" placeholder="Titulo del producto">
+                        <input type="text" class="form-control" id="form" placeholder="Titulo del producto"
+                            id="tituloProducto">
                     </div>
                     <div class="mb-3">
                         <label for="Precio" class="form-label">Precio</label>
                         <input type="number" class="form-control" id="form" placeholder="$">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Cantidad" class="form-label">Cantidad</label>
+                        <input type="number" class="form-control" id="form"
+                            placeholder="Cantidad de productos disponibles">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Ciudad" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="form"
+                            placeholder="Ciudad donde te encuentras vendiendo">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Estado" class="form-label">Estado</label>
+                        <select class="form-select" id="form" aria-label="Default select example">
+                            <option disabled selected>Estado</option>
+                            <option value="Aguascalientes">Aguascalientes</option>
+                            <option value="Baja California">Baja California</option>
+                            <option value="Baja California Sur">Baja California Sur</option>
+                            <option value="Campeche">Campeche</option>
+                            <option value="Chiapas">Chiapas</option>
+                            <option value="Chichuahua">Chihuahua</option>
+                            <option value="Ciudad de México">Ciudad de México</option>
+                            <option value="Coahuila">Coahuila</option>
+                            <option value="Colima">Colima</option>
+                            <option value="Durango">Durango</option>
+                            <option value="Guanajuato">Guanajuato</option>
+                            <option value="Guerrero">Guerrero</option>
+                            <option value="Hidalgo">Hidalgo</option>
+                            <option value="Jalisco">Jalisco</option>
+                            <option value="México">México</option>
+                            <option value="Michoacán">Michoacán</option>
+                            <option value="Morelos">Morelos</option>
+                            <option value="Nayarit">Nayarit</option>
+                            <option value="Nuevo León">Nuevo León</option>
+                            <option value="Oaxaca">Oaxaca</option>
+                            <option value="Puebla">Puebla</option>
+                            <option value="Querétaro">Querétaro</option>
+                            <option value="Quintana Roo">Quintana Roo</option>
+                            <option value="San Luis Potosí">San Luis Potosí</option>
+                            <option value="Sinaloa">Sinaloa</option>
+                            <option value="Sonora">Sonora</option>
+                            <option value="Tabasco">Tabasco</option>
+                            <option value="Tamaulipas">Tamaulipas</option>
+                            <option value="Tlaxcala">Tlaxcala</option>
+                            <option value="Veracruz">Veracruz</option>
+                            <option value="Yucatán">Yucatán</option>
+                            <option value="Zacatecas">Zacatecas</option>
+                        </select>
                     </div>
 
                     <div class="mb-3">
