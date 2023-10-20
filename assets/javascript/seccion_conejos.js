@@ -48,197 +48,197 @@ function pintarFila(contenedorId, datosArray) { //recibe el id del contenedor y 
 
 
 // Datos específicos para cada categoría
-const datosPerroAlimentacion = [
+const datosConejoAlimentacion = [
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoAlimentacion.jpg",
-        nombre: "Croquetas Sportman's Choice",
+        imgSrc: "",
+        nombre: "",
         categoria: "Alimentacion",
         vendedor: "Kenia",
-        precio: "$230.99",
+        precio: "$00.00",
     },
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoAlimentacion2.jpg",
-        nombre: "Sobre Plaisir Adult",
+        imgSrc: "",
+        nombre: "",
         categoria: "Alimentacion",
         vendedor: "Berenice",
-        precio: "$20.00",
+        precio: "$00.00",
     },
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoAlimentacion3.jpg",
-        nombre: "Croquetas FullTrust",
+        imgSrc: "",
+        nombre: "",
         categoria: "Alimentacion",
         vendedor: "Antonio",
-        precio: "$300.00",
+        precio: "$00.00",
     },
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoAlimentacion4.jpg",
-        nombre: "Galletas Gourmet Bakes",
+        imgSrc: "",
+        nombre: "",
         categoria: "Alimentacion",
         vendedor: "Alejandra",
-        precio: "$30.00",
+        precio: "$00.00",
     }
 ];
 
-const datosPerroAccesorios = [
+const datosConejoAccesorios = [
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoAccesorios.jpg",
-        nombre: "Correa Grande",
+        imgSrc: "",
+        nombre: "",
         categoria: "Accesorios",
         vendedor: "Uriel",
-        precio: "$160.50",
+        precio: "$00.00",
     },
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoAccesorios2.jpg",
-        nombre: "Camita Mediana",
+        imgSrc: "",
+        nombre: "",
         categoria: "Accesorios",
         vendedor: "Alexis",
-        precio: "$270.50",
+        precio: "$00.00",
     },
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoAccesorios3.jpg",
-        nombre: "Juguete Pelota",
+        imgSrc: "",
+        nombre: "",
         categoria: "Accesorios",
         vendedor: "Edna",
-        precio: "$270.50",
+        precio: "$00.00",
     },
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoAccesorios4.jpg",
-        nombre: "Plato de Comida Metal",
+        imgSrc: "",
+        nombre: "",
         categoria: "Accesorios",
         vendedor: "Kenia",
-        precio: "$49.97",
+        precio: "$00.00",
     }
 ];
 
-const datosPerroCuidadoEHigiene = [
+const datosConejoCuidadoEHigiene = [
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoCuidadoeHigiene.jpg",
-        nombre: "Shampoo Orgánico Pet",
+        imgSrc: "",
+        nombre: "",
         categoria: "Cuidado e Higiene",
         vendedor: "Berenice",
-        precio: "$165.00",
+        precio: "$00.00",
     },
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoCuidadoeHigiene2.jpg",
-        nombre: "Cepillo para Perro",
+        imgSrc: "",
+        nombre: "",
         categoria: "Cuidado e Higiene",
         vendedor: "Antonio",
-        precio: "$115.80",
+        precio: "$00.00",
     },
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoCuidadoeHigiene3.jpg",
-        nombre: "Pasta Dental Trixie",
+        imgSrc: "",
+        nombre: "",
         categoria: "Cuidado e Higiene",
         vendedor: "Alejandra",
-        precio: "$85.00",
+        precio: "$00.00",
     },
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoCuidadoeHigiene4.jpg",
-        nombre: "Pasto Sintético",
+        imgSrc: "",
+        nombre: "",
         categoria: "Cuidado e Higiene",
         vendedor: "Uriel",
-        precio: "$560.00",
+        precio: "$00.00",
     }
 ];
 
-const datosPerroSaludYBienestar = [
+const datosConejoSaludYBienestar = [
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoSaludyBienestar.jpg",
-        nombre: "Desparasitante Simparica TRIO",
+        imgSrc: "",
+        nombre: "",
         categoria: "Salud y Bienestar",
         vendedor: "Alexis",
-        precio: "$305.00",
+        precio: "$00.00",
     },
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoSaludyBienestar2.jpg",
-        nombre: "Antibiótico Clinda Pet's NRV",
+        imgSrc: "",
+        nombre: "",
         categoria: "Salud y Bienestar",
         vendedor: "Edna",
-        precio: "$166.00",
+        precio: "$00.00",
     },
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoSaludyBienestar3.jpg",
-        nombre: "Antinflamatorio Cortipet",
+        imgSrc: "",
+        nombre: "",
         categoria: "Salud y Bienestar",
         vendedor: "Kenia",
-        precio: "$238.00",
+        precio: "$00.00",
     },
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoSaludyBienestar4.jpg",
-        nombre: "Diurético Dirulán",
+        imgSrc: "",
+        nombre: "",
         categoria: "Salud y Bienestar",
         vendedor: "Berenice",
-        precio: "$120.00",
+        precio: "$00.00",
     }
 ];
 
-const datosPerroRopaYModa = [
+const datosConejoRopaYModa = [
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoRopayModa.jpg",
-        nombre: "Chamarra Verde Mediana",
+        imgSrc: "",
+        nombre: "",
         categoria: "Ropa y Moda",
         vendedor: "Antonio",
-        precio: "$799.00",
+        precio: "$00.00",
     },
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoRopayModa2.jpg",
-        nombre: "Chamarra Negra con Peluche Chica",
+        imgSrc: "",
+        nombre: "",
         categoria: "Ropa y Moda",
         vendedor: "Alejandra",
-        precio: "$799.00",
+        precio: "$00.00",
     },
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoRopayModa3.jpg",
-        nombre: "Bandana Azul Marino",
+        imgSrc: "",
+        nombre: "",
         categoria: "Ropa y Moda",
         vendedor: "Uriel",
-        precio: "$200.00",
+        precio: "$00.00",
     },
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoRopayModa4.jpg",
-        nombre: "Set Impermeable y Botas",
+        imgSrc: "",
+        nombre: "",
         categoria: "Ropa y Moda",
         vendedor: "Alexis",
-        precio: "$400.00",
+        precio: "$00.00",
     }
 ];
 
-const datosPerroEntrenamiento = [
+const datosConejoEntrenamiento = [
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoEntrenamiento.jpg",
-        nombre: "Treats Hill's de Pollo",
+        imgSrc: "",
+        nombre: "",
         categoria: "Entrenamiento",
         vendedor: "Edna",
-        precio: "$105.00",
+        precio: "$00.00",
     },
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoEntrenamiento2.jpg",
-        nombre: "Guía de Adiestramiento",
+        imgSrc: "",
+        nombre: "",
         categoria: "Entrenamiento",
         vendedor: "Kenia",
-        precio: "$95.00",
+        precio: "$00.00",
     },
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoEntrenamiento3.jpg",
-        nombre: "Clicker con Silbato",
+        imgSrc: "",
+        nombre: "",
         categoria: "Entrenamiento",
         vendedor: "Berenice",
-        precio: "$93.00",
+        precio: "$00.00",
     },
     {
-        imgSrc: "./assets/img/seccion_perros/ProductoEntrenamiento4.jpg",
-        nombre: "Repelente Natural !Ahí No!",
+        imgSrc: "",
+        nombre: "",
         categoria: "Entrenamiento",
         vendedor: "Antonio",
-        precio: "$599.00",
+        precio: "$00.00",
     }
 ];
 
 // Pintar las filas de tarjetas con los datos específicos de cada categoría
-pintarFila("tarjeta-perro-contenedor1", datosPerroAlimentacion);
-pintarFila("tarjeta-perro-contenedor2", datosPerroAccesorios);
-pintarFila("tarjeta-perro-contenedor3", datosPerroCuidadoEHigiene);
-pintarFila("tarjeta-perro-contenedor4", datosPerroSaludYBienestar);
-pintarFila("tarjeta-perro-contenedor5", datosPerroRopaYModa);
-pintarFila("tarjeta-perro-contenedor6", datosPerroEntrenamiento);
+pintarFila("tarjeta-conejo-contenedor1", datosConejoAlimentacion);
+pintarFila("tarjeta-conejo-contenedor2", datosConejoAccesorios);
+pintarFila("tarjeta-conejo-contenedor3", datosConejoCuidadoEHigiene);
+pintarFila("tarjeta-conejo-contenedor4", datosConejoSaludYBienestar);
+pintarFila("tarjeta-conejo-contenedor5", datosConejoRopaYModa);
+pintarFila("tarjeta-conejo-contenedor6", datosConejoEntrenamiento);
 // Llama a la función pintarFila con los contenedores y arreglos de objetos para todas las categorías
