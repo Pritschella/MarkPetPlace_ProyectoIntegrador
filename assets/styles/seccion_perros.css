@@ -25,9 +25,9 @@ h3{
 }
 
 
-.img-fluid {
-width: 267.17px;
-height: 235.58px;
+#img-fluid {
+
+aspect-ratio: 1/1;
 }
 
 /* El tamaño del fondo de color influye en el tamaño del ícono por su clase. Hubieron cambios en la propiedad transition, aspect ratio, width, margin y demás. */
@@ -80,6 +80,9 @@ a {
     background: #fafafa;
     border: 1px solid #fbb72c;
     border-radius: 12px;
+    height: 530px;
+    max-width: 304px;
+    min-width: 304px;
 }
 
 .badge {
@@ -105,8 +108,8 @@ a {
 }
 
 .product-tumb img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 100% !important; 
+    max-height: 100% !important;
     border-radius: 12px 12px 0 0;
 }
 
@@ -207,6 +210,9 @@ div .card {
     border-radius: 40px;
     padding: 2px;
 }
+
+
+
 
 /* navbar */
 
