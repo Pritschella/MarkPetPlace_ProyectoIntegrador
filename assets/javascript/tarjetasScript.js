@@ -9,7 +9,7 @@ function crearTarjeta(contenedor, imgSrc, nombre, categoria, vendedor, precio) {
           <img src="${imgSrc}" alt="">
         </div>
         <div class="product-details">
-          <h4><a href="">${nombre}</a></h4>
+          <h4><a href="./producto.html">${nombre}</a></h4>
           <span class="product-catagory">${categoria}</span>
           <p>${vendedor}</p>
           <div class="product-bottom-details">
@@ -96,8 +96,8 @@ function pintarFila(contenedorId, datos) {//recibe el id del contenedor y los da
 const datosPerro = {//objeto con los datos de la tarjeta de perro 
   imgSrc:
     "https://www.mayoreototal.mx/cdn/shop/products/000058155m_350x.webp?v=1662653418",
-  nombre: "Croquetas Sport Man's hoise",
-  categoria: "Alimentacion",
+  nombre: "Croquetas Sport Man's Choise",
+  categoria: "Alimentación",
   vendedor: "Kenia",
   precio: "$230.99",
 };
