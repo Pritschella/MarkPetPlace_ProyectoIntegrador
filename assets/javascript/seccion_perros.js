@@ -58,14 +58,14 @@ const datosPerroAlimentacion = [
     },
     {
         imgSrc: "./assets/img/seccion_perros/ProductoAlimentacion2.jpg",
-        nombre: "Sobre Plaisir Adult",
+        nombre: "Sobre Plaisir Adulto de Res",
         categoria: "Alimentacion",
         vendedor: "Berenice",
         precio: "$20.00",
     },
     {
         imgSrc: "./assets/img/seccion_perros/ProductoAlimentacion3.jpg",
-        nombre: "Croquetas FullTrust",
+        nombre: "Croquetas FullTrust Perro Grande",
         categoria: "Alimentacion",
         vendedor: "Antonio",
         precio: "$300.00",
@@ -120,21 +120,21 @@ const datosPerroCuidadoEHigiene = [
     },
     {
         imgSrc: "./assets/img/seccion_perros/ProductoCuidadoeHigiene2.jpg",
-        nombre: "Cepillo para Perro",
+        nombre: "Cepillo Negro para Perro",
         categoria: "Cuidado e Higiene",
         vendedor: "Antonio",
         precio: "$115.80",
     },
     {
         imgSrc: "./assets/img/seccion_perros/ProductoCuidadoeHigiene3.jpg",
-        nombre: "Pasta Dental Trixie",
+        nombre: "Pasta Dental Blanqueadora Trixie",
         categoria: "Cuidado e Higiene",
         vendedor: "Alejandra",
         precio: "$85.00",
     },
     {
         imgSrc: "./assets/img/seccion_perros/ProductoCuidadoeHigiene4.jpg",
-        nombre: "Pasto Sintético",
+        nombre: "Pasto Sintético Pet Loo",
         categoria: "Cuidado e Higiene",
         vendedor: "Uriel",
         precio: "$560.00",
@@ -165,7 +165,7 @@ const datosPerroSaludYBienestar = [
     },
     {
         imgSrc: "./assets/img/seccion_perros/ProductoSaludyBienestar4.jpg",
-        nombre: "Diurético Dirulán",
+        nombre: "Diurético Dirulán Tabletas",
         categoria: "Salud y Bienestar",
         vendedor: "Berenice",
         precio: "$120.00",
@@ -189,7 +189,7 @@ const datosPerroRopaYModa = [
     },
     {
         imgSrc: "./assets/img/seccion_perros/ProductoRopayModa3.jpg",
-        nombre: "Bandana Azul Marino",
+        nombre: "Bandana Chica Azul Marino",
         categoria: "Ropa y Moda",
         vendedor: "Uriel",
         precio: "$200.00",
@@ -206,7 +206,7 @@ const datosPerroRopaYModa = [
 const datosPerroEntrenamiento = [
     {
         imgSrc: "./assets/img/seccion_perros/ProductoEntrenamiento.jpg",
-        nombre: "Treats Hill's de Pollo",
+        nombre: "Treats Hill's Suaves de Pollo",
         categoria: "Entrenamiento",
         vendedor: "Edna",
         precio: "$105.00",
@@ -220,14 +220,14 @@ const datosPerroEntrenamiento = [
     },
     {
         imgSrc: "./assets/img/seccion_perros/ProductoEntrenamiento3.jpg",
-        nombre: "Clicker con Silbato",
+        nombre: "Clicker Naranja con Silbato",
         categoria: "Entrenamiento",
         vendedor: "Berenice",
         precio: "$93.00",
     },
     {
         imgSrc: "./assets/img/seccion_perros/ProductoEntrenamiento4.jpg",
-        nombre: "Repelente Natural !Ahí No!",
+        nombre: "Repelente Natural !Ahí No! 750 ml",
         categoria: "Entrenamiento",
         vendedor: "Antonio",
         precio: "$599.00",
