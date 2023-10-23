@@ -107,7 +107,7 @@ div#accordionExample.accordion .accordion-item .accordion-button::after {
     opacity: 40%;
 }
 
-
+/* Estilos para SLIDER */
 .card-wrapper{
     max-width: 1100px;
     margin: 0 auto;
@@ -161,4 +161,9 @@ img.slider{
     .product-content{
         padding-top: 0;
     }
+}
+
+/* Estilos para MODAL REVIEWS */
+.modal-content .modal-header, .modal-content .modal-footer {
+    border: none;
 }

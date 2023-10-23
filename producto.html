@@ -179,7 +179,7 @@
             </div>         
         </div> <!--Cierre de Row 2-->
 
-        <div class="row my-5 align-items-center justify-content-between d-none"> <!--Row 3-->
+        <div class="row my-5 align-items-center justify-content-between"> <!--Row 3-->
             
             <div class="col-12"> <!-- Título de sección -->
                 <p class="sb18">Reseñas hechas por la pandilla digital 😸</p>
@@ -221,8 +221,73 @@
             </div>
 
             <div class="col-4 gap-2 txt18_SB"><!-- Botón Reseña -->
-                <button type="button" class="btn btn-outline-primary disabled rounded-pill ">Deja huella con tu reseña🐾</button>
+                <button type="button" class="btn btn-outline-primary rounded-pill " data-bs-toggle="modal" data-bs-target="#reviewModal">Deja huella con tu reseña🐾</button>
             </div><!-- Termina botón Reseña -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-4">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 sb20" id="reviewModalLabel">Deja huella con tu reseña🐾</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!-- CUERPO DEL MODAL -->
+                        <div class="modal-body">
+                            <form class="row g-3 needs-validation" action="https://formsubmit.co/markpetplace@gmail.com" method="POST" novalidate>
+
+                                <!-- Para los forms, el for del label, tiene que tener el mismo nombre que el #id del input. -->
+                                <!-- Input de puntaje REVIEW -->
+                                <div class="col-12"> 
+                                    <input name="Puntaje" id="puntaje_review" type="number" class="form-control" required>
+                                    <i></i>
+                                    <div class="invalid-feedback txt14">
+                                      Revisa con ojos de águila el campo🦅
+                                    </div>
+                                </div>
+
+                          
+                                <!-- Input de Nombre completo a 12 col -->
+                                <div class="col-12">
+                                  <label for="Nombre_review" class="form-label sb16">Nombre completo</label>
+                                  <input name="Nombre completo" id="Nombre_review" type="text" class="form-control" placeholder="Ej. Mark Paws" required>
+                                  <div class="invalid-feedback txt14">
+                                    Revisa con ojos de águila el campo🦅
+                                  </div>
+                                </div>
+                          
+                                <!-- Textarea de MENSAJE LARGO a 12 col -->
+                                <div class="col-12 ">
+                                  <label for="mensaje_review" class="form-label sb16">Comentario</label>
+                                  <textarea name="mensaje" id="mensaje_review" class="form-control"  placeholder="Tu reseña a detalle aquí" required></textarea>
+                                  <div class="invalid-feedback txt14">
+                                    Deja tu rugido largo y tendido🐅
+                                  </div>
+                                </div>
+                          
+                                <!-- Botón de ENVIAR MENSAJE -->
+                                <div class="d-grid gap-2 txt18_SB">
+                                  <button type="submit" class="btn btn-primary rounded-pill">Publicar reseña😸</button>
+                                </div>
+                          
+                                <!-- FormSubmit para desactivar captcha -->
+                                <input type="hidden" name="_captcha" value="false">
+                                <!-- FormSubmit para mandar a una página de agradecimiento -->
+                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/gracias_contacto.html">
+                                <!-- FormSubmit para ponerle un asunto a los mensajes que llegan al correo -->
+                                <input type="hidden" name="_subject" value="¡Nuevo mensaje para MarkPetPlace!">
+                          
+                                <input type="hidden" name="_autoresponse" value="¡Hemos recibido tu aullido!">
+                                <!-- FormSubmit para darle formato a la información recibida por correo -->
+                                <input type="hidden" name="_template" value="table">
+                              </form>
+                        </div>
+                        <div class="modal-footer">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="hr-crema "><hr class="border-1 opacity-75"><!-- Linea divisoria --></div>
             
