@@ -1,4 +1,33 @@
+// Funcion para crear las tarjetas de la 2 en adelante
 function crearTarjeta(contenedor, imgSrc, nombre, categoria, vendedor, precio) {//recibe el contenedor y los datos de la tarjeta
+  const tarjeta = document.createElement("div");//crea un elemento div
+  tarjeta.className = "d-none d-sm-none d-md-none d-lg-block col-sm-12 col-md-3 col-lg-3";//le asigna una clase al elemento div
+  //innerHTML es una propiedad que define o devuelve el contenido HTML de un elemento
+  tarjeta.innerHTML = `
+      <div class="product-card">
+        <div class="product-tumb">
+          <img src="${imgSrc}" alt="">
+        </div>
+        <div class="product-details">
+          <h4><a href="./producto.html">${nombre}</a></h4>
+          <span class="product-catagory">${categoria}</span>
+          <p>${vendedor}</p>
+          <div class="product-bottom-details">
+            <div class="product-price"><small></small>${precio}</div>
+            <div class="product-links">
+              <a href=""><i class="fa fa-heart-o" id="icono-card"> </i></a>
+              <a href=""><i class="fa fa-shopping-bag" id="icono-card"> </i></a>
+              <a href=""><i class="fa fa-shopping-cart" id="icono-card"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  contenedor.appendChild(tarjeta);//agrega un nodo al final de la lista de hijos de un nodo padre especificado
+}
+
+// Función para crear la primera tarjeta de cada slide ya que siempre será visible
+function crearPrimerTarjeta(contenedor, imgSrc, nombre, categoria, vendedor, precio) {//recibe el contenedor y los datos de la tarjeta
   const tarjeta = document.createElement("div");//crea un elemento div
   tarjeta.className = "col-sm-12 col-md-3 col-lg-3";//le asigna una clase al elemento div
   //innerHTML es una propiedad que define o devuelve el contenido HTML de un elemento
@@ -29,28 +58,46 @@ function crearTarjeta(contenedor, imgSrc, nombre, categoria, vendedor, precio) {
 function pintarFila(contenedorId, datos) {//recibe el id del contenedor y los datos de la tarjeta
   const contenedor = document.getElementById(contenedorId);//obtiene el elemento por su id
   const fila = document.createElement("div");//crea un elemento div
-  fila.className = "row";//le asigna una clase al elemento div
+  let numTarjetas = 0;//inicializa la variable numTarjetas en 0
+  fila.className = "row justify-content-center";//le asigna una clase al elemento div
+  if (window.innerWidth < 768) {//si el ancho de la ventana es menor a 768px
+    numTarjetas = 1;//numTarjetas es igual a 1
+  } else {
+    numTarjetas = 4;//numTarjetas es igual a 4
+  }
   //crea 4 tarjetas
-  for (let i = 0; i < 4; i++) {
-    crearTarjeta(
-      fila,//contenedor
-      datos.imgSrc,//imagen
-      datos.nombre,//nombre del producto
-      datos.categoria,//categoria
-      datos.vendedor,//vendedor
-      datos.precio//precio
-    );
+  for (let i = 0; i < numTarjetas; i++) {
+    if (i == 0) {//si i es igual a 0
+      crearPrimerTarjeta(//llama a la funcion crearPrimerTarjeta y le pasa el contenedor y los datos de la tarjeta
+        fila,//contenedor
+        datos.imgSrc,//imagen
+        datos.nombre,//nombre del producto
+        datos.categoria,//categoria
+        datos.vendedor,//vendedor
+        datos.precio//precio
+      );
+      continue;//salta a la siguiente iteracion del ciclo
+    } else {
+      crearTarjeta(
+        fila,//contenedor
+        datos.imgSrc,//imagen
+        datos.nombre,//nombre del producto
+        datos.categoria,//categoria
+        datos.vendedor,//vendedor
+        datos.precio//precio
+      );
+    }
   }
 
   contenedor.appendChild(fila);//agrega un nodo al final de la lista de hijos de un nodo padre especificado
 }
 
 // Datos específicos para cada categoría
-const datosPerro = {//objeto con los datos de la tarjeta de perro
+const datosPerro = {//objeto con los datos de la tarjeta de perro 
   imgSrc:
     "https://www.mayoreototal.mx/cdn/shop/products/000058155m_350x.webp?v=1662653418",
-  nombre: "Crocretitas",
-  categoria: "Alimentacion",
+  nombre: "Croquetas Sport Man's Choise",
+  categoria: "Alimentación",
   vendedor: "Kenia",
   precio: "$230.99",
 };
