@@ -3,6 +3,15 @@
     background-color: #FFFDF5;
 }
 
+.titulosH2 {
+    text-align: center;
+}
+
+.d-block {
+    width: 100%;
+    object-fit: cover;
+}
+
 .txt21 {
     font-family: 'Mukta', sans-serif;
     font-weight: 400;
