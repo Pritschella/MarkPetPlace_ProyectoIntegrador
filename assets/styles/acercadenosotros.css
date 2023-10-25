@@ -40,7 +40,13 @@
 }
 
 .img-art {
-    width: 65%;
+    width: 80%;
+}
+
+/*Icono de regresar*/
+.icono {
+    max-width: 20px;
+    max-height: 20px;
 }
 
 
