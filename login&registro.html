@@ -64,20 +64,39 @@
         <form action="#" class="sign-up-form" id="signupForm">
           <h2 class="title titulosH2">Regístrate</h2>
           <p class="txt18">Y forma parte de nuestra pandilla digital</p>
+          <!-- Campo nombre -->
           <div class="input-field">
             <i class="fas fa-user"></i>
-            <input class="sb28P" type="text" placeholder="Mark Paws" id="name" required autofocus/>
+            <input class="sb28P" type="text" placeholder="Mark" id="firstName" required autofocus/>
           </div>
+          <!-- Campo apellido -->
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input class="sb28P" type="text" placeholder="Paws" id="lastName" required/>
+          </div>
+          <!-- Campo direccion -->
+          <div class="input-field">
+            <i class="fas fa-home"></i>
+            <input class="sb28P" type="address" placeholder="Calle bigotes" id="address" required />
+          </div>
+          <!-- Campo correo -->
           <div class="input-field">
             <i class="fas fa-envelope"></i>
             <input class="sb28P" type="email" placeholder="gatito@gmail.com" id="email" required />
           </div>
+          <!-- Campo numero -->
           <div class="input-field">
-            <i class="fas fa-lock"></i>
-            <input class="sb28P" type="password" placeholder="Password" id="password" required/>
+            <i class="fas fa-phone"></i>
+            <input class="sb28P" type="phone" placeholder="1234567890" id="phone" required />
           </div>
+  <!--    <div class="input-field">
+            <i class="fas fa-lock"></i>
+             Campo contraseña 
+            <input class="sb28P" type="password" placeholder="Password" id="password" required/>
+          </div>           -->
+          <!-- Boton de registro -->
           <div class="boton">
-            <input class="btn rounded-pill" type="submit" value="¡Hagámoslo!" />
+            <input class="btn rounded-pill" id="submit" type="button" value="¡Hagámoslo!" />
           </div>
           <p class="social-text txt18">O regístrate con </p>
           <div class="social-media">
