@@ -23,6 +23,26 @@
     background-color: #FFFDF5;
 }
 
+.row {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sb18{
+    margin-top: 10px;
+}
+
+/*Container de img*/
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-art {
+    width: 65%;
+}
+
 
 /*Container 2: Descripciones*/
 #foto {
