@@ -239,7 +239,7 @@
                                 <!-- Para los forms, el for del label, tiene que tener el mismo nombre que el #id del input. -->
                                 <!-- Input de puntaje REVIEW -->
                                 <div class="col-12"> 
-                                    <input name="Puntaje" id="puntajeReview" type="number" class="form-control" required>
+                                    <input name="Puntaje" id="puntajeReview" type="number" min="0" max="5" class="form-control" required>
                                     <i></i>
                                     <div class="invalid-feedback txt14">
                                       Revisa con ojos de águila el campo🦅
@@ -267,7 +267,7 @@
                           
                                 <!-- Botón de ENVIAR MENSAJE -->
                                 <div class="d-grid gap-2 txt18_SB">
-                                  <button id="btnRegistroReview" type="submit" class="btn btn-primary rounded-pill">Publicar reseña😸</button>
+                                  <button id="btnRegistroReview" type="button" data-bs-dismiss="modal" class="btn btn-primary rounded-pill">Publicar reseña😸</button>
                                 </div>
                               </form>
                         </div>
@@ -280,10 +280,10 @@
 
             <div class="hr-crema "><hr class="border-1 opacity-75"><!-- Linea divisoria --></div>
             
-            <!-- ROW reseñas detalladas -->
-            <div class="row justify-content-center" id="contenedorReviews">
+            <!-- ROW SIN reseñas detalladas -->
+            <div class="row justify-content-center" id="sinReviews">
                 <!-- Sección sin reseñas -->
-                <div class="col-6 text-center my-2">
+                <div class="col-12 col-lg-6 text-center my-2">
                     <p class="txt14">Parece que todavía no hay reseñas... 
                         Deja la tuya como huella en la arena, para que otros curiosos viajeros sigan el rastro de tu experiencia.🐾 
                     </p>
@@ -291,6 +291,11 @@
                         De paso, presume esas insignias.😼
                     </p>    
                 </div>
+            </div>
+
+            <!-- ROW reseñas detalladas -->
+            <div class="row" id="contenedorReviews">
+                <!-- Aquí se añadirán las reviews -->
 
             </div>
            

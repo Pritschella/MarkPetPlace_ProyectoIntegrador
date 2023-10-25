@@ -28,7 +28,11 @@ window.addEventListener('resize', slideImage);
 let puntajeReview = document.getElementById("puntajeReview");
 let nombreReview = document.getElementById("nombreReview");
 let mensajeReview = document.getElementById("mensajeReview");
-let btnRegistroReview = document.getElementById("mensajeReview");
+const tiempoHoy = Date.now();
+const fechaActual = new Date(tiempoHoy);
+let btnRegistroReview = document.getElementById("btnRegistroReview");
+
+let seccionsinReviews = document.getElementById("sinReviews");
 
 let reviews = [];
 
@@ -42,8 +46,10 @@ function registrarReview(){
     let review = {
         puntaje : puntajeReviewValue,
         nombre : nombreReviewValue,
+        fecha : fechaActual.toLocaleDateString(),
         mensaje : mensajeReviewValue
     };
+    seccionsinReviews.classList.add("d-none");
 
     reviews.push(review);
 
@@ -58,16 +64,16 @@ function registrarReview(){
 
     // 4. Retorno en autobus.
     return review;
-
     
 
 
 }
 
 function mostrarReview(review) {
-    console.log("Citas registradas: " + review.puntaje);
-    console.log("Nombre del paciente: " + review.nombre);
-    console.log("Edad del paciente: ", review.mensaje); 
+    console.log("Puntaje: " + review.puntaje);
+    console.log("Nombre: " + review.nombre);
+    console.log("Fecha: ", review.fecha); 
+    console.log("Mensaje: ", review.mensaje); 
 }
 
 //Función para generar las reviews
@@ -78,18 +84,19 @@ function generarTarjetaReview(review){
 
     //crear el contenido de la tarjeta
     //Se usan las backsticks porque ya se unan las comillas. Alt + 96 
-    tarjetaDiv.innerHTML=`
+    reviewDiv.innerHTML=`
         <div class="card border-info mb-3">
             <div class="card-header">Reseña</div>
             <div class="card-body">
                 <h5 class="card-title">${review.nombre}</h5>
                 <p class="card-text textoprueba"><i>Agregar descripción.</i></p>
+                <p>${review.fecha}</p>
                 <p>${review.mensaje}</p>
             </div>
         </div>
     `
     //POner
-    contenedorReviews.appendChild(tarjetaDiv);
+    contenedorReviews.appendChild(reviewDiv);
 }
 
 btnRegistroReview.addEventListener('click', registrarReview)

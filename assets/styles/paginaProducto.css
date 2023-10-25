@@ -167,3 +167,15 @@ img.slider{
 .modal-content .modal-header, .modal-content .modal-footer {
     border: none;
 }
+
+.reviewIcon{
+    background-image: url(/assets/img/iconos/icon_review32.svg);
+    background-repeat: no-repeat;
+    aspect-ratio: 1 / 1;
+}
+
+.reviewIconVacio{
+    background-image: url(/assets/img/iconos/icon_review32.svg);
+    background-repeat: no-repeat;
+    aspect-ratio: 1 / 1;
+}
