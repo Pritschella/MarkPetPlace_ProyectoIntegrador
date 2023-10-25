@@ -66,6 +66,7 @@ button.btn-outline-primary.disabled{
 div#accordionExample.accordion .accordion-item {
     background-color: transparent;
     border-color: #FFA101;
+    border-radius: 1rem;
 }
 
 div#accordionExample.accordion .accordion-item .accordion-button {
@@ -73,6 +74,11 @@ div#accordionExample.accordion .accordion-item .accordion-button {
     font-family: 'Mukta', sans-serif;
     color: #472922;
     font-size: 16px;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+div#accordionExample.accordion .accordion-item .accordion-button.collapsed {
+    border-radius: 1rem;
 }
 
 div#accordionExample.accordion .accordion-item .accordion-button:focus {
@@ -100,14 +106,14 @@ div#accordionExample.accordion .accordion-item .accordion-button::after {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     color: #FFA101;
-    font-size: 40px;
+    font-size: 36px;
 }
 
 .huellaVacia{
     opacity: 40%;
 }
 
-
+/* Estilos para SLIDER */
 .card-wrapper{
     max-width: 1100px;
     margin: 0 auto;
@@ -161,4 +167,21 @@ img.slider{
     .product-content{
         padding-top: 0;
     }
+}
+
+/* Estilos para MODAL REVIEWS */
+.modal-content .modal-header, .modal-content .modal-footer {
+    border: none;
+}
+
+.reviewIcon{
+    background-image: url(/assets/img/iconos/icon_review32.svg);
+    background-repeat: no-repeat;
+    aspect-ratio: 1 / 1;
+}
+
+.reviewIconVacio{
+    background-image: url(/assets/img/iconos/icon_review32.svg);
+    background-repeat: no-repeat;
+    aspect-ratio: 1 / 1;
 }
