@@ -24,6 +24,7 @@
     <!--Estilos CSS-->
     <link rel="stylesheet" href="./assets/styles/paginaProducto.css">
     <link rel="stylesheet" href="./assets/styles/formstyle.css">
+    <link rel="stylesheet" href="./assets/styles/historialDePedido.css">
 
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
@@ -179,13 +180,13 @@
             </div>         
         </div> <!--Cierre de Row 2-->
 
-        <div class="row my-5 align-items-center justify-content-between d-none"> <!--Row 3-->
+        <div class="row my-5 align-items-center justify-content-between"> <!--Row 3-->
             
             <div class="col-12"> <!-- Título de sección -->
                 <p class="sb18">Reseñas hechas por la pandilla digital 😸</p>
             </div>
 
-            <div class="col-5"> <!-- Puntaje de reviews -->
+            <div class="col-7 col-lg-4 col-xxl-3"> <!-- Puntaje de reviews -->
                 <p class="txt14 m-0 text-center">Basado en 0 reseñas</p>
                 <span class="puntajeReviews" id="puntajeReviews">0 / 5</span>
                 <svg  class="huellaVacia" width="32" height="32" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -220,23 +221,83 @@
                 </svg>
             </div>
 
-            <div class="col-4 gap-2 txt18_SB"><!-- Botón Reseña -->
-                <button type="button" class="btn btn-outline-primary disabled rounded-pill ">Deja huella con tu reseña🐾</button>
+            <div class="col-5 col-md-4 gap-2 txt18_SB"><!-- Botón Reseña -->
+                <button type="button" class="btn btn-outline-primary rounded-pill " data-bs-toggle="modal" data-bs-target="#reviewModal">Deja huella con tu reseña🐾</button>
             </div><!-- Termina botón Reseña -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-4">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 sb20" id="reviewModalLabel">Deja huella con tu reseña🐾</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!-- CUERPO DEL MODAL -->
+                        <div class="modal-body">
+                            <form class="row g-3 needs-validation" novalidate>
+
+                                <!-- Para los forms, el for del label, tiene que tener el mismo nombre que el #id del input. -->
+                                <!-- Input de puntaje REVIEW -->
+                                <div class="col-12"> 
+                                    <input name="Puntaje" id="puntajeReview" type="number" min="0" max="5" class="form-control" required>
+                                    <i></i>
+                                    <div class="invalid-feedback txt14">
+                                      Revisa con ojos de águila el campo🦅
+                                    </div>
+                                </div>
+
+                          
+                                <!-- Input de Nombre completo a 12 col -->
+                                <div class="col-12">
+                                  <label for="nombreReview" class="form-label sb16">Nombre completo</label>
+                                  <input name="Nombre completo" id="nombreReview" type="text" class="form-control" placeholder="Ej. Mark Paws" required>
+                                  <div class="invalid-feedback txt14">
+                                    Revisa con ojos de águila el campo🦅
+                                  </div>
+                                </div>
+                          
+                                <!-- Textarea de MENSAJE LARGO a 12 col -->
+                                <div class="col-12 ">
+                                  <label for="mensajeReview" class="form-label sb16">Comentario</label>
+                                  <textarea name="mensaje" id="mensajeReview" class="form-control"  placeholder="Tu reseña a detalle aquí" required></textarea>
+                                  <div class="invalid-feedback txt14">
+                                    Deja tu rugido largo y tendido🐅
+                                  </div>
+                                </div>
+                          
+                                <!-- Botón de ENVIAR MENSAJE -->
+                                <div class="d-grid gap-2 txt18_SB">
+                                  <button id="btnRegistroReview" type="button" data-bs-dismiss="modal" class="btn btn-primary rounded-pill">Publicar reseña😸</button>
+                                </div>
+                              </form>
+                        </div>
+                        <div class="modal-footer">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="hr-crema "><hr class="border-1 opacity-75"><!-- Linea divisoria --></div>
             
-            <!-- ROW reseñas detalladas -->
-            <div class="row justify-content-center">
+            <!-- ROW SIN reseñas detalladas -->
+            <div class="row justify-content-center" id="sinReviews">
                 <!-- Sección sin reseñas -->
-                <div class="col-6 text-center my-2">
+                <div class="col-12 col-lg-6 text-center my-2">
                     <p class="txt14">Parece que todavía no hay reseñas... 
                         Deja la tuya como huella en la arena, para que otros curiosos viajeros sigan el rastro de tu experiencia.🐾 
-                    </p>
-                    <p class="txt14">
-                        De paso, presume esas insignias.😼
-                    </p>    
+                    </p>  
                 </div>
+            </div>
+
+            <!-- ROW reseñas detalladas -->
+            <div class="row" id="contenedorReviews">
+                <!-- Aquí se añadirán las reviews -->
+                <div class="col-12 col-md-6"> <!-- Producto -->
+                    
+                </div> <!-- Cierre de producto -->
+
             </div>
            
         </div> <!--Cierre de Row 3-->
