@@ -80,22 +80,29 @@ function mostrarReview(review) {
 function generarTarjetaReview(review){
     //crear
     let reviewDiv = document.createElement("div");
-    reviewDiv.className = "col-6";
+    reviewDiv.className = "col-12 col-md-6 mb-3";
 
     //crear el contenido de la tarjeta
     //Se usan las backsticks porque ya se unan las comillas. Alt + 96 
     reviewDiv.innerHTML=`
-        <div class="card border-info mb-3">
-            <div class="card-header">Reseña</div>
-            <div class="card-body">
-                <h5 class="card-title">${review.nombre}</h5>
-                <p class="card-text textoprueba"><i>Agregar descripción.</i></p>
-                <p>${review.fecha}</p>
-                <p>${review.mensaje}</p>
+        <div class="card rounded-4">                     
+            <div class="card-body d-flex flex-column">
+                <div class="h-100">
+                    <p class="align-items-center align-bottom txt14"> 0 / 5
+                        <img src="./assets/img/huellaReview.svg" alt="Huella para review" class="huellaVacia">
+                        <img src="./assets/img/huellaReview.svg" alt="Huella para review" class="huellaVacia">
+                        <img src="./assets/img/huellaReview.svg" alt="Huella para review" class="huellaVacia">
+                        <img src="./assets/img/huellaReview.svg" alt="Huella para review" class="huellaVacia">
+                        <img src="./assets/img/huellaReview.svg" alt="Huella para review" class="huellaVacia">
+                    </p>
+                    <h6 class="txt16_SB mb-2">${review.nombre}</h6><!-- Usuario de review --> 
+                    <p class="txt14">${review.fecha}</p> <!-- fecha -->
+                    <p class="txt16">${review.mensaje}</p> <!-- mensaje -->
+                </div>
             </div>
         </div>
     `
-    //POner
+    //Aquí se especifica bajo qué div o sección del HTML se añadirá
     contenedorReviews.appendChild(reviewDiv);
 }
 
