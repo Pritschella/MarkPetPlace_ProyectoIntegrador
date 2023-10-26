@@ -24,6 +24,31 @@ window.addEventListener('resize', slideImage);
 
 //Manipulación de DOM para reviews
 
+// Funcionamiento de recibir puntaje de reviews
+const puntaje = document.querySelectorAll('.seccReview .review')
+const puntajeValor = document.querySelector('.seccReview input')
+
+puntaje.forEach((item, idx)=> {
+	item.addEventListener('click', function () {
+		let click = 0
+		puntajeValor.value = idx + 1
+
+		puntaje.forEach(i=> {
+			i.classList.replace('reviewIcon', 'reviewIconSelected')
+			i.classList.remove('reviewActive')
+		})
+		for(let i=0; i<puntaje.length; i++) {
+			if(i <= idx) {
+				puntaje[i].classList.replace('reviewIconSelected', 'reviewIcon')
+				puntaje[i].classList.add('reviewActive')
+			} else {
+				puntaje[i].style.setProperty('--i', click);
+				click++
+			}
+		}
+	})
+})
+
 // Recibir los datos de inputs de formulario de Reviews
 let puntajeReview = document.getElementById("puntajeReview");
 let nombreReview = document.getElementById("nombreReview");
