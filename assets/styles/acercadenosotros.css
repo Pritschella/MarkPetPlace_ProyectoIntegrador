@@ -49,6 +49,12 @@
     max-height: 20px;
 }
 
+.icono_reverse {
+    transform: scaleX(-1);
+    max-width: 20px;
+    max-height: 20px;
+}
+
 
 /*Container 2: Descripciones*/
 #foto {
