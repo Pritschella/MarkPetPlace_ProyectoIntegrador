@@ -6,3 +6,16 @@
     width: 1000px;
     height: 500px;
 }
+
+.icono {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+
+.link {
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+    color: #FFA101;
+    padding: 200px 100px 200px 100px;
+}
