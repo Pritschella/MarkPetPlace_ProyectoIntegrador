@@ -57,7 +57,7 @@
             </div> <!--Cierre de Col 1-->
         </div> <!--Cierre de Row 1-->
         
-        <div class="row justify-content-between"> <!--Row 2-->
+        <div class="row justify-content-between oculto"> <!--Row 2-->
             <!--Columa izquierda con SLIDER DE IMAGENES-->
             <div class="col-12 col-sm-12 col-md-6">
                 <!-- Empieza carousel/slider de imágenes -->
@@ -141,8 +141,8 @@
                         <button type="button" class="btn btn-outline-primary rounded-pill" id="productoCarrito" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarrito" aria-controls="offcanvasCarrito" value="1">Añadir a carrito</button>
                     </div>
                     <!-- Botón Comprar -->
-                    <div class="col-6 d-grid gap-2 txt18_SB">
-                        <button type="button" class="btn btn-primary rounded-pill" >Comprar</button>
+                    <div class="col-6 txt18_SB">
+                        <a href="./direccionDeEnvio.html" class="d-grid gap-2"><button type="button" class="btn btn-primary rounded-pill" >Comprar</button></a>
                     </div>
                 </div><!-- Termina row de botones -->
 
@@ -181,13 +181,13 @@
             </div>         
         </div> <!--Cierre de Row 2-->
 
-        <div class="row my-5 align-items-center justify-content-between"> <!--Row 3-->
+        <div class="row my-5 align-items-center justify-content-between oculto"> <!--Row 3-->
             
             <div class="col-12"> <!-- Título de sección -->
                 <p class="sb18">Reseñas hechas por la pandilla digital 😸</p>
             </div>
 
-            <div class="col-7 col-lg-4 col-xxl-3"> <!-- Puntaje de reviews -->
+            <div class="col-7 col-lg-4 col-xxl-3 d-none"> <!-- Puntaje de reviews -->
                 <p class="txt14 m-0 text-center">Basado en 0 reseñas</p>
                 <span class="puntajeReviews" id="puntajeReviews">0 / 5</span>
                 <svg  class="huellaVacia" width="32" height="32" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -240,7 +240,7 @@
 
                                 <!-- Para los forms, el for del label, tiene que tener el mismo nombre que el #id del input. -->
                                 <!-- Input de puntaje REVIEW -->
-                                <div class="col-12 seccReview d-flex justify-content-center"> 
+                                <div class="col-12 seccReview d-flex justify-content-center d-none"> 
                                     <input name="Puntaje" id="puntajeReview" type="number" min="0" max="5" class="form-control" required hidden>
                                     <i class="reviewIcon review"></i>
                                     <i class="reviewIcon review"></i>
@@ -319,8 +319,10 @@
 
         </div>
         <div class="offcanvas-footer">
-            <h5 class="offcanvas-title titulosH5C" id="offcanvasRightLabel">Carrito😼</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+             <!-- Botón Comprar -->
+             <div class="col-6 txt18_SB m-5">
+                <a href="./direccionDeEnvio.html" class="d-grid gap-2"><button type="button" class="btn btn-primary rounded-pill" >Comprar</button></a>
+            </div>
         </div>
     </div>
 
@@ -339,6 +341,7 @@
 
     <!-- Script con slider de imágenes -->
     <script src="./assets/javascript/paginaProducto.js"></script>
+    <script src="./assets/javascript/scrollanim.js"></script>
 
 </body>
 

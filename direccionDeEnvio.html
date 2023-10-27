@@ -53,24 +53,24 @@
     <h1 class="sb28">Dirección de envío</h1>
     <a class="link16 d-none" href="./login&registro.html">¿Ya tienes cuenta? Inicia sesión</a>
     </div><br><br>
-    <div class="container">
+    <div class="container oculto">
         <div class="row">
           <div class="col-12 col-md-7"><br>
     <!--Formulario de direccion-->
     
-    <form class="row g-3 needs-validation" action="https://formsubmit.co/markpetplace@gmail.com" method="POST" novalidate>
+    <form class="row g-3 needs-validation" action="https://formsubmit.co/markpetplace@gmail.com" method="POST" >
         <!-- Input de Nombre completo a 12 col -->
           
                 <div class="col-md-6 mb-2">
                     <label for="Nombre_Direccion" class="form-label sb20">Nombre</label>
-                    <input name="Nombre" id="Nombre_Direccion" type="text" class="form-control" placeholder="Ingresa nombre de quien recibe" required>
+                    <input name="Nombre" id="Nombre_Direccion" type="text" class="form-control" placeholder="Nombre de quien recibe" required>
                     <div class="invalid-feedback txt14">
                     Revisa con ojos de águila el campo🦅
                     </div>
                 </div>
                 <div class="col-md-6 mb-2">
                     <label for="Apellido_Direccion" class="form-label sb20">Apellido</label>
-                    <input name="Apellido" id="Apellido_Direccion" type="text" class="form-control" placeholder="Ingresa el apellido de quien recibe" required>
+                    <input name="Apellido" id="Apellido_Direccion" type="text" class="form-control" placeholder="Apellido de quien recibe" required>
                     <div class="invalid-feedback txt14">
                     Revisa con ojos de águila el campo🦅
                     </div>
@@ -79,7 +79,7 @@
 
                 <div class="col-12 mb-3">
                   <label for="email_Direccion" class="form-label sb20">Correo electrónico</label>
-                  <input name="email" id="email_Direccion" type="email" class="form-control" placeholder="Ingresa tu correo electrónico" required>
+                  <input name="email" id="email_Direccion" type="email" class="form-control" placeholder="Tu correo electrónico" required>
                   <div class="invalid-feedback txt14">
                   Revisa con ojos de águila el campo🦅
                   </div>
@@ -87,14 +87,14 @@
                 
                     <div class="col-md-6 mb-2">
                         <label for="calleYNumero_Direccion" class="form-label sb20">Calle y número</label>
-                        <input name="Calle y nombero" id="calleYNumero_Direccion" type="text" class="form-control" placeholder="Ingresa la calle y número" required>
+                        <input name="Calle y nombero" id="calleYNumero_Direccion" type="text" class="form-control" placeholder="La calle y número" required>
                         <div class="invalid-feedback txt14">
                         Revisa con ojos de águila el campo🦅
                         </div>
                     </div>
                     <div class="col-md-6 mb-2">
                         <label for="Colonia_Direccion" class="form-label sb20">Colonia</label>
-                        <input name="Direccion" id="Colonia_Direccion" type="text" class="form-control" placeholder="Ingresa la colonia" required>
+                        <input name="Direccion" id="Colonia_Direccion" type="text" class="form-control" placeholder="Colonia" required>
                         <div class="invalid-feedback txt14">
                         Revisa con ojos de águila el campo🦅
                         </div>
@@ -102,14 +102,14 @@
                 
                 <div class="col-md-6 mb-2">
                     <label for="Ciudad_Direccion" class="form-label sb20">Ciudad</label>
-                    <input name="Ciudad" id="Ciudad_Direccion" type="text" class="form-control" placeholder="Ingresa tu ciudad" required>
+                    <input name="Ciudad" id="Ciudad_Direccion" type="text" class="form-control" placeholder="Localidad o ciudad" required>
                     <div class="invalid-feedback txt14">
                     Revisa con ojos de águila el campo🦅
                     </div>
                 </div>
                 <div class="col-md-6 mb-2">
                     <label for="Estado_Direccion" class="form-label sb20">Estado</label>
-                    <input name="Estado" id="Estado_Direccion" type="text" class="form-control" placeholder="Ingresa tu estado" required>
+                    <input name="Estado" id="Estado_Direccion" type="text" class="form-control" placeholder="Estado" required>
                     <div class="invalid-feedback txt14">
                     Revisa con ojos de águila el campo🦅
                     </div>
@@ -118,14 +118,14 @@
                 
                 <div class="col-md-6 mb-2">
                     <label for="CP_Direccion" class="form-label sb20">Código postal</label>
-                    <input name="Estado" id="CP_Direccion" type="text" class="form-control" placeholder="Ej. 90000" required>
+                    <input name="CP" id="CP_Direccion" type="text" class="form-control" placeholder="Ej. 90000" required>
                     <div class="invalid-feedback txt14">
                     Revisa con ojos de águila el campo🦅
                     </div>
                 </div>
                 <div class="col-md-6 mb-2">
                     <label for="Telf_Direccion" class="form-label sb20">Teléfono</label>
-                    <input name="Estado" id="Telf_Direccion" type="tel" class="form-control" placeholder="Ej. 0011223344" required>
+                    <input name="TELEFONO" id="Telf_Direccion" type="tel" class="form-control" placeholder="Ej. 0011223344" required>
                     <div class="invalid-feedback txt14">
                     Revisa con ojos de águila el campo🦅
                     </div>
@@ -138,47 +138,49 @@
                       Deja tu rugido largo y tendido🐅
                     </div>
                   </div>
-                <br><br>
-            <!--Checkbox-->
-            <div class="row mb-3">
-                <div class="col-sm-12 text-center">
-                    <div class="form-check form-check-inline align-items-center">
-                        <input class="form-check-input" type="checkbox" id="gridCheck1">
-                        <label class="form-check-label" for="gridCheck1">
-                            Guardar dirección para futuras compras
-                        </label>
-                    </div>
+              <!--Checkbox-->
+              <div class="row my-3">
+                  <div class="col-sm-12 text-center">
+                      <div class="form-check form-check-inline align-items-center">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <label class="form-check-label txt16" for="gridCheck1">
+                              Guardar dirección para futuras compras
+                          </label>
+                      </div>
+                  </div>
+              </div>
+              
+                <label for="Alias_Direccion" class="form-label sb20">Alias de dirección</label>
+                <input name="Alias" id="inputAlias_Direccion" type="text" class="form-control" placeholder="Ej. Casita" required>
+                <div class="invalid-feedback txt14">
+                Revisa con ojos de águila el campo🦅
                 </div>
-            </div>
-            <label for="Alias_Direccion" class="form-label sb20">Alias de dirección</label>
-            <input name="Alias" id="inputAlias_Direccion" type="text" class="form-control" placeholder="Ingresa el alias de dirección. Ej.Casita 2" required>
-            <div class="invalid-feedback txt14">
-            Revisa con ojos de águila el campo🦅
-            </div><br><br>
-            <!-- Botón de ENVIAR MENSAJE -->
-            <div class="d-grid gap-2 txt18_SB">
-              <button type="submit" class="btn btn-primary rounded-pill" onclick="copyAutoresponseToInput()">Comprar</button>
-            </div>
+              
+              
+              <!-- Botón de ENVIAR MENSAJE -->
+              <div class="d-grid gap-2 txt18_SB">
+                <button type="submit" class="btn btn-primary rounded-pill" onclick="copyAutoresponseToInput()">Comprar</button>
+              </div>
 
-            <!-- FormSubmit para mandar a una página de agradecimiento -->
-            <input type="hidden" name="_next" value="http://127.0.0.1:5502/gracias_contacto.html">
-            <!-- FormSubmit para ponerle un asunto a los mensajes que llegan al correo -->
-            <input type="hidden" name="_subject" value="¡Nuevo mensaje para MarkPetPlace!">
+              <!-- FormSubmit para mandar a una página de agradecimiento -->
+              <input type="hidden" name="_next" value="http://127.0.0.1:5502/confirmacionDePago.html">
+              <!-- FormSubmit para ponerle un asunto a los mensajes que llegan al correo -->
+              <input type="hidden" name="_subject" value="¡Nuevo mensaje para MarkPetPlace!">
 
-            <input type="hidden" name="_autoresponse" id="autoresponseField" value="¡">
-            <!-- FormSubmit para darle formato a la información recibida por correo -->
-            <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_autoresponse" id="autoresponseField" value="¡">
+              <!-- FormSubmit para darle formato a la información recibida por correo -->
+              <input type="hidden" name="_template" value="table">
 
-            <div class="d-none" id="autoresponseDiv">
-              ¡Hola! Soy Mark 😸, ¡el minino detrás de MarkPetPlace! ✨ Para completar tu compra, te pedimos que realices un pago por transferencia o depósito al siguiente número de cuenta: *************.❗ Una vez completado el pago, por favor envía el comprobante de pago al correo markpetplace@gmail.com. Una vez que recibamos la confirmación del pago, procederemos con el envío de tus productos. ✅ Si necesitas algo, ¡maúlla o ladra! 🐕 Estamos aquí para ayudarte. Con amor y patitas, Mark del Equipo de MarkPetPlace🐾.
-            </div>
+              <div class="d-none" id="autoresponseDiv">
+                ¡Hola! Soy Mark 😸, ¡el minino detrás de MarkPetPlace! ✨ Para completar tu compra, te pedimos que realices un pago por transferencia o depósito al siguiente número de cuenta: *************.❗ Una vez completado el pago, por favor envía el comprobante de pago al correo markpetplace@gmail.com. Una vez que recibamos la confirmación del pago, procederemos con el envío de tus productos. ✅ Si necesitas algo, ¡maúlla o ladra! 🐕 Estamos aquí para ayudarte. Con amor y patitas, Mark del Equipo de MarkPetPlace🐾.
+              </div>
 
         </form>
 
           </div>
           <div class="col-12 col-md-5">
-<!--div para el resumen de compra-->
-<div class="container">
+  <!--div para el resumen de compra-->
+  <div class="container">
     <hr class="linea-horizontal">
     <div><br>
         <h1 class="sb28">Resumen</h1>
@@ -188,17 +190,17 @@
               <div class="card rounded-4"> 
                 <div class="row g-0">
                   <!-- Imagen de producto -->
-                  <div class="col-3 col-md-4">
+                  <div class="col-3 col-md-5 col-lg-4">
                     <img src="./assets/img/productoArbolGato/producto-1.jpg" class="card-img rounded-start-4 horizontal" alt="Arbol para gato con forma de cactus">
                   </div>
                   <!-- Información de producto -->
-                  <div class="col-9 col-md-8">
+                  <div class="col-9 col-md-7 col-lg-8">
                     <div class="card-body d-flex flex-column">
                       <div class="h-100">
-                        <h6 class="titulosH6">Dow Chow para raza mediana 25kg</h6>
+                        <h6 class="titulosH6">Árbol para gato con forma de cactus
+                        </h6>
                         <div class="d-flex justify-content-between">
-                          <a href="#" class="link16">Ver más</a>
-                          <p class="txt18_SB">$750.00</p> <!-- Precio -->
+                          <p class="txt18_SB mb-0">$370.00</p> <!-- Precio -->
                         </div>
                       </div>
                     </div>
@@ -206,67 +208,20 @@
                 </div>
               </div>
             </div> <!-- Cierre de producto -->
-      
-            <div class="col-12"> <!-- Producto -->
-              <!-- Card -->
-              <div class="card rounded-4"> 
-                <div class="row g-0">
-                  <!-- Imagen de producto -->
-                  <div class="col-3 col-md-4">
-                    <img src="./assets/img/productoArbolGato/producto-1.jpg" class="card-img rounded-start-4 horizontal" alt="Arbol para gato con forma de cactus">
-                  </div>
-                  <!-- Información de producto -->
-                  <div class="col-9 col-md-8">
-                    <div class="card-body d-flex flex-column">
-                      <div class="h-100">
-                        <h6 class="titulosH6">Dow Chow para raza mediana 25kg</h6>
-                        <div class="d-flex justify-content-between">
-                          <a href="#" class="link16">Ver más</a>
-                          <p class="txt18_SB">$750.00</p> <!-- Precio -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> <!-- Cierre de producto -->
-      
-            <div class="col-12 "> <!-- Producto -->
-              <!-- Card -->
-              <div class="card rounded-4"> 
-                <div class="row g-0">
-                  <!-- Imagen de producto -->
-                  <div class="col-3 col-md-4">
-                    <img src="./assets/img/productoArbolGato/producto-1.jpg" class="card-img rounded-start-4 horizontal" alt="Arbol para gato con forma de cactus">
-                  </div>
-                  <!-- Información de producto -->
-                  <div class="col-9 col-md-8">
-                    <div class="card-body d-flex flex-column">
-                      <div class="h-100">
-                        <h6 class="titulosH6">Dow Chow para raza mediana 25kg</h6>
-                        <div class="d-flex justify-content-between">
-                          <a href="#" class="link16">Ver más</a>
-                          <p class="txt18_SB">$750.00</p> <!-- Precio -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
+  
         </div>
     </div><br>
-    <div class="linea-horizontal">
-    </div>
-    <div class="container">
-        <div class="resultado sb18">
-            <div class="nombre">Total</div>
-            <div class="precio">$600</div>
-        </div> <br>
-        <input class="datos" type="text" id="numeroTarjeta" name="numeroTarjeta" placeholder="Código de descuento">
-        </div>
+    <div class="linea-horizontal"></div>
+    <div class="row">
+      <div class="resultado sb18 my-2">
+          <div class="nombre">Total</div>
+          <div class="precio">$370</div>
       </div>
+        <input class="datos form-control" type="text" id="numeroTarjeta" name="numeroTarjeta" placeholder="Código de descuento">
     </div>
+  </div>
+  </div>
 </div>
 </div>
           </div>
@@ -282,5 +237,6 @@
     <script src="./assets/javascript/script.js"></script>
     <!-- Script local -->
     <script src="./assets/javascript/paginaProducto.js"></script>
+    <script src="./assets/javascript/scrollanim.js"></script>
 </body>
 </html>

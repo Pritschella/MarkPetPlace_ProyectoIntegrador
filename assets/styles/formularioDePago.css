@@ -118,6 +118,14 @@ h1{
     padding: 10px;
 }
 
+.form-check .form-check-input:checked {
+    background-color: #FF862F;
+    border-color: #FF862F;
+}
+
+.form-check .form-check-input:focus {
+    box-shadow: none;
+}
 
 
 
