@@ -104,7 +104,7 @@ function generarTarjetaReview(review){
         <div class="card rounded-4">                     
             <div class="card-body d-flex flex-column">
                 <div class="h-100">
-                    <p class="align-items-center align-bottom txt14"> 0 / 5
+                    <p class="align-items-center align-bottom txt14 d-none"> 0 / 5
                         <img src="./assets/img/huellaReview.svg" alt="Huella para review" class="huellaVacia">
                         <img src="./assets/img/huellaReview.svg" alt="Huella para review" class="huellaVacia">
                         <img src="./assets/img/huellaReview.svg" alt="Huella para review" class="huellaVacia">
@@ -112,7 +112,7 @@ function generarTarjetaReview(review){
                         <img src="./assets/img/huellaReview.svg" alt="Huella para review" class="huellaVacia">
                     </p>
                     <h6 class="txt16_SB mb-2">${review.nombre}</h6><!-- Usuario de review --> 
-                    <p class="txt14">${review.fecha}</p> <!-- fecha -->
+                    <p class="txt14N">${review.fecha}</p> <!-- fecha -->
                     <p class="txt16">${review.mensaje}</p> <!-- mensaje -->
                 </div>
             </div>
@@ -128,4 +128,13 @@ function copyAutoresponseToInput() {
     const autoresponseDiv = document.getElementById('autoresponseDiv');
     const autoresponseField = document.getElementById('autoresponseField');
     autoresponseField.value = autoresponseDiv.innerHTML;
-  }
+}
+
+let gridCheck1 = document.getElementById("gridCheck1").click;
+gridCheck1.addEventListener('click', checkGuardarDireccion);
+
+let inputAlias = document.getElementById("inputAlias");
+
+function checkGuardarDireccion(inputAlias) {
+    inputAlias.classList.remove("d-none");
+}
