@@ -58,7 +58,7 @@
           <div class="col-12 col-md-7"><br>
     <!--Formulario de direccion-->
     
-    <form class="row g-3 needs-validation" action="https://formsubmit.co/markpetplace@gmail.com" method="POST" novalidate>
+    <form class="row g-3 needs-validation" action="https://formsubmit.co/markpetplace@gmail.com" method="POST" >
         <!-- Input de Nombre completo a 12 col -->
           
                 <div class="col-md-6 mb-2">
@@ -118,14 +118,14 @@
                 
                 <div class="col-md-6 mb-2">
                     <label for="CP_Direccion" class="form-label sb20">Código postal</label>
-                    <input name="Estado" id="CP_Direccion" type="text" class="form-control" placeholder="Ej. 90000" required>
+                    <input name="CP" id="CP_Direccion" type="text" class="form-control" placeholder="Ej. 90000" required>
                     <div class="invalid-feedback txt14">
                     Revisa con ojos de águila el campo🦅
                     </div>
                 </div>
                 <div class="col-md-6 mb-2">
                     <label for="Telf_Direccion" class="form-label sb20">Teléfono</label>
-                    <input name="Estado" id="Telf_Direccion" type="tel" class="form-control" placeholder="Ej. 0011223344" required>
+                    <input name="TELEFONO" id="Telf_Direccion" type="tel" class="form-control" placeholder="Ej. 0011223344" required>
                     <div class="invalid-feedback txt14">
                     Revisa con ojos de águila el campo🦅
                     </div>
@@ -142,20 +142,20 @@
               <div class="row my-3">
                   <div class="col-sm-12 text-center">
                       <div class="form-check form-check-inline align-items-center">
-                          <input class="form-check-input" type="checkbox" id="gridCheck1" onclick="checkGuardarDireccion()">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1">
                           <label class="form-check-label txt16" for="gridCheck1">
                               Guardar dirección para futuras compras
                           </label>
                       </div>
                   </div>
               </div>
-              <div class="col-12 d-none" id="inputAlias">
+              
                 <label for="Alias_Direccion" class="form-label sb20">Alias de dirección</label>
                 <input name="Alias" id="inputAlias_Direccion" type="text" class="form-control" placeholder="Ej. Casita" required>
                 <div class="invalid-feedback txt14">
                 Revisa con ojos de águila el campo🦅
                 </div>
-              </div>
+              
               
               <!-- Botón de ENVIAR MENSAJE -->
               <div class="d-grid gap-2 txt18_SB">
@@ -163,7 +163,7 @@
               </div>
 
               <!-- FormSubmit para mandar a una página de agradecimiento -->
-              <input type="hidden" name="_next" value="http://127.0.0.1:5502/gracias_contacto.html">
+              <input type="hidden" name="_next" value="http://127.0.0.1:5502/confirmacionDePago.html">
               <!-- FormSubmit para ponerle un asunto a los mensajes que llegan al correo -->
               <input type="hidden" name="_subject" value="¡Nuevo mensaje para MarkPetPlace!">
 
@@ -197,7 +197,8 @@
                   <div class="col-9 col-md-7 col-lg-8">
                     <div class="card-body d-flex flex-column">
                       <div class="h-100">
-                        <h6 class="titulosH6">Dow Chow para raza mediana 25kg</h6>
+                        <h6 class="titulosH6">Árbol para gato con forma de cactus
+                        </h6>
                         <div class="d-flex justify-content-between">
                           <p class="txt18_SB mb-0">$370.00</p> <!-- Precio -->
                         </div>
@@ -207,6 +208,7 @@
                 </div>
               </div>
             </div> <!-- Cierre de producto -->
+            
   
         </div>
     </div><br>

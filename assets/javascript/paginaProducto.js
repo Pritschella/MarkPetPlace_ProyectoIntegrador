@@ -130,11 +130,3 @@ function copyAutoresponseToInput() {
     autoresponseField.value = autoresponseDiv.innerHTML;
 }
 
-let gridCheck1 = document.getElementById("gridCheck1").click;
-gridCheck1.addEventListener('click', checkGuardarDireccion);
-
-let inputAlias = document.getElementById("inputAlias");
-
-function checkGuardarDireccion(inputAlias) {
-    inputAlias.classList.remove("d-none");
-}
