@@ -1,6 +1,5 @@
 .cuerpo {
     background-color: #FFFDF5;
-    padding-bottom: 25px;
 }
 
 .icono {
@@ -16,10 +15,8 @@
     padding: 200px 100px 200px 100px;
 }
 
-.titulo {
-    color: #472922;
+.titulosH1C {
     text-align: center;
-    font-size: 48px;
 }
 
 .icono_camara {
@@ -134,7 +131,14 @@ main {
 
 /* ->Selector de imágenes */
 
-#form {
+#inputTitulo,
+#inputPrecio,
+#inputCantidad,
+#inputCiudad,
+#selectEstado,
+#selectAnimal,
+#selectCategoria,
+#txtDescripcion {
     border-radius: 25px;
     border: 1px solid #FFA101;
 }
@@ -161,9 +165,13 @@ main {
     padding: 25px;
 }
 
+.btn_registrarProducto {
+    margin-left: 25%
+}
+
 @media (max-width: 600px) {
     #container-form {
-        margin-top: 35px;
+        margin-top: 40px;
         margin-left: 20 px;
         margin-right: 20px;
     }
@@ -209,7 +217,7 @@ button {
     padding: 10px 20px;
     border-radius: 20px !important;
     cursor: pointer;
-    width: 80%;
+    width: 50%;
 }
 
 li {
@@ -218,4 +226,14 @@ li {
 
 .modal-content img {
     max-width: 200px;
+}
+
+.valid-tooltip {
+    background-color: #B3DEE5 !important;
+    right: 0;
+}
+
+.invalid-tooltip {
+    background-color: #F05A18 !important;
+    right: 0;
 }
