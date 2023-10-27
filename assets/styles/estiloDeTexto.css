@@ -149,6 +149,20 @@
 }
 
 /*Cuerpo de texto*/
+.txt21 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color: #472922;
+    font-size: 21px;
+}
+
+.txt21N {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color:#FF862F;
+    font-size: 21px; 
+}
+
 .txt18 {
     font-family: 'Mukta', sans-serif;
     font-weight: 400;
