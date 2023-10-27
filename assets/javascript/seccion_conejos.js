@@ -48,195 +48,133 @@ function pintarFila(contenedorId, datosArray) { //recibe el id del contenedor y 
 // Datos específicos para cada categoría
 const datosConejoAlimentacion = [
     {
-        imgSrc: "",
-        nombre: "",
+        imgSrc: "./assets/img/seccion_conejos/ProductoAlimentación.jpg",
+        nombre: "Alimento con Cereales, Manzanas y Verduras",
         categoria: "Alimentacion",
         vendedor: "Kenia",
-        precio: "$00.00",
+        precio: "$200.00",
     },
     {
-        imgSrc: "",
-        nombre: "",
+        imgSrc: "./assets/img/seccion_conejos/ProductoAlimentación2.jpg",
+        nombre: "Crispy Muesli Conejo - 20 kg",
         categoria: "Alimentacion",
         vendedor: "Berenice",
-        precio: "$00.00",
+        precio: "$300.00",
     },
     {
-        imgSrc: "",
-        nombre: "",
+        imgSrc: "./assets/img/seccion_conejos/ProductoAlimentación3.jpg",
+        nombre: "Alimento Nature Conejo Rebalance",
         categoria: "Alimentacion",
         vendedor: "Antonio",
-        precio: "$00.00",
+        precio: "$95.00",
     },
     {
-        imgSrc: "",
-        nombre: "",
+        imgSrc: "./assets/img/seccion_conejos/ProductoAlimentación4.jpg",
+        nombre: "Deuka nin Basis Plus Comida para Conejos",
         categoria: "Alimentacion",
         vendedor: "Alejandra",
-        precio: "$00.00",
+        precio: "$100.00",
     }
 ];
 
 const datosConejoAccesorios = [
     {
-        imgSrc: "",
-        nombre: "",
+        imgSrc: "./assets/img/seccion_conejos/ProductoAccesorio.jpg",
+        nombre: "Arnés para Conejo",
         categoria: "Accesorios",
         vendedor: "Uriel",
-        precio: "$00.00",
+        precio: "$165.00",
     },
     {
-        imgSrc: "",
-        nombre: "",
+        imgSrc: "./assets/img/seccion_conejos/ProductoAccesorio2.jpg",
+        nombre: "Jaula para Conejo",
         categoria: "Accesorios",
         vendedor: "Alexis",
-        precio: "$00.00",
+        precio: "$201.50",
     },
     {
-        imgSrc: "",
-        nombre: "",
+        imgSrc: "./assets/img/seccion_conejos/ProductoAccesorio3.jpg",
+        nombre: "Bebedero para Conejo",
         categoria: "Accesorios",
         vendedor: "Edna",
-        precio: "$00.00",
+        precio: "$138.29",
     },
     {
-        imgSrc: "",
-        nombre: "",
+        imgSrc: "./assets/img/seccion_conejos/ProductoAccesorio4.jpg",
+        nombre: "Carrier para Conejo",
         categoria: "Accesorios",
         vendedor: "Kenia",
-        precio: "$00.00",
+        precio: "$400.00",
     }
 ];
 
 const datosConejoCuidadoEHigiene = [
     {
-        imgSrc: "",
-        nombre: "",
+        imgSrc: "./assets/img/seccion_conejos/ProductoCuidadoeHigiene.jpg",
+        nombre: "Arenero para Conejo fácil limpiado",
         categoria: "Cuidado e Higiene",
         vendedor: "Berenice",
-        precio: "$00.00",
+        precio: "$267.90",
     },
     {
-        imgSrc: "",
-        nombre: "",
+        imgSrc: "./assets/img/seccion_conejos/ProductoCuidadoeHigiene2.jpg",
+        nombre: "Producto contra olores",
         categoria: "Cuidado e Higiene",
         vendedor: "Antonio",
-        precio: "$00.00",
+        precio: "$169.00",
     },
     {
-        imgSrc: "",
-        nombre: "",
+        imgSrc: "./assets/img/seccion_conejos/ProductoCuidadoeHigiene3.jpg",
+        nombre: "Cepillo auto limpiado para conejo",
         categoria: "Cuidado e Higiene",
         vendedor: "Alejandra",
-        precio: "$00.00",
+        precio: "$88.70",
     },
     {
-        imgSrc: "",
-        nombre: "",
+        imgSrc: "./assets/img/seccion_conejos/ProductoCuidadoeHigiene4.jpg",
+        nombre: "Men For San Shampoo para conejo",
         categoria: "Cuidado e Higiene",
         vendedor: "Uriel",
-        precio: "$00.00",
+        precio: "$403.00",
     }
 ];
 
 const datosConejoSaludYBienestar = [
     {
-        imgSrc: "",
-        nombre: "",
+        imgSrc: "./assets/img/seccion_conejos/ProductoSalud.jpg",
+        nombre: "Multivitamínico beaphar",
         categoria: "Salud y Bienestar",
         vendedor: "Alexis",
-        precio: "$00.00",
+        precio: "$204.10",
     },
     {
-        imgSrc: "",
-        nombre: "",
+        imgSrc: "./assets/img/seccion_conejos/ProductoSalud2.jpg",
+        nombre: "Desparasitante Fenben Lab",
         categoria: "Salud y Bienestar",
         vendedor: "Edna",
-        precio: "$00.00",
+        precio: "$308.40",
     },
     {
-        imgSrc: "",
-        nombre: "",
+        imgSrc: "./assets/img/seccion_conejos/ProductoSalud3.jpg",
+        nombre: "Desparasitante beaphar",
         categoria: "Salud y Bienestar",
         vendedor: "Kenia",
-        precio: "$00.00",
+        precio: "$250.60",
     },
     {
-        imgSrc: "",
-        nombre: "",
+        imgSrc: "./assets/img/seccion_conejos/ProductoSalud4.jpg",
+        nombre: "Gotitas para los ojos lacrifresh",
         categoria: "Salud y Bienestar",
         vendedor: "Berenice",
-        precio: "$00.00",
+        precio: "$196.00",
     }
 ];
 
-const datosConejoRopaYModa = [
-    {
-        imgSrc: "",
-        nombre: "",
-        categoria: "Ropa y Moda",
-        vendedor: "Antonio",
-        precio: "$00.00",
-    },
-    {
-        imgSrc: "",
-        nombre: "",
-        categoria: "Ropa y Moda",
-        vendedor: "Alejandra",
-        precio: "$00.00",
-    },
-    {
-        imgSrc: "",
-        nombre: "",
-        categoria: "Ropa y Moda",
-        vendedor: "Uriel",
-        precio: "$00.00",
-    },
-    {
-        imgSrc: "",
-        nombre: "",
-        categoria: "Ropa y Moda",
-        vendedor: "Alexis",
-        precio: "$00.00",
-    }
-];
 
-const datosConejoEntrenamiento = [
-    {
-        imgSrc: "",
-        nombre: "",
-        categoria: "Entrenamiento",
-        vendedor: "Edna",
-        precio: "$00.00",
-    },
-    {
-        imgSrc: "",
-        nombre: "",
-        categoria: "Entrenamiento",
-        vendedor: "Kenia",
-        precio: "$00.00",
-    },
-    {
-        imgSrc: "",
-        nombre: "",
-        categoria: "Entrenamiento",
-        vendedor: "Berenice",
-        precio: "$00.00",
-    },
-    {
-        imgSrc: "",
-        nombre: "",
-        categoria: "Entrenamiento",
-        vendedor: "Antonio",
-        precio: "$00.00",
-    }
-];
 
 // Pintar las filas de tarjetas con los datos específicos de cada categoría
 pintarFila("tarjeta-conejo-contenedor1", datosConejoAlimentacion);
 pintarFila("tarjeta-conejo-contenedor2", datosConejoAccesorios);
 pintarFila("tarjeta-conejo-contenedor3", datosConejoCuidadoEHigiene);
 pintarFila("tarjeta-conejo-contenedor4", datosConejoSaludYBienestar);
-pintarFila("tarjeta-conejo-contenedor5", datosConejoRopaYModa);
-pintarFila("tarjeta-conejo-contenedor6", datosConejoEntrenamiento);
 // Llama a la función pintarFila con los contenedores y arreglos de objetos para todas las categorías
