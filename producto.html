@@ -138,11 +138,11 @@
                 <div class="row g-2 my-2"> <!-- Inicia row de botones -->
                     <!-- Botón añadir a carrito -->
                     <div class="col-6 d-grid gap-2 txt18_SB ">
-                        <button type="button" class="btn btn-outline-primary rounded-pill">Añadir a carrito</button>
+                        <button type="button" class="btn btn-outline-primary rounded-pill" id="productoCarrito" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarrito" aria-controls="offcanvasCarrito" value="1">Añadir a carrito</button>
                     </div>
                     <!-- Botón Comprar -->
                     <div class="col-6 d-grid gap-2 txt18_SB">
-                        <button type="button" class="btn btn-primary rounded-pill">Comprar</button>
+                        <button type="button" class="btn btn-primary rounded-pill" >Comprar</button>
                     </div>
                 </div><!-- Termina row de botones -->
 
@@ -299,16 +299,30 @@
             <!-- ROW reseñas detalladas -->
             <div class="row" id="contenedorReviews">
                 <!-- Aquí se añadirán las reviews -->
-                <div class="col-12 col-md-6"> <!-- Producto -->
-                    
-                </div> <!-- Cierre de producto -->
+                
 
             </div>
            
         </div> <!--Cierre de Row 3-->
 
     </div> <!--Cierre de Container 1-->
-  
+
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCarrito" aria-labelledby="offcanvasCarritoLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title titulosH5C" id="offcanvasRightLabel">Carrito😼</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" id="bodyCarrito">
+            
+            
+
+        </div>
+        <div class="offcanvas-footer">
+            <h5 class="offcanvas-title titulosH5C" id="offcanvasRightLabel">Carrito😼</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+    </div>
 
     <!--Footer-->
     <footer id="my-footer"></footer>
@@ -321,6 +335,7 @@
 
     <!-- Script local -->
     <script src="./assets/javascript/script.js"></script>
+    <script src="./assets/javascript/getProductos.js"></script>
 
     <!-- Script con slider de imágenes -->
     <script src="./assets/javascript/paginaProducto.js"></script>

@@ -1,5 +1,4 @@
 // Sistema para hacer un slider de imágenes con ayuda de un forEach
-
 const imgs = document.querySelectorAll('.img-select a');
 const imgBtns = [...imgs];
 let imgId = 1;
@@ -75,23 +74,15 @@ function registrarReview(){
         mensaje : mensajeReviewValue
     };
     seccionsinReviews.classList.add("d-none");
-
     reviews.push(review);
-
     // 1. Muestro la info en consola.
     mostrarReview(review); //Invocación de otra función para mostrar la info en consola
-
     // 2. Mensaje de confirmación (textContext)
     //mensajeConfirmacion.textContent = "Reseña registrada correctamente";
-
     // 3. Generar la tarjeta
     generarTarjetaReview(review); //Invocación de una funci+pn para generar tarjetas
-
-    // 4. Retorno en autobus.
+    // 4. Retorno
     return review;
-    
-
-
 }
 
 function mostrarReview(review) {
