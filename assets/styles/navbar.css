@@ -10,11 +10,6 @@
     background-image: url("/assets/img/Icono_hamburguesa.svg");
 }
 
-.navbar-nav .nav-link.active {
-    color: #FFFDF5;
-    font-weight: bold;
-}
-
 .navbar-nav .nav-link.active:hover {
     text-decoration: underline;
 }
@@ -34,21 +29,17 @@
     font-weight: bold;
 }
 
-.navbar-nav .nav-link.show {
-    color: #FFFDF5;
-}
-
 /*Dropdown menu*/
 .dropdown-toggle {
     font-weight: 600;
 }
 
 .navbar-nav .dropdown-menu .dropdown-item {
-    color: #472922;
+    color: #FFFDF5;
 }
 
-.navbar-nav .dropdown-menu .dropdown-item:hover {
-    background-color: #ff862f13;
+ul .dropdown-menu{
+    background-color: #FF862F;
 }
 
 /*Botón*/
@@ -85,7 +76,7 @@
     font-weight: bold;
 }
 
-.navbar-nav .nav-link.show {
+.navbar-nav .nav-link {
     color: #FFFDF5;
 }
 
@@ -95,11 +86,7 @@
 }
 
 .navbar-nav .dropdown-menu .dropdown-item {
-    color: #472922;
-}
-
-.navbar-nav .dropdown-menu .dropdown-item:hover {
-    background-color: #ff862f13;
+    color: #FFFDF5;
 }
 
 /*Botón*/
@@ -142,8 +129,4 @@ hr{
 .hr_movil{
     color: #fffdf5;
     margin: 0;
-}
-
-.navbar-nav .nav-link.show {
-    color: #472922;
 }
