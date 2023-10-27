@@ -22,17 +22,19 @@
         <div class="container-fluid">
 
             <!-- botón para menú en móvil -->
-            <button class="navbar-toggler d-md-none d-lg-none" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler d-lg-none boton-navbar" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- botón para menú en tablet -->
+            <!--
+            botón para menú en tablet 
             <button class="navbar-toggler d-none d-md-block d-lg-none" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            -->
 
             <!-- Logo -->
             <div class="contenedor-logo">
@@ -68,24 +70,28 @@
 
                 <!-- Iconos -->
                 <div class="contendor-iconos">
+
+                    <!--
                     <span class="navbar-icon d-none d-sm-inline-block" href="#">
                         <img src="./assets/img/icon_lupa.svg" alt="Lupa de búsqueda" width="30" height="24"
                             class="d-inline-block align-text-top">
                     </span>
+                    -->
 
                     <a class="navbar-icon d-none d-sm-inline-block" href="./login&registro.html">
                         <img src="./assets/img/icon_usuario.svg" alt="Icono de usuario" width="30" height="24"
                             class="d-inline-block align-text-top">
                     </a>
-                    <button class="navbar-icon carritoStyle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarrito" aria-controls="offcanvasCarrito" ><img src="./assets/img/icon_carrito.svg" alt="Carrito" width="30" height="24" 
-                        class="d-inline-block align-text-top"></button>
                     <a class="navbar-icon" href="#">
-                        
+                        <img src="./assets/img/icon_carrito.svg" alt="Carrito" width="30" height="24"
+                            class="d-inline-block align-text-top">
                     </a>
                 </div>
             </div>
 
+            
             <!-- navegación de desgloce para tablet -->
+            <!--
             <div class="offcanvas offcanvas-start d-none d-md-block" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header d-flex justify-content-end">
@@ -164,13 +170,14 @@
                     </ul>
 
                 </div>
-            </div> <!--Termina navegación para tablet-->
+            </div> Termina navegación para tablet
+        -->
 
             <!-- navegación en desgloce para móvil-->
-            <div class="collapse navbar-collapse text-center d-md-none d-lg-none" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse text-center d-lg-none" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
                     </li>
                     <li>
                         <hr class="hr_movil">
@@ -182,22 +189,22 @@
                         </a>
                         <ul class="dropdown-menu text-center">
                             <li>
-                                <a class="dropdown-item" href="./seccion_perros.html    ">
+                                <a class="dropdown-item" href="./seccion_perros.html">
                                     Perros
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="./seccion_gatos.html">
                                     Gatos
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="./seccion_peces.html">
                                     Peces
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="./seccion_conejos.html">
                                     Conejos
                                 </a>
                             </li>
@@ -217,7 +224,7 @@
                         <a class="nav-link sb16" href="./login&registro.html">Iniciar sesión</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link sb16" href="#">Insignias</a>
+                        <a class="nav-link sb16" href="./conseguir_insignias.html">Insignias</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link sb16" href="./fv_agregarProducto.html">Vender</a>
@@ -238,20 +245,19 @@
                         <a class="nav-link sb16" href="./acercadenosotros.html">Sobre nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link sb16" href="#">Aporte a la comunidad</a>
+                        <a class="nav-link sb16" href="./servicioalacomunidad.html">Aporte a la comunidad</a>
                     </li>
 
                 </ul>
 
-               
-
-                <!-- buscador para móvil -->
+                <!-- buscador para móvil 
                 <div class="d-inline-block d-sm-none">
                     <form class="d-flex" role="search" id="search-form">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" id="search-input">
                         <button class="btn btn-outline txt20B" type="submit">Buscar</button>
                     </form>
                 </div>
+                -->
 
             </div> <!--Termina navegación para móvil-->
 
