@@ -4,6 +4,11 @@
     object-fit: cover;
 }
 
+/*Contenedor*/
+.texto-principal{
+    margin: 0px 30px;
+}
+
 /* Insignias */
 .contenedor-insignia {
     position: relative;
