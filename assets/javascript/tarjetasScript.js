@@ -11,11 +11,11 @@ function crearTarjeta(contenedor, imgSrc, nombre, categoria, vendedor, precio) {
         <div class="product-details">
           <h4><a href="./producto.html">${nombre}</a></h4>
           <span class="product-catagory">${categoria}</span>
-          <p>${vendedor}</p>
+          <p class="txt14">${vendedor}</p>
           <div class="product-bottom-details">
             <div class="product-price"><small></small>${precio}</div>
             <div class="product-links">
-              <a href=""><i class="fa fa-shopping-bag" id="icono-card"> </i></a>
+              <a href="../../producto.html"><i class="fa fa-shopping-bag" id="icono-card"> </i></a>
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@ function crearTarjeta(contenedor, imgSrc, nombre, categoria, vendedor, precio) {
 // Función para crear la primera tarjeta de cada slide ya que siempre será visible
 function crearPrimerTarjeta(contenedor, imgSrc, nombre, categoria, vendedor, precio) {//recibe el contenedor y los datos de la tarjeta
   const tarjeta = document.createElement("div");//crea un elemento div
-  tarjeta.className = "col-sm-12 col-md-3 col-lg-3";//le asigna una clase al elemento div
+  tarjeta.className = "col-9 col-sm-6 col-md-6 col-lg-3";//le asigna una clase al elemento div
   //innerHTML es una propiedad que define o devuelve el contenido HTML de un elemento
   tarjeta.innerHTML = `
       <div class="product-card">
@@ -41,7 +41,7 @@ function crearPrimerTarjeta(contenedor, imgSrc, nombre, categoria, vendedor, pre
           <div class="product-bottom-details">
             <div class="product-price"><small></small>${precio}</div>
             <div class="product-links">
-              <a href=""><i class="fa fa-shopping-bag" id="icono-card"> </i></a>
+              <a href="../../producto.html"><i class="fa fa-shopping-bag" id="icono-card"> </i></a>
             </div>
           </div>
         </div>
@@ -99,11 +99,11 @@ const datosPerro = {//objeto con los datos de la tarjeta de perro
 };
 
 const datosGato = {//objeto con los datos de la tarjeta de gato
-  imgSrc: "https://m.media-amazon.com/images/I/51OFagHcQFL.jpg",
-  nombre: "Castillo de gatos",
+  imgSrc: "./assets/img/productoArbolGato/producto-1.jpg",
+  nombre: "Árbol para gato con forma de cactus",
   categoria: "Accesorios",
   vendedor: "Kenia",
-  precio: "$230.99",
+  precio: "$370.00",
 };
 
 const datosPez = {//objeto con los datos de la tarjeta de pez

@@ -1,6 +1,6 @@
 function crearTarjeta(contenedor, imgSrc, nombre, categoria, vendedor, precio) {//recibe el contenedor y los datos de la tarjeta
     const tarjeta = document.createElement("div"); //crea un elemento div
-    tarjeta.className = "col-sm-12 col-md-3 col-lg-3"; //le asigna una clase al elemento div
+    tarjeta.className = "col-9 col-sm-6 col-md-6 col-lg-3"; //le asigna una clase al elemento div
     //innerHTML es una propiedad que define o devuelve el contenido HTML de un elemento
     tarjeta.innerHTML = `
       <div class="product-card">
@@ -80,28 +80,28 @@ const datosPerroAlimentacion = [
 const datosPerroAccesorios = [
     {
         imgSrc: "./assets/img/seccion_perros/ProductoAccesorios.jpg",
-        nombre: "Correa Grande",
+        nombre: "Correa Grande para razas grandes",
         categoria: "Accesorios",
         vendedor: "Uriel",
         precio: "$160.50",
     },
     {
         imgSrc: "./assets/img/seccion_perros/ProductoAccesorios2.jpg",
-        nombre: "Camita Mediana",
+        nombre: "Camita mediana para razas pequeñas",
         categoria: "Accesorios",
         vendedor: "Alexis",
         precio: "$270.50",
     },
     {
         imgSrc: "./assets/img/seccion_perros/ProductoAccesorios3.jpg",
-        nombre: "Juguete Pelota",
+        nombre: "Juguete de pelota plástico azul",
         categoria: "Accesorios",
         vendedor: "Edna",
         precio: "$270.50",
     },
     {
         imgSrc: "./assets/img/seccion_perros/ProductoAccesorios4.jpg",
-        nombre: "Plato de Comida Metal",
+        nombre: "Plato de Comida Metal acero inoxidable",
         categoria: "Accesorios",
         vendedor: "Kenia",
         precio: "$49.97",
@@ -111,7 +111,7 @@ const datosPerroAccesorios = [
 const datosPerroCuidadoEHigiene = [
     {
         imgSrc: "./assets/img/seccion_perros/ProductoCuidadoeHigiene.jpg",
-        nombre: "Shampoo Orgánico Pet",
+        nombre: "Shampoo Orgánico para cachorro",
         categoria: "Cuidado e Higiene",
         vendedor: "Berenice",
         precio: "$165.00",
@@ -132,7 +132,7 @@ const datosPerroCuidadoEHigiene = [
     },
     {
         imgSrc: "./assets/img/seccion_perros/ProductoCuidadoeHigiene4.jpg",
-        nombre: "Pasto Sintético Pet Loo",
+        nombre: "Pasto Sintético Pet Loo Verde",
         categoria: "Cuidado e Higiene",
         vendedor: "Uriel",
         precio: "$560.00",
@@ -211,7 +211,7 @@ const datosPerroEntrenamiento = [
     },
     {
         imgSrc: "./assets/img/seccion_perros/ProductoEntrenamiento2.jpg",
-        nombre: "Guía de Adiestramiento",
+        nombre: "Guía de Adiestramiento desde cero",
         categoria: "Entrenamiento",
         vendedor: "Kenia",
         precio: "$95.00",

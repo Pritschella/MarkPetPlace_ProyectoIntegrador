@@ -77,12 +77,10 @@ a {
     position: relative;
     /* box-shadow: 0 2px 7px #dfdfdf; */
     margin: 50px auto;
-    background: #fafafa;
+    background: #ffffff;
     border: 1px solid #fbb72c;
     border-radius: 12px;
     height: 530px;
-    max-width: 304px;
-    min-width: 304px;
 }
 
 .badge {
@@ -127,7 +125,8 @@ a {
 }
 
 .product-details h4 a {
-    font-weight: 500;
+    font-weight: 700;
+    font-family:'Nunito', sans-serif;
     display: block;
     margin-bottom: 18px;
     text-transform: uppercase;
