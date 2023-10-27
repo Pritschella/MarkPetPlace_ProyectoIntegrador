@@ -76,11 +76,9 @@ a {
     position: relative;
     /* box-shadow: 0 2px 7px #dfdfdf; */
     margin: 50px auto;
-    background: #fafafa;
+    background: #ffffff;
     border: 1px solid #fbb72c;
     border-radius: 12px;
-    max-width: 304px;
-    min-width: 304px;
 }
 
 .badge {
@@ -117,7 +115,8 @@ a {
 
 .product-catagory {
     display: block;
-    font-size: 12px;
+    font-family:'Mukta', sans-serif;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     color: #ccc;
@@ -125,13 +124,15 @@ a {
 }
 
 .product-details h4 a {
-    font-weight: 500;
+    font-weight: 700;
+    font-family:'Nunito', sans-serif;
+    text-transform: uppercase;
     display: block;
     margin-bottom: 18px;
-    text-transform: uppercase;
     color: #363636;
     text-decoration: none;
     transition: 0.3s;
+    
 }
 
 .product-details h4 a:hover {
@@ -160,6 +161,7 @@ a {
     font-size: 18px;
     color: #fbb72c;
     font-weight: 600;
+    font-family:'Nunito', sans-serif;
 }
 
 .product-price small {

@@ -1,6 +1,6 @@
 function crearTarjeta(contenedor, imgSrc, nombre, categoria, vendedor, precio) {//recibe el contenedor y los datos de la tarjeta
     const tarjeta = document.createElement("div"); //crea un elemento div
-    tarjeta.className = "col-sm-12 col-md-3 col-lg-3"; //le asigna una clase al elemento div
+    tarjeta.className = "col-9 col-sm-6 col-md-6 col-lg-3"; //le asigna una clase al elemento div
     //innerHTML es una propiedad que define o devuelve el contenido HTML de un elemento
     tarjeta.innerHTML = `
       <div class="product-card">
