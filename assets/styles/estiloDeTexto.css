@@ -149,6 +149,20 @@
 }
 
 /*Cuerpo de texto*/
+.txt21 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color: #472922;
+    font-size: 21px;
+}
+
+.txt21N {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color:#FF862F;
+    font-size: 21px; 
+}
+
 .txt18 {
     font-family: 'Mukta', sans-serif;
     font-weight: 400;
@@ -220,6 +234,13 @@
     font-size: 16px;
 }
 
+.link14 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color: #FF862F;
+    font-size: 14px;
+}
+
 .link16_SB {
     font-family: 'Mukta', sans-serif;
     font-weight: 600;
@@ -250,6 +271,13 @@
 }
 
 /*Botones*/
+.txt22{
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    color: #472922;
+    font-size: 22px;
+}
+
 .txt20B {
     font-family: 'Mukta', sans-serif;
     font-weight: 600;
@@ -306,4 +334,13 @@ form input.form-control:focus {
     font-weight: 900;
     color: #FFA101;
     font-size: 24px;
+}
+
+.oculto{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.mostrar{
+    opacity: 1;
 }

@@ -12,7 +12,7 @@ fetch(navbarURL)
     .catch(error => {
         console.log("Error al cargar la barra de navegación", error);
     })
-
+    
 
 /* footer */
 
@@ -28,3 +28,5 @@ fetch(footerURL)
     .catch(error => {
         console.log("Error al cargar el footer", error);
     })
+
+

@@ -43,7 +43,7 @@
     <a href="./index.html" class="link"> <img src="./assets/img/icono_regresar.svg" class="icono"> Regresar</a>
 
     <!-- Título de página -->
-    <h1 class="titulo">Vender producto</h1>
+    <h1 class="titulosH1C">Vender producto</h1>
 
     <!-- 
     El siguiente código muestra la sección donde se van agregan las fotos, es decir, 
@@ -64,16 +64,15 @@
                     <li>Reutilices material que tengas en casa para envolverlos.</li>
                     <li>Evites el uso de material innecesario para el empaque del producto.</li>
                 </ul>
-                <p class="txt18">Tus clientes podrán calificar este aspecto tuyo como vendedor, ¡así que tenlo en cuenta
-                    para tener
-                    una buena reputación!</p>
+                <p class="txt18">Tus clientes podrán calificar éste aspecto tuyo como vendedor, ¡así que tenlo en cuenta
+                    para tener una buena reputación!</p>
                 <button onclick="acceptAlert()" class="txt20B ">Aceptar</button>
             </div>
         </div>
 
         <div class="container"><!-- Inicio de div container imagenes -->
 
-            <h4 class="subtitulo">Sube tus imagenes aquí</h4><!-- Subtitulo imagenes -->
+            <h4 class="sb24">Sube tus imagenes aquí</h4><!-- Subtitulo imagenes -->
 
             <div class="row justify-content-sm-center"><!-- Inicio de div row -->
 
@@ -106,34 +105,51 @@
 
 
                 <!--Inicio formulario-->
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10 col-xs-10 formulario" id="container-form">
-                    <div class=" mb-3">
-                        <label for="Titulo" class="form-label">Titulo <span class="textoSecundario">Máximo 40
+                <form class="col-xl-4 col-lg-4 col-md-6 col-sm-10 col-xs-10 formulario needs-validation"
+                    id="container-form" novalidate>
+                    <div class=" mb-3 position-relative">
+                        <label for="Titulo" class="form-label">Título <span class="textoSecundario">Máximo 40
                                 caracteres</span></label>
-                        <input type="text" class="form-control" id="form" placeholder="Titulo del producto"
-                            id="tituloProducto">
+                        <input type="text" class="form-control" id="inputTitulo" placeholder="Titulo del producto"
+                            id="tituloProducto" required>
+
+                        <div class="invalid-tooltip">
+                            Es necesario añadir un título
+                        </div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 position-relative">
                         <label for="Precio" class="form-label">Precio</label>
-                        <input type="number" class="form-control" id="form" placeholder="$">
+                        <input type="number" class="form-control" id="inputPrecio" placeholder="$" required>
+
+                        <div class="invalid-tooltip">
+                            Es necesario añadir un precio
+                        </div>
                     </div>
 
-                    <div class="mb-3">
+                    <div class="mb-3 position-relative">
                         <label for="Cantidad" class="form-label">Cantidad</label>
-                        <input type="number" class="form-control" id="form"
-                            placeholder="Cantidad de productos disponibles">
+                        <input type="number" class="form-control" id="inputCantidad"
+                            placeholder="Cantidad de productos disponibles" required>
+
+                        <div class="invalid-tooltip">
+                            Es necesario añadir la cantidad de productos
+                        </div>
                     </div>
 
-                    <div class="mb-3">
+                    <div class="mb-3 position-relative">
                         <label for="Ciudad" class="form-label">Ciudad</label>
-                        <input type="text" class="form-control" id="form"
-                            placeholder="Ciudad donde te encuentras vendiendo">
+                        <input type="text" class="form-control" id="inputCiudad"
+                            placeholder="Ciudad donde te encuentras vendiendo" required>
+
+                        <div class="invalid-tooltip">
+                            Es necesario añadir una Ciudad
+                        </div>
                     </div>
 
-                    <div class="mb-3">
+                    <div class="mb-3 position-relative">
                         <label for="Estado" class="form-label">Estado</label>
-                        <select class="form-select" id="form" aria-label="Default select example">
-                            <option disabled selected>Estado</option>
+                        <select class="form-select" id="selectEstado" aria-label="Default select example" required>
+                            <option disabled selected value="">Estado</option>
                             <option value="Aguascalientes">Aguascalientes</option>
                             <option value="Baja California">Baja California</option>
                             <option value="Baja California Sur">Baja California Sur</option>
@@ -167,23 +183,32 @@
                             <option value="Yucatán">Yucatán</option>
                             <option value="Zacatecas">Zacatecas</option>
                         </select>
+
+                        <div class="invalid-tooltip">
+                            Es necesario añadir un Estado
+                        </div>
                     </div>
 
-                    <div class="mb-3">
+                    <div class="mb-3 position-relative">
+
                         <label for="Animal" class="form-label">¿A qué animal pertenece el producto?</label>
-                        <select class="form-select" id="form" aria-label="Default select example">
-                            <option disabled selected>Animal</option>
+                        <select class="form-select" id="selectAnimal" required>
+                            <option disabled selected value="">Animal</option>
                             <option value="Perro">Perro</option>
                             <option value="Gato">Gato</option>
                             <option value="Conejo">Conejo</option>
                             <option value="Peces">Peces</option>
                         </select>
+
+                        <div class="invalid-tooltip">
+                            Es necesario añadir un Estado
+                        </div>
                     </div>
 
-                    <div class="mb-3">
+                    <div class="mb-3 position-relative">
                         <label for="Categoria" class="form-label">Selecciona una categoria</label>
-                        <select class="form-select" id="form" aria-label="Default select example">
-                            <option disabled selected>Categoria</option>
+                        <select class="form-select" id="selectCategoria" aria-label="Default select example" required>
+                            <option selected disabled value="">Categoria</option>
                             <option value="Alimentacion">Alimentación</option>
                             <option value="Accesorios">Accesorios</option>
                             <option value="Cuidado">Cuidado e higiene</option>
@@ -191,15 +216,20 @@
                             <option value="Ropa">Ropa y moda</option>
                             <option value="Entrenamiento">Productos para entrenamiento</option>
                         </select>
+
+                        <div class="invalid-tooltip">
+                            Es necesario añadir un Estado
+                        </div>
                     </div>
 
-                    <div class="mb-3">
+                    <div class="mb-3 position-relative">
                         <label for="Descripcion" class="form-label">Descripción del producto</label>
-                        <textarea class="form-control" id="form" rows="3"
-                            placeholder="Añada una descripcion del producto"></textarea>
+                        <textarea class="form-control" id="txtDescripcion" rows="3"
+                            placeholder="Añada una descripcion del producto" required></textarea>
                     </div>
-                    <button class="btn" type="submit" id="form">Añadir producto</button>
-                </div>
+                    <button class="btn_registrarProducto mb-2" type="submit" id="btn-form">Añadir
+                        producto</button>
+                </form>
             </div> <!-- Fin de div row -->
 
         </div><!-- Fin de div container imagenes -->
