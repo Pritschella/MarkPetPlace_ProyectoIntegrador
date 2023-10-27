@@ -122,4 +122,10 @@ function generarTarjetaReview(review){
     contenedorReviews.appendChild(reviewDiv);
 }
 
-btnRegistroReview.addEventListener('click', registrarReview)
+btnRegistroReview.addEventListener('click', registrarReview);
+
+function copyAutoresponseToInput() {
+    const autoresponseDiv = document.getElementById('autoresponseDiv');
+    const autoresponseField = document.getElementById('autoresponseField');
+    autoresponseField.value = autoresponseDiv.innerHTML;
+  }
