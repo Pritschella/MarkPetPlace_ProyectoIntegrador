@@ -84,3 +84,7 @@ form.needs-validation .invalid-feedback {
     background: #B3DEE5;
     overflow: hidden;
   }
+
+  .custom-arrow{
+    background: #293cb4 url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='white' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px !important;
+  }

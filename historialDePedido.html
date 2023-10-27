@@ -18,6 +18,15 @@
     <!--CSS Estilos Footer-->
     <link rel="stylesheet" href="./assets/styles/footer.css">
 
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#f06b30">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
     </head>
     <header>
     <div>
@@ -30,53 +39,45 @@
     <div class="filtro"><h1 class="sb20">Filtro </h1>
     </div>
     </div>
-    <!--Este conainer tiene los filtros-->
+    <!--Este container tiene los filtros-->
     <div class="container text-center">
-      <div class="btn-group">
-        <button type="button" class="boton link16" data-bs-toggle="dropdown" aria-expanded="false">
-          Por mascota
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Separated link</a></li>
-        </ul>
+      <div class=" row justify-content-center mb-5 g-2">
+
+        <!-- Botón selector de filtro FECHA PUBLICACIÓN -->
+        <div class="col-4 col-lg-2"> 
+          <select class="form-select rounded-pill" aria-label="Default select example">
+            <option selected>Todas las mascotas</option>
+            <option value="1">Perro</option>
+            <option value="2">Gato</option>
+            <option value="3">Pez</option>
+            <option value="4">Conejo</option>
+          </select>
+        </div>
+
+        <!-- Botón selector de filtro FECHA PUBLICACIÓN -->
+        <div class="col-4 col-lg-2"> 
+          <select class="form-select rounded-pill custom-arrow" aria-label="Default select example">
+            <option disabled>Orden de fecha</option>
+            <option selected value="1">Más recientes</option>
+            <option value="2">Más antiguos</option>
+          </select>
+        </div>
+
+        <!-- Botón selector de filtro FECHA PUBLICACIÓN -->
+        <div class="col-4 col-lg-2"> 
+          <select class="form-select rounded-pill" aria-label="Default select example">
+            <option selected disabled>Status de pedido</option>
+            <option value="1">Más recientes</option>
+            <option value="2">Más antiguos</option>
+          </select>
+        </div>
+
       </div>
-      <div class="btn-group">
-        <button type="button" class="boton link16" data-bs-toggle="dropdown" aria-expanded="false">
-          Mas reciente
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Separated link</a></li>
-        </ul>
-      </div>
-    <br>
-    <br>
-    <div class="btn-group">
-      <button type="button" class="boton link16" data-bs-toggle="dropdown" aria-expanded="false">
-        Por status
-      </button>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Separated link</a></li>
-      </ul>
-    </div>
-    <br>
-    <br>
-    <br>
+
   </div>
   <!--Este div contiene todas las tarjetas del historial de pedido-->
   <div class="container">
-    <div class="row g-4 g-lg-5 justify-content-between">
+    <div class="row g-4 g-md-5 g-lg-5 justify-content-between">
 
       
 
@@ -95,7 +96,7 @@
           <div class="row g-0">
             <!-- Imagen de producto -->
             <div class="col-3 col-md-4">
-              <img src="./assets/img/producto-1.jpg" class="card-img rounded-start-4 horizontal" alt="Arbol para gato con forma de cactus">
+              <img src="./assets/img/productoArbolGato/producto-1.jpg" class="card-img rounded-start-4 horizontal" alt="Arbol para gato con forma de cactus">
             </div>
             <!-- Información de producto -->
             <div class="col-9 col-md-8">
@@ -127,7 +128,7 @@
           <div class="row g-0">
             <!-- Imagen de producto -->
             <div class="col-3 col-md-4">
-              <img src="./assets/img/producto-1.jpg" class="card-img rounded-start-4 horizontal" alt="Arbol para gato con forma de cactus">
+              <img src="./assets/img/productoArbolGato/producto-1.jpg" class="card-img rounded-start-4 horizontal" alt="Arbol para gato con forma de cactus">
             </div>
             <!-- Información de producto -->
             <div class="col-9 col-md-8">
@@ -159,7 +160,7 @@
           <div class="row g-0">
             <!-- Imagen de producto -->
             <div class="col-3 col-md-4">
-              <img src="./assets/img/producto-1.jpg" class="card-img rounded-start-4 horizontal" alt="Arbol para gato con forma de cactus">
+              <img src="./assets/img/productoArbolGato/producto-1.jpg" class="card-img rounded-start-4 horizontal" alt="Arbol para gato con forma de cactus">
             </div>
             <!-- Información de producto -->
             <div class="col-9 col-md-8">
@@ -191,7 +192,7 @@
           <div class="row g-0">
             <!-- Imagen de producto -->
             <div class="col-3 col-md-4">
-              <img src="./assets/img/producto-1.jpg" class="card-img rounded-start-4 horizontal" alt="Arbol para gato con forma de cactus">
+              <img src="./assets/img/productoArbolGato/producto-1.jpg" class="card-img rounded-start-4 horizontal" alt="Arbol para gato con forma de cactus">
             </div>
             <!-- Información de producto -->
             <div class="col-9 col-md-8">

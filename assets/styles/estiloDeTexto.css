@@ -67,6 +67,7 @@
 }
 
 /*Subtitulos*/
+
 .sb28 {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
@@ -219,6 +220,13 @@
     font-size: 16px;
 }
 
+.link14 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color: #FF862F;
+    font-size: 14px;
+}
+
 .link16_SB {
     font-family: 'Mukta', sans-serif;
     font-weight: 600;
@@ -249,6 +257,13 @@
 }
 
 /*Botones*/
+.txt22{
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    color: #472922;
+    font-size: 22px;
+}
+
 .txt20B {
     font-family: 'Mukta', sans-serif;
     font-weight: 600;

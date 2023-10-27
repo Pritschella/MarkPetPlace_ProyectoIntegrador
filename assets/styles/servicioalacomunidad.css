@@ -3,6 +3,23 @@
     background-color: #FFFDF5;
 }
 
+.titulosH2 {
+    text-align: center;
+}
+
+.sb28Y {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color:#e7bb0a;
+    font-size: 28px;
+}
+
+.d-block {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
 .txt21 {
     font-family: 'Mukta', sans-serif;
     font-weight: 400;
@@ -10,6 +27,16 @@
     font-size: 21px;
 }
 
+.txt21N {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color:#FF862F;
+    font-size: 21px; 
+}
+
+#contactar {
+    text-align: center;
+}
 
 #img-art {
     width: 280px;

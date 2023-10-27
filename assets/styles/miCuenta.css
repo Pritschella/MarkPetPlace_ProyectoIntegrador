@@ -30,7 +30,7 @@ ul {
 }
 
 ul hr {
-    border-color: #472922;
+    border: 2px solid #472922;
 }
 
 #formulario-nombre {

@@ -2,6 +2,7 @@
 
 body {
   background-color: #FAE6B1 !important;
+ 
 }
 
 * {
@@ -14,7 +15,6 @@ body,
 input {
   font-family: "Poppins", sans-serif;
 }
-
 
 .container {
   position: relative;
@@ -411,8 +411,14 @@ form.sign-in-form {
 }
 
 form .boton .btn {
-  color: #000000;
+  color: #472922;
   background-color: #FFA101;
   /*   border-radius: 10px;
   padding: 10px; */
 }
+
+form .boton .btn:active {
+  color: #472922;
+  border-color: #472922
+}
+
