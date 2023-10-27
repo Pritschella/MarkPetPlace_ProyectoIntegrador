@@ -1,5 +1,4 @@
 // Sistema para hacer un slider de imágenes con ayuda de un forEach
-
 const imgs = document.querySelectorAll('.img-select a');
 const imgBtns = [...imgs];
 let imgId = 1;
@@ -23,6 +22,31 @@ window.addEventListener('resize', slideImage);
 
 
 //Manipulación de DOM para reviews
+
+// Funcionamiento de recibir puntaje de reviews
+const puntaje = document.querySelectorAll('.seccReview .review')
+const puntajeValor = document.querySelector('.seccReview input')
+
+puntaje.forEach((item, idx)=> {
+	item.addEventListener('click', function () {
+		let click = 0
+		puntajeValor.value = idx + 1
+
+		puntaje.forEach(i=> {
+			i.classList.replace('reviewIcon', 'reviewIconSelected')
+			i.classList.remove('reviewActive')
+		})
+		for(let i=0; i<puntaje.length; i++) {
+			if(i <= idx) {
+				puntaje[i].classList.replace('reviewIconSelected', 'reviewIcon')
+				puntaje[i].classList.add('reviewActive')
+			} else {
+				puntaje[i].style.setProperty('--i', click);
+				click++
+			}
+		}
+	})
+})
 
 // Recibir los datos de inputs de formulario de Reviews
 let puntajeReview = document.getElementById("puntajeReview");
@@ -50,23 +74,15 @@ function registrarReview(){
         mensaje : mensajeReviewValue
     };
     seccionsinReviews.classList.add("d-none");
-
     reviews.push(review);
-
     // 1. Muestro la info en consola.
     mostrarReview(review); //Invocación de otra función para mostrar la info en consola
-
     // 2. Mensaje de confirmación (textContext)
     //mensajeConfirmacion.textContent = "Reseña registrada correctamente";
-
     // 3. Generar la tarjeta
     generarTarjetaReview(review); //Invocación de una funci+pn para generar tarjetas
-
-    // 4. Retorno en autobus.
+    // 4. Retorno
     return review;
-    
-
-
 }
 
 function mostrarReview(review) {
@@ -106,4 +122,10 @@ function generarTarjetaReview(review){
     contenedorReviews.appendChild(reviewDiv);
 }
 
-btnRegistroReview.addEventListener('click', registrarReview)
+btnRegistroReview.addEventListener('click', registrarReview);
+
+function copyAutoresponseToInput() {
+    const autoresponseDiv = document.getElementById('autoresponseDiv');
+    const autoresponseField = document.getElementById('autoresponseField');
+    autoresponseField.value = autoresponseDiv.innerHTML;
+  }

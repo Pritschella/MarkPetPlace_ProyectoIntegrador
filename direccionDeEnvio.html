@@ -35,7 +35,7 @@
     <div class="container"><a href="./index.html" class="link18"><img src="./assets/img/icono_regresar.svg" class="icono"> Regresar al mercadito </a></div>
     <br><br>
     <!--Este div contiene las imagenes de patitas-->
-    <div class="container patitas">
+    <div class="container patitas d-none">
         <div class="centro">
             <img src="./assets/img/PatitaCafe.svg">
             <h1 class="sb18">1</h1>
@@ -49,81 +49,88 @@
             <h1 class="sb18">3</h1>
         </div>
     </div>
-<br>
     <div class="text-center">
     <h1 class="sb28">Dirección de envío</h1>
-    <a class="link16" href="./login&registro.html">¿Ya tienes cuenta? Inicia sesión</a>
+    <a class="link16 d-none" href="./login&registro.html">¿Ya tienes cuenta? Inicia sesión</a>
     </div><br><br>
     <div class="container">
         <div class="row">
-          <div class="col"><br>
+          <div class="col-12 col-md-7"><br>
     <!--Formulario de direccion-->
-    <div class="formulario">
+    
+    <form class="row g-3 needs-validation" action="https://formsubmit.co/markpetplace@gmail.com" method="POST" novalidate>
         <!-- Input de Nombre completo a 12 col -->
-                <div class="row">
+          
                 <div class="col-md-6 mb-2">
                     <label for="Nombre_Direccion" class="form-label sb20">Nombre</label>
-                    <input name="Nombre" id="inputNombre_Direccion" type="text" class="form-control" placeholder="Ingresa nombre de quien recibe" required>
+                    <input name="Nombre" id="Nombre_Direccion" type="text" class="form-control" placeholder="Ingresa nombre de quien recibe" required>
                     <div class="invalid-feedback txt14">
                     Revisa con ojos de águila el campo🦅
                     </div>
                 </div>
                 <div class="col-md-6 mb-2">
                     <label for="Apellido_Direccion" class="form-label sb20">Apellido</label>
-                    <input name="Apellido" id="inputApellido_Direccion" type="text" class="form-control" placeholder="Ingresa el apellido de quien recibe" required>
+                    <input name="Apellido" id="Apellido_Direccion" type="text" class="form-control" placeholder="Ingresa el apellido de quien recibe" required>
                     <div class="invalid-feedback txt14">
                     Revisa con ojos de águila el campo🦅
                     </div>
+                    
+                  </div>
+
+                <div class="col-12 mb-3">
+                  <label for="email_Direccion" class="form-label sb20">Correo electrónico</label>
+                  <input name="email" id="email_Direccion" type="email" class="form-control" placeholder="Ingresa tu correo electrónico" required>
+                  <div class="invalid-feedback txt14">
+                  Revisa con ojos de águila el campo🦅
+                  </div>
                 </div>
-                </div>
-                <div class="row">
+                
                     <div class="col-md-6 mb-2">
                         <label for="calleYNumero_Direccion" class="form-label sb20">Calle y número</label>
-                        <input name="Calle y nombero" id="inputCalleYNumero_Direccion" type="text" class="form-control" placeholder="Ingresa la calle y número" required>
+                        <input name="Calle y nombero" id="calleYNumero_Direccion" type="text" class="form-control" placeholder="Ingresa la calle y número" required>
                         <div class="invalid-feedback txt14">
                         Revisa con ojos de águila el campo🦅
                         </div>
                     </div>
                     <div class="col-md-6 mb-2">
                         <label for="Colonia_Direccion" class="form-label sb20">Colonia</label>
-                        <input name="Direccion" id="inputColonia_Direccion" type="text" class="form-control" placeholder="Ingresa la colonia" required>
+                        <input name="Direccion" id="Colonia_Direccion" type="text" class="form-control" placeholder="Ingresa la colonia" required>
                         <div class="invalid-feedback txt14">
                         Revisa con ojos de águila el campo🦅
                         </div>
                     </div>
-                    </div>
-                <div class="row">
+                
                 <div class="col-md-6 mb-2">
                     <label for="Ciudad_Direccion" class="form-label sb20">Ciudad</label>
-                    <input name="Ciudad" id="inputCiudad_Direccion" type="text" class="form-control" placeholder="Ingresa tu ciudad" required>
+                    <input name="Ciudad" id="Ciudad_Direccion" type="text" class="form-control" placeholder="Ingresa tu ciudad" required>
                     <div class="invalid-feedback txt14">
                     Revisa con ojos de águila el campo🦅
                     </div>
                 </div>
                 <div class="col-md-6 mb-2">
                     <label for="Estado_Direccion" class="form-label sb20">Estado</label>
-                    <input name="Estado" id="inputEstado_Direccion" type="text" class="form-control" placeholder="Ingresa tu estado" required>
+                    <input name="Estado" id="Estado_Direccion" type="text" class="form-control" placeholder="Ingresa tu estado" required>
                     <div class="invalid-feedback txt14">
                     Revisa con ojos de águila el campo🦅
                     </div>
                 </div>
-                </div>
-                <div class="row">
+                
+                
                 <div class="col-md-6 mb-2">
                     <label for="Estado_Direccion" class="form-label sb20">Codigo postal</label>
-                    <input name="Estado" id="inputEstado_Direccion" type="text" class="form-control" placeholder="Ingresa tu estado" required>
+                    <input name="Estado" id="Estado_Direccion" type="text" class="form-control" placeholder="Ingresa tu estado" required>
                     <div class="invalid-feedback txt14">
                     Revisa con ojos de águila el campo🦅
                     </div>
                 </div>
                 <div class="col-md-6 mb-2">
                     <label for="Estado_Direccion" class="form-label sb20">Telefono</label>
-                    <input name="Estado" id="inputEstado_Direccion" type="text" class="form-control" placeholder="Ingresa tu estado" required>
+                    <input name="Estado" id="Estado_Direccion" type="tel" class="form-control" placeholder="Ingresa tu estado" required>
                     <div class="invalid-feedback txt14">
                     Revisa con ojos de águila el campo🦅
                     </div>
                 </div>
-                </div>
+                
                 <div class="col-12">
                     <label for="Detalles_Direccion" class="form-label sb20">Detalles de envio</label>
                     <textarea name="Detalles" id="inputDetalles_Direccion" class="form-control"  placeholder="Escribe detalles de tu dirección de envío" required></textarea>
@@ -148,11 +155,28 @@
             <div class="invalid-feedback txt14">
             Revisa con ojos de águila el campo🦅
             </div><br><br>
-            <a href="./formularioDePago" class="d-grid gap-2"><input class="btn-pago rounded-pill sb18B" type="submit" value="Continuar"></a>
+            <!-- Botón de ENVIAR MENSAJE -->
+            <div class="d-grid gap-2 txt18_SB">
+              <button type="submit" class="btn btn-primary rounded-pill" onclick="copyAutoresponseToInput()">Comprar</button>
+            </div>
+
+            <!-- FormSubmit para mandar a una página de agradecimiento -->
+            <input type="hidden" name="_next" value="http://127.0.0.1:5502/gracias_contacto.html">
+            <!-- FormSubmit para ponerle un asunto a los mensajes que llegan al correo -->
+            <input type="hidden" name="_subject" value="¡Nuevo mensaje para MarkPetPlace!">
+
+            <input type="hidden" name="_autoresponse" id="autoresponseField" value="¡">
+            <!-- FormSubmit para darle formato a la información recibida por correo -->
+            <input type="hidden" name="_template" value="table">
+
+            <div class="d-none" id="autoresponseDiv">
+              ¡Hola! Soy Mark 😸, ¡el minino detrás de MarkPetPlace! ✨ Para completar tu compra, te pedimos que realices un pago por transferencia o depósito al siguiente número de cuenta: *************.❗ Una vez completado el pago, por favor envía el comprobante de pago al correo markpetplace@gmail.com. Una vez que recibamos la confirmación del pago, procederemos con el envío de tus productos. ✅ Si necesitas algo, ¡maúlla o ladra! 🐕 Estamos aquí para ayudarte. Con amor y patitas, Mark del Equipo de MarkPetPlace🐾.
+            </div>
+
         </form>
-    </div>
+
           </div>
-          <div class="col">
+          <div class="col-12 col-md-5">
 <!--div para el resumen de compra-->
 <div class="container">
     <hr class="linea-horizontal">
@@ -165,7 +189,7 @@
                 <div class="row g-0">
                   <!-- Imagen de producto -->
                   <div class="col-3 col-md-4">
-                    <img src="./assets/img/producto-1.jpg" class="card-img rounded-start-4 horizontal" alt="Arbol para gato con forma de cactus">
+                    <img src="./assets/img/productoArbolGato/producto-1.jpg" class="card-img rounded-start-4 horizontal" alt="Arbol para gato con forma de cactus">
                   </div>
                   <!-- Información de producto -->
                   <div class="col-9 col-md-8">
@@ -189,7 +213,7 @@
                 <div class="row g-0">
                   <!-- Imagen de producto -->
                   <div class="col-3 col-md-4">
-                    <img src="./assets/img/producto-1.jpg" class="card-img rounded-start-4 horizontal" alt="Arbol para gato con forma de cactus">
+                    <img src="./assets/img/productoArbolGato/producto-1.jpg" class="card-img rounded-start-4 horizontal" alt="Arbol para gato con forma de cactus">
                   </div>
                   <!-- Información de producto -->
                   <div class="col-9 col-md-8">
@@ -213,7 +237,7 @@
                 <div class="row g-0">
                   <!-- Imagen de producto -->
                   <div class="col-3 col-md-4">
-                    <img src="./assets/img/producto-1.jpg" class="card-img rounded-start-4 horizontal" alt="Arbol para gato con forma de cactus">
+                    <img src="./assets/img/productoArbolGato/producto-1.jpg" class="card-img rounded-start-4 horizontal" alt="Arbol para gato con forma de cactus">
                   </div>
                   <!-- Información de producto -->
                   <div class="col-9 col-md-8">
@@ -240,8 +264,8 @@
             <div class="precio">$600</div>
         </div> <br>
         <input class="datos" type="text" id="numeroTarjeta" name="numeroTarjeta" placeholder="Codigo de descuento">
-    </div>
         </div>
+      </div>
     </div>
 </div>
 </div>
@@ -256,5 +280,7 @@
         crossorigin="anonymous"></script>
     <!-- Script local -->
     <script src="./assets/javascript/script.js"></script>
+    <!-- Script local -->
+    <script src="./assets/javascript/paginaProducto.js"></script>
 </body>
 </html>

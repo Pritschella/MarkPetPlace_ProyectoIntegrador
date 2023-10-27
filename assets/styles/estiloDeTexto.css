@@ -321,3 +321,12 @@ form input.form-control:focus {
     color: #FFA101;
     font-size: 24px;
 }
+
+.oculto{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.mostrar{
+    opacity: 1;
+}

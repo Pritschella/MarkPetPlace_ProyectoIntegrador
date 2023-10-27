@@ -101,3 +101,11 @@ a.page-link{
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
 }
+
+.offcanvas-body .card{
+    border: 1px solid #FAE6B1;
+}
+
+.offcanvas.offcanvas-end{
+    background-color: #FFFDF5;
+}

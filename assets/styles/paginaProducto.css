@@ -63,38 +63,52 @@ button.btn-outline-primary.disabled{
 
 
 /* Estilo de componente Acordeon */
-div#accordionExample.accordion .accordion-item {
+div.accordion .accordion-item {
     background-color: transparent;
     border-color: #FFA101;
     border-radius: 1rem;
 }
 
-div#accordionExample.accordion .accordion-item .accordion-button {
+div.accordion .accordion-item .accordion-button {
     background-color: transparent;
     font-family: 'Mukta', sans-serif;
-    color: #472922;
     font-size: 16px;
     border-radius: 1rem 1rem 0rem 0rem;
 }
 
-div#accordionExample.accordion .accordion-item .accordion-button.collapsed {
+
+div.accordion .accordion-item .accordion-button.collapsed {
     border-radius: 1rem;
 }
 
-div#accordionExample.accordion .accordion-item .accordion-button:focus {
+div.accordion .accordion-item .accordion-button:focus {
     background-color: #FAE6B1;
     box-shadow: none;
     border-color: #F06B30;
 }
 
-div#accordionExample.accordion .accordion-item .accordion-body {
+div.accordion .accordion-item .accordion-body {
     font-family: 'Mukta', sans-serif;
     color: #472922;
 }
 
-div#accordionExample.accordion .accordion-item .accordion-button::after {
+div.accordion .accordion-item .accordion-button::after {
     fill: #472922;
 }
+
+/* Acordeón de direcciones */
+div#accordionDireccion.accordion .accordion-item .accordion-button {
+    background-color: transparent;
+    font-family: 'Mukta', sans-serif;
+    color: #FFA101;
+    font-size: 16px;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+div#accordionDireccion.accordion .accordion-item {
+    background-color: white;
+}
+
 /* Terminma estilo de componente Acordeon */
 
 /* Esilo para línea divisoria */
@@ -175,13 +189,64 @@ img.slider{
 }
 
 .reviewIcon{
-    background-image: url(/assets/img/iconos/icon_review32.svg);
-    background-repeat: no-repeat;
-    aspect-ratio: 1 / 1;
+    width: 32px;
+    display:block;
+    height:32px;
+    padding-left:10px;
+    align-items: center;
+    opacity: 40%;
+    transition: .2s;
 }
 
-.reviewIconVacio{
-    background-image: url(/assets/img/iconos/icon_review32.svg);
-    background-repeat: no-repeat;
-    aspect-ratio: 1 / 1;
+.reviewIconSelected{
+    opacity: 100%;
+}
+
+.reviewActive{
+    opacity: 100%;
+    animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.reviewActive:before{
+    content: '';
+    background:url('/assets/img/iconos/icon_review32.svg');
+    background-size:cover;
+    position:absolute;
+    width: 32px;
+    height:32px;
+    margin-left: -10px;
+}
+
+.reviewIcon:before{
+    content: '';
+    background:url('/assets/img/iconos/icon_review32.svg');
+    background-size:cover;
+    position:absolute;
+    width: 32px;
+    height:32px;
+    margin-left: -10px;
+}
+
+.seccReview .review{
+    cursor: pointer;
+}
+
+.seccReview .review:hover{
+    transform: scale(1.1);
+    opacity: 100%;
 }

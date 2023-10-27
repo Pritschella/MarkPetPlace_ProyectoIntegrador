@@ -138,11 +138,11 @@
                 <div class="row g-2 my-2"> <!-- Inicia row de botones -->
                     <!-- Botón añadir a carrito -->
                     <div class="col-6 d-grid gap-2 txt18_SB ">
-                        <button type="button" class="btn btn-outline-primary rounded-pill">Añadir a carrito</button>
+                        <button type="button" class="btn btn-outline-primary rounded-pill" id="productoCarrito" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarrito" aria-controls="offcanvasCarrito" value="1">Añadir a carrito</button>
                     </div>
                     <!-- Botón Comprar -->
                     <div class="col-6 d-grid gap-2 txt18_SB">
-                        <button type="button" class="btn btn-primary rounded-pill">Comprar</button>
+                        <button type="button" class="btn btn-primary rounded-pill" >Comprar</button>
                     </div>
                 </div><!-- Termina row de botones -->
 
@@ -164,7 +164,7 @@
                 <div class="accordion mb-5" id="accordionExample">
                     <div class="accordion-item ">
                       <h2 class="accordion-header ">
-                        <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button collapsed txt16" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                           Información detallada🐾
                         </button>
                       </h2>
@@ -176,7 +176,8 @@
                         </div>
                       </div>
                     </div>              
-                </div><!-- Terminma acordeón para mostrar más información -->
+                </div><!-- Termina acordeón para mostrar más información -->
+
             </div>         
         </div> <!--Cierre de Row 2-->
 
@@ -239,9 +240,13 @@
 
                                 <!-- Para los forms, el for del label, tiene que tener el mismo nombre que el #id del input. -->
                                 <!-- Input de puntaje REVIEW -->
-                                <div class="col-12"> 
-                                    <input name="Puntaje" id="puntajeReview" type="number" min="0" max="5" class="form-control" required>
-                                    <i></i>
+                                <div class="col-12 seccReview d-flex justify-content-center"> 
+                                    <input name="Puntaje" id="puntajeReview" type="number" min="0" max="5" class="form-control" required hidden>
+                                    <i class="reviewIcon review"></i>
+                                    <i class="reviewIcon review"></i>
+                                    <i class="reviewIcon review"></i>
+                                    <i class="reviewIcon review"></i>
+                                    <i class="reviewIcon review reviewActive"></i>
                                     <div class="invalid-feedback txt14">
                                       Revisa con ojos de águila el campo🦅
                                     </div>
@@ -294,16 +299,30 @@
             <!-- ROW reseñas detalladas -->
             <div class="row" id="contenedorReviews">
                 <!-- Aquí se añadirán las reviews -->
-                <div class="col-12 col-md-6"> <!-- Producto -->
-                    
-                </div> <!-- Cierre de producto -->
+                
 
             </div>
            
         </div> <!--Cierre de Row 3-->
 
     </div> <!--Cierre de Container 1-->
-  
+
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCarrito" aria-labelledby="offcanvasCarritoLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title titulosH5C" id="offcanvasRightLabel">Carrito😼</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" id="bodyCarrito">
+            
+            
+
+        </div>
+        <div class="offcanvas-footer">
+            <h5 class="offcanvas-title titulosH5C" id="offcanvasRightLabel">Carrito😼</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+    </div>
 
     <!--Footer-->
     <footer id="my-footer"></footer>
@@ -316,6 +335,7 @@
 
     <!-- Script local -->
     <script src="./assets/javascript/script.js"></script>
+    <script src="./assets/javascript/getProductos.js"></script>
 
     <!-- Script con slider de imágenes -->
     <script src="./assets/javascript/paginaProducto.js"></script>
