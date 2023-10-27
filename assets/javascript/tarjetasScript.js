@@ -15,9 +15,7 @@ function crearTarjeta(contenedor, imgSrc, nombre, categoria, vendedor, precio) {
           <div class="product-bottom-details">
             <div class="product-price"><small></small>${precio}</div>
             <div class="product-links">
-              <a href=""><i class="fa fa-heart-o" id="icono-card"> </i></a>
               <a href=""><i class="fa fa-shopping-bag" id="icono-card"> </i></a>
-              <a href=""><i class="fa fa-shopping-cart" id="icono-card"></i></a>
             </div>
           </div>
         </div>
@@ -43,9 +41,7 @@ function crearPrimerTarjeta(contenedor, imgSrc, nombre, categoria, vendedor, pre
           <div class="product-bottom-details">
             <div class="product-price"><small></small>${precio}</div>
             <div class="product-links">
-              <a href=""><i class="fa fa-heart-o" id="icono-card"> </i></a>
               <a href=""><i class="fa fa-shopping-bag" id="icono-card"> </i></a>
-              <a href=""><i class="fa fa-shopping-cart" id="icono-card"></i></a>
             </div>
           </div>
         </div>
