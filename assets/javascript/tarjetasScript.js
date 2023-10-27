@@ -51,7 +51,7 @@ function crearPrimerTarjeta(contenedor, imgSrc, nombre, categoria, vendedor, pre
 }
 
 // Función para pintar una fila de tarjetas
-function pintarFila(contenedorId, datos) {//recibe el id del contenedor y los datos de la tarjeta
+function pintarFila(contenedorId, datosArray) {//recibe el id del contenedor y un arreglo de objetos
   const contenedor = document.getElementById(contenedorId);//obtiene el elemento por su id
   const fila = document.createElement("div");//crea un elemento div
   let numTarjetas = 0;//inicializa la variable numTarjetas en 0
@@ -61,44 +61,70 @@ function pintarFila(contenedorId, datos) {//recibe el id del contenedor y los da
   } else {
     numTarjetas = 4;//numTarjetas es igual a 4
   }
-  //crea 4 tarjetas
   for (let i = 0; i < numTarjetas; i++) {
-    if (i == 0) {//si i es igual a 0
-      crearPrimerTarjeta(//llama a la funcion crearPrimerTarjeta y le pasa el contenedor y los datos de la tarjeta
-        fila,//contenedor
-        datos.imgSrc,//imagen
-        datos.nombre,//nombre del producto
-        datos.categoria,//categoria
-        datos.vendedor,//vendedor
-        datos.precio//precio
-      );
-      continue;//salta a la siguiente iteracion del ciclo
-    } else {
-      crearTarjeta(
-        fila,//contenedor
-        datos.imgSrc,//imagen
-        datos.nombre,//nombre del producto
-        datos.categoria,//categoria
-        datos.vendedor,//vendedor
-        datos.precio//precio
-      );
+    if (i < datosArray.length) {//Verifica si aún hay objetos en el arreglo
+      if (i == 0) {//si i es igual a 0
+        crearPrimerTarjeta(//llama a la funcion crearPrimerTarjeta y le pasa el contenedor y los datos del primer objeto
+          fila,
+          datosArray[i].imgSrc,
+          datosArray[i].nombre,
+          datosArray[i].categoria,
+          datosArray[i].vendedor,
+          datosArray[i].precio
+        );
+      } else {
+        crearTarjeta(//llama a la funcion crearTarjeta y le pasa el contenedor y los datos del objeto actual
+          fila,
+          datosArray[i].imgSrc,
+          datosArray[i].nombre,
+          datosArray[i].categoria,
+          datosArray[i].vendedor,
+          datosArray[i].precio
+        );
+      }
     }
   }
-
   contenedor.appendChild(fila);//agrega un nodo al final de la lista de hijos de un nodo padre especificado
 }
 
 // Datos específicos para cada categoría
-const datosPerro = {//objeto con los datos de la tarjeta de perro 
+const datosPerro1 = {//objeto con los datos de la tarjeta de perro 
   imgSrc:
-    "https://www.mayoreototal.mx/cdn/shop/products/000058155m_350x.webp?v=1662653418",
-  nombre: "Croquetas Sport Man's Choise",
+    "./assets/img/seccion_perros/ProductoAlimentacion.jpg",
+  nombre: "Sport Man's Choise",
   categoria: "Alimentación",
   vendedor: "Kenia",
-  precio: "$230.99",
+  precio: "$1357.00",
 };
 
-const datosGato = {//objeto con los datos de la tarjeta de gato
+const datosPerro2 = {//objeto con los datos de la tarjeta de perro 
+  imgSrc:
+    "./assets/img/seccion_perros/ProductoAccesorios.jpg",
+  nombre: "Correa Perro Roja",
+  categoria: "Accesorios",
+  vendedor: "Alexis",
+  precio: "$124.98",
+};
+
+const datosPerro3 = {//objeto con los datos de la tarjeta de perro 
+  imgSrc:
+    "./assets/img/seccion_perros/ProductoCuidadoeHigiene.jpg",
+  nombre: "Pet Shapoo puppies",
+  categoria: "Cuidado e Higiene",
+  vendedor: "Berenice",
+  precio: "$113.16",
+};
+
+const datosPerro4 = {//objeto con los datos de la tarjeta de perro 
+  imgSrc:
+    "./assets/img/seccion_perros/ProductoEntrenamiento.jpg",
+  nombre: "Premios Entrenamiento",
+  categoria: "Entrenamiento",
+  vendedor: "Antonio",
+  precio: "$110.00",
+};
+
+const datosGato1 = {//objeto con los datos de la tarjeta de gato
   imgSrc: "./assets/img/productoArbolGato/producto-1.jpg",
   nombre: "Árbol para gato con forma de cactus",
   categoria: "Accesorios",
@@ -106,24 +132,107 @@ const datosGato = {//objeto con los datos de la tarjeta de gato
   precio: "$370.00",
 };
 
-const datosPez = {//objeto con los datos de la tarjeta de pez
-  imgSrc:
-    "https://chedrauimx.vtexassets.com/arquivos/ids/20412915/7500211004376_00.jpg?v=638327521844500000",
-  nombre: "Comida de pez",
-  categoria: "Alimentación",
-  vendedor: "Kenia",
-  precio: "$230.99",
+const datosGato2 = {//objeto con los datos de la tarjeta de gato
+  imgSrc: "./assets/img/seccion_gatos/accesoriogato1.jpg",
+  nombre: "Castillo para gato",
+  categoria: "Accesorios",
+  vendedor: "Antonio",
+  precio: "$1,499.00",
 };
 
-const datosConejo = {//objeto con los datos de la tarjeta de conejo
-  imgSrc: "https://m.media-amazon.com/images/I/817nmi6KcNL._AC_UF1000,1000_QL80_.jpg",
-  nombre: "Cama de conejo",
+const datosGato3 = {//objeto con los datos de la tarjeta de gato
+  imgSrc: "./assets/img/seccion_gatos/alimentogato1.jpg",
+  nombre: "Purina Gati",
+  categoria: "Alimentación",
+  vendedor: "Alejandra",
+  precio: "$255.00",
+};
+
+const datosGato4 = {//objeto con los datos de la tarjeta de gato
+  imgSrc: "./assets/img/seccion_gatos/ropagato1.jpg",
+  nombre: "Árbol para gato con forma de cactus",
+  categoria: "Ropa y Moda",
+  vendedor: "Uriel",
+  precio: "$199.99",
+};
+
+const datosPez1 = {//objeto con los datos de la tarjeta de pez
+  imgSrc:
+    "./assets/img/seccion_peces/alimentopez1.png",
+  nombre: "Wardley Algas",
+  categoria: "Alimentación",
+  vendedor: "Edna",
+  precio: "$45.00",
+};
+
+const datosPez2 = {//objeto con los datos de la tarjeta de pez
+  imgSrc:
+    "./assets/img/seccion_peces/accesoriopez1.jpg",
+  nombre: "Acuario con ilumincación led",
   categoria: "Accesorios",
+  vendedor: "Berenice",
+  precio: "$3,192.00",
+};
+
+const datosPez3 = {//objeto con los datos de la tarjeta de pez
+  imgSrc:
+    "./assets/img/seccion_peces/cuidadopez1.jpg",
+  nombre: "Aquasafe plus",
+  categoria: "Cuidado e Higiene",
   vendedor: "Kenia",
-  precio: "$230.99",
+  precio: "$299.00",
+};
+
+const datosPez4 = {//objeto con los datos de la tarjeta de pez
+  imgSrc:
+    "./assets/img/seccion_peces/saludpez1.jpg",
+  nombre: "Flourish 100ml",
+  categoria: "Salud",
+  vendedor: "Antonio",
+  precio: "$173.00",
+};
+
+const datosConejo1 = {//objeto con los datos de la tarjeta de conejo
+  imgSrc: "./assets/img/seccion_conejos/ProductoAccesorio.jpg",
+  nombre: "Arnés para conejo",
+  categoria: "Accesorios",
+  vendedor: "Edna",
+  precio: "$110.00",
+};
+
+const datosConejo2 = {//objeto con los datos de la tarjeta de conejo
+  imgSrc: "./assets/img/seccion_conejos/ProductoAlimentación.jpg",
+  nombre: "Vitakraft Menu vital",
+  categoria: "Alimentación",
+  vendedor: "Berenice",
+  precio: "$275.50",
+};
+
+const datosConejo3 = {//objeto con los datos de la tarjeta de conejo
+  imgSrc: "./assets/img/seccion_conejos/ProductoSalud.jpg",
+  nombre: "beaphar multi-vit",
+  categoria: "Salud",
+  vendedor: "Uriel",
+  precio: "$18.99",
+};
+
+const datosConejo4 = {//objeto con los datos de la tarjeta de conejo
+  imgSrc: "./assets/img/seccion_conejos/ProductoCuidadoeHigiene.jpg",
+  nombre: "Caja de arena",
+  categoria: "Cuidado e Higiene",
+  vendedor: "Alejandra",
+  precio: "$980.20",
 };
 
 // Pintar las filas de tarjetas con los datos específicos de cada categoría
+
+
+pintarFila("tarjeta-perro-contenedor1", [datosPerro1, datosPerro2, datosPerro3, datosPerro4]);
+pintarFila("tarjeta-gato-contenedor1", [datosGato1, datosGato2, datosGato3, datosGato4]);
+pintarFila("tarjeta-pez-contenedor1", [datosPez1, datosPez2, datosPez3, datosPez4]);
+pintarFila("tarjeta-conejo-contenedor1", [datosConejo1, datosConejo2, datosConejo3, datosConejo4]);
+
+/*
 pintarFila("tarjeta-perro-contenedor1", datosPerro);//llama a la funcion pintarFila y le pasa el id del contenedor y los datos de la tarjeta
 pintarFila("tarjeta-perro-contenedor2", datosPerro);
 pintarFila("tarjeta-perro-contenedor3", datosPerro);
@@ -139,3 +248,4 @@ pintarFila("tarjeta-pez-contenedor3", datosPez);
 pintarFila("tarjeta-conejo-contenedor1", datosConejo);
 pintarFila("tarjeta-conejo-contenedor2", datosConejo);
 pintarFila("tarjeta-conejo-contenedor3", datosConejo);
+*/
