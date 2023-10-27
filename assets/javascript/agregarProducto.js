@@ -88,4 +88,68 @@ function createPreview(file) {
 
 let expresiones = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
+// Obtén una referencia al formulario
+const userForm = document.getElementById('container-form');
+
+var contador = 0;
+var bandera = false;
+
+
+userForm.addEventListener('submit', function (event) {
+
+    (function () {
+        'use strict'
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+
+        var forms = document.querySelectorAll('.needs-validation');
+        // Loop over them and prevent submission
+        Array.from(forms)
+            .forEach(function (form) {
+
+                form.addEventListener('submit', function (event) {
+                    contador = 0;
+
+                    Array.from(form.elements).forEach(function (element) {
+                        if (element.checkValidity() === false) {
+                            contador++;
+                        }
+                    });
+                    if (contador === 0) {
+                        bandera = true;
+                    } else {
+
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+
+            })
+
+
+    })()
+    if (bandera) {
+        // Obtiene los valores de los campos del formulario
+        const nombre = document.getElementById('inputName').value;
+        const telefono = document.getElementById('inputnumber').value;
+        const email = document.getElementById('inputemail').value;
+        const pass = document.getElementById('password').value;
+        const passConf = document.getElementById('confirmpassword').value;
+        // Crea un objeto JSON con los valores del formulario
+        if (pass === passConf) {
+            const usuario = {
+                nombre: nombre,
+                telefono: telefono,
+                email: email,
+                pass: pass
+            };
+
+            localStorage.setItem('user', JSON.stringify(usuario));
+
+        } else {
+            alert("Las contraseñas no coinciden");
+        }
+    }
+
+    event.preventDefault(); // Evita el envío predeterminado del formulario
+    // Puedes realizar otras acciones aquí, como enviar el objeto JSON a un servidor
+});
 
