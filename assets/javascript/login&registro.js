@@ -13,21 +13,21 @@ sign_in_btn.addEventListener("click", () => {
 
 // LocaStorage SignIn
 
-// const loginForm = document.querySelector('#loginForm')
-// loginForm.addEventListener('submit', (e)=>{
-//   e.preventDefault()
-//   const email = document.querySelector('#email1').value
-//   const password = document.querySelector('#password1').value
-//   const Users = JSON.parse(localStorage.getItem('users')) || []
-//   const validUser = Users.find(user => user.email === email && user.password === password)
-//   if(!validUser){
-//     return alert('Usuario y/o contraseña incorrecta')
-//   }
-//   alert(`Bienvenido ${validUser.name}`)
-//   localStorage.setItem('login_success', JSON.stringify(validUser))
-//   window.location.href = 'index.html'
+const loginForm = document.querySelector('#loginForm')
+loginForm.addEventListener('submit', (e)=>{
+  e.preventDefault()
+  const email = document.querySelector('#email1').value
+  const password = document.querySelector('#password1').value
+  const Users = JSON.parse(localStorage.getItem('users')) || []
+  const validUser = Users.find(user => user.email === email && user.password === password)
+  if(!validUser){
+    window.location.href = 'index.html'
+  }
+  alert(`Bienvenido ${validUser.name}`)
+  localStorage.setItem('login_success', JSON.stringify(validUser))
+  window.location.href = 'index.html'
 
-// })
+})
 
 // LocaStorage SignUp
 
@@ -54,7 +54,7 @@ sign_in_btn.addEventListener("click", () => {
 // ---
 
 
-//Base de datos
+//Base de datos - Registro
 const signupForm = document.getElementById('submit');
 
 signupForm.addEventListener("click", (e) => {
@@ -69,17 +69,17 @@ console.log(nombre, apellido, email, address, telefono);
 // Necesito asignar estas constantes a un Objeto que se va a enviar a mi servidor y posteriormente, convertir este Objeto e un formato que mi servidor pueda leer
 
 const cliente = {
-    firstName: nombre.value,
-    lastName: apellido.value,
-    address: direccion.value,
-    email: correo.value,
-    phone: telefono.value,
+    nombreUsuario: nombre.value,
+    contrasenia: apellido.value,
+    apellido: direccion.value,
+    telefono: correo.value,
+    correo: telefono.value,
 };
 console.log(cliente);
 //fetch API(url, method, headers, (json), body, then, catch)
 // const url = "http://localhost:8080/users/clients";
 
-fetch("http://localhost:8080/users/clients", {
+fetch("http://localhost:8080/users", {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
@@ -91,11 +91,47 @@ fetch("http://localhost:8080/users/clients", {
     })
     .then(cliente =>{
         console.log("Si fine", cliente);
+        window.location.href = 'index.html'
         return cliente;
     })
     .catch(error => {
         console.log("Aqui hay un error", error);
+        window.location.href = 'index.html'
     })
 });
 
- 
+document.addEventListener('DOMContentLoaded', function () {
+    const userForm = document.getElementById('userForm');
+    const userInfo = document.getElementById('userInfo');
+
+    userForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const email = document.getElementById('email').value;
+        const url = `http://localhost:8080/users/clients/byEmail?email=${email}`;
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                if (data) {
+                    // Mostrar la información del usuario en el elemento "userInfo"
+                    userInfo.innerHTML = `
+                        <h3>Información del Usuario:</h3>
+                        <p>Nombre: ${data.firstName} ${data.lastName}</p>
+                        <p>Dirección: ${data.address}</p>
+                        <p>Teléfono: ${data.phone}</p>
+                        <p>Correo Electrónico: ${data.email}</p>
+                    `;
+                } else {
+                    // Mostrar un mensaje de usuario no encontrado si no se encontró el usuario
+                    userInfo.innerHTML = "Usuario no encontrado";
+                }
+
+                
+            })
+            .catch(error => {
+                console.error(error);
+            });
+            window.location.href = 'index.html'
+    });
+});
