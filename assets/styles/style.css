@@ -115,7 +115,7 @@ a {
 
 .product-catagory {
     display: block;
-    font-family:'Mukta', sans-serif;
+    font-family: 'Mukta', sans-serif;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -125,14 +125,14 @@ a {
 
 .product-details h4 a {
     font-weight: 700;
-    font-family:'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;
     text-transform: uppercase;
     display: block;
     margin-bottom: 18px;
     color: #363636;
     text-decoration: none;
     transition: 0.3s;
-    
+
 }
 
 .product-details h4 a:hover {
@@ -161,7 +161,7 @@ a {
     font-size: 18px;
     color: #fbb72c;
     font-weight: 600;
-    font-family:'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .product-price small {

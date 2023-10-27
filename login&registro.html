@@ -20,14 +20,8 @@
   <!-- Estilos -->
   <link rel="stylesheet" href="./assets/styles/estiloDeTexto.css" />
 
-  <!-- FAVICON -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
-  <link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#f06b30">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
+
+
 
   <title>Registro & Inicio</title>
 
@@ -40,7 +34,7 @@
       <div class="signin-signup">
         <!-- Formulario de inicio sesion -->
         <form action="#" class="sign-in-form" id="loginForm">
-          <h2 class="title titulosH2">Iniciar sesión</h2>
+          <h2 class="title titulosH2">Iniciar Sesión</h2>
           <p class="bienvenido txt18">¡Bienvenido/a de vuelta a la manada!</p>
           <div class="input-field"><!-- Inicio placeholders -->
             <i class="fas fa-user"></i>
@@ -51,7 +45,7 @@
             <input class="sb28P" type="password" placeholder="Password" id="password1" required/>
           </div><!-- Fin placeholders -->
           <div class="boton">
-            <input class="btn rounded-pill txt18" type="submit" value="¡Bienvenido/a de nuevo!" />
+            <input class="btn rounded-pill" type="submit" value="¡Bienvenido/a de nuevo!" />
           </div>
           <p class="social-text txt18">O inicia sesión con</p>
           <div class="social-media">
@@ -69,29 +63,41 @@
         </form><!-- Formulario de registro -->
         <form action="#" class="sign-up-form" id="signupForm">
           <h2 class="title titulosH2">Regístrate</h2>
-          <p class="txt18">Y forma parte de nuestra pandilla digital😸</p>
+          <p class="txt18">Y forma parte de nuestra pandilla digital</p>
+          <!-- Campo nombre -->
           <div class="input-field">
             <i class="fas fa-user"></i>
-            <input class="sb28P" type="text" placeholder="Nombre(s)" id="name" required autofocus/>
+            <input class="sb28P" type="text" placeholder="Mark" id="firstName" required autofocus/>
           </div>
+          <!-- Campo password -->
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input class="sb28P" type="password" placeholder="******" id="address" required />
+          </div>
+          <!-- Campo apellido -->
           <div class="input-field">
             <i class="fas fa-user"></i>
-            <input class="sb28P" type="text" placeholder="Apellido" id="lastName" required autofocus/>
-          </div>
+            <input class="sb28P" type="text" placeholder="Paws" id="lastName" required/>
+          </div>   
+          <!-- Campo numero -->
+          <div class="input-field">
+            <i class="fas fa-phone"></i>
+            <input class="sb28P" type="phone" placeholder="1234567890" id="phone" required />
+              </div>
+          <!-- Campo correo -->
           <div class="input-field">
             <i class="fas fa-envelope"></i>
             <input class="sb28P" type="email" placeholder="gatito@gmail.com" id="email" required />
           </div>
-          <div class="input-field">
+      
+  <!--    <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input class="sb28P" type="password" placeholder="Contraseña" id="password" required/>
-          </div>
-          <div class="input-field">
-            <i class="fas fa-phone fa-flip-horizontal"></i>
-            <input class="sb28P" type="tel" placeholder="Teléfono" id="phone" required/>
-          </div>
+             Campo contraseña 
+            <input class="sb28P" type="password" placeholder="Password" id="password" required/>
+          </div>           -->
+          <!-- Boton de registro -->
           <div class="boton">
-            <input class="btn rounded-pill txt18" type="submit" value="¡Hagámoslo!" />
+            <input class="btn rounded-pill" id="submit" type="button" value="¡Hagámoslo!" />
           </div>
           <p class="social-text txt18">O regístrate con </p>
           <div class="social-media">
